@@ -1,0 +1,7 @@
+- name: Docs
+  href: /
+  homepage: /
+  items:
+    - name: 참여자 가이드
+      href: /contribute/
+      homepage: /contribute/
