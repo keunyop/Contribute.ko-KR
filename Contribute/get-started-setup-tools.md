@@ -8,11 +8,11 @@ ms.date: 01/04/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 62c4b234f23b470ffea33cacdfc469fbd7e526bd
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="install-content-authoring-tools"></a>콘텐츠 작성 도구 설치
 
@@ -22,9 +22,9 @@ ms.lasthandoff: 04/23/2018
 > * [Visual Studio Code](https://code.visualstudio.com/) 설치
 
 >[!IMPORTANT]
-> 문서에서 사소한 내용을 변경하려는 경우 이 문서의 단계를 완료할 필요 *없이* 바로 [사소한/빈도가 적은 변경 워크플로](light-workflow.md)를 진행할 수 있습니다.
+> 아티클에서 사소한 내용을 변경하려는 경우 이 아티클의 단계를 완료할 필요 *없이* 바로 [빠른 변경 워크플로](index.md#quick-edits-to-existing-documents)를 계속 진행할 수 있습니다.
 >
-> 주요 참가자는 [중요한/장기 실행 변경 워크플로](full-workflow.md)를 사용할 수 있도록 이러한 단계를 완료하는 것이 좋습니다. 기본 리포지토리에 대한 쓰기 권한이 있는 경우에도 *리포지토리를 포크하고 복제하는 것이 좋습니다(이 가이드에서 이렇게 가정)*. 그러면 포크에서 제안된 변경 내용을 저장하기 위한 읽기/쓰기 권한이 있게 됩니다.
+> 주요 참가자는 [중요한/장기 실행 변경 워크플로](how-to-write-workflows-major.md)를 사용할 수 있도록 이러한 단계를 완료하는 것이 좋습니다. 기본 리포지토리에 대한 쓰기 권한이 있는 경우에도 *리포지토리를 포크하고 복제하는 것이 좋습니다(이 가이드에서 이렇게 가정)*. 그러면 포크에서 제안된 변경 내용을 저장하기 위한 읽기/쓰기 권한이 있게 됩니다.
 
 ## <a name="install-git-client-tools-on-windows"></a>Windows에 Git 클라이언트 도구 설치
 
