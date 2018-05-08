@@ -1,18 +1,18 @@
 ---
 title: 콘텐츠 작성 도구 설치
 description: 이 문서의 정보를 활용하여 Git 및 Markdown 파일 편집에 필요한 클라이언트 도구를 다운로드하고 설치할 수 있습니다.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
-ms.date: 01/04/2018
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-content-authoring-tools"></a>콘텐츠 작성 도구 설치
 
@@ -20,6 +20,7 @@ ms.lasthandoff: 04/28/2018
 > [!div class="checklist"]
 > * [Git for Windows](https://git-scm.com/download/win) 설치
 > * [Visual Studio Code](https://code.visualstudio.com/) 설치
+> * [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) 설치
 
 >[!IMPORTANT]
 > 아티클에서 사소한 내용을 변경하려는 경우 이 아티클의 단계를 완료할 필요 *없이* 바로 [빠른 변경 워크플로](index.md#quick-edits-to-existing-documents)를 계속 진행할 수 있습니다.
@@ -58,6 +59,16 @@ OPS 사용자 지정 Markdown 확장에서 지원하는 Markdown 기본 사항 �
 
 > [!TIP]
 > VS Code를 시작하고 현재 폴더를 열려면 명령줄 또는 Bash 셸에서 `code .` 명령을 실행합니다. 현재 폴더가 로컬 Git 리포지토리의 일부인 경우 GitHub 통합이 Visual Studio Code에 자동으로 나타납니다.
+
+## <a name="docs-authoring-pack"></a>Docs Authoring Pack
+Visual Studio Code용 Docs Authoring Pack을 설치합니다. 이 확장 집합에는 Markdown 작성 시 도움이 되는 기본 작성 지원과 미리 보기 기능이 포함되므로, Markdown 모양을 docs.microsoft.com 사이트의 스타일로 볼 수 있습니다.
+
+   이 [Marketplace 페이지](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)를 방문하고 **설치**를 선택하거나 VS Code 창의 확장 목록에서 `docsmsft.docs-authoring-pack`을 검색합니다. 
+
+   Docs Authoring Pack은 VS Code 내에서 Alt+M을 눌러서 액세스할 수 있습니다. 도구 모음은 기본적으로 숨겨져 있지만 표시할 수 있습니다. VS Code 설정(Control+쉼표) 및 사용자 추가 설정 `"markdown.showToolbar": true`을 편집하여 도구 모음을 표시합니다.
+
+   자세한 내용은 [Docs Authoring Pack](how-to-write-docs-auth-pack.md) 페이지를 참조하세요.
+
 
 ## <a name="next-steps"></a>다음 단계
 

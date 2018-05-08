@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>설명서를 위한 Git 리포지토리 로컬로 설정
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 > * 업스트림 원격 값 구성
 
 > [!IMPORTANT]
-> 문서의 사소한 내용만 변경하는 경우 이 문서의 단계를 완료하지 *않아도* 됩니다. 바로 [사소하거나 자주 발생하지 않는 변경 내용 워크플로](light-workflow.md)를 계속할 수 있습니다.
+> 문서의 사소한 내용만 변경하는 경우 이 문서의 단계를 완료하지 *않아도* 됩니다. 바로 [빠른 변경 내용 워크플로](index.md#quick-edits-to-existing-documents)를 계속할 수 있습니다.
 >
 
 ## <a name="overview"></a>개요
@@ -46,7 +46,7 @@ GitHub에 익숙하지 않은 경우 아래 비디오를 시청하고 분기 및
 
 1. 사용할 리포지토리를 잘 모르는 경우 웹 브라우저를 사용하여 docs.microsoft.com에서 문서를 방문합니다. 문서의 오른쪽 위에 있는 **편집** 링크(연필 아이콘)를 선택합니다.
 
-   ![편집을 클릭하여 리포지토리 및 파일 위치를 확인합니다.](media/edit-article.png)
+   ![편집을 클릭하여 리포지토리 및 파일 위치를 확인합니다.](media/index/edit-article.png)
 
 2. 해당 링크를 사용하면 적절한 리포지토리에 있는 해당 Markdown 파일에 대한 github.com 위치로 이동합니다. URL에 주목하여 리포지토리 이름을 확인합니다.
 

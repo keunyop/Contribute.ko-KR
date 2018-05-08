@@ -1,19 +1,18 @@
 ---
 title: VS Code용 Docs Authoring Pack
-description: docs.microsoft.com용 Markdown 작성을 용이하게 하는 VS Code 확장 팩입니다.
+description: 이 문서에서는 docs.microsoft.com용 Markdown 작성을 용이하게 하는 VS Code 확장 팩을 설명합니다.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.article: contributor-guide
-ms.prod: n.a
-ms.service: n.a
-ms.technology: n.a
-ms.openlocfilehash: 5c857deb07e28e1f6744c895a291bf78a6acf1df
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>VS Code용 Docs Authoring Pack
 
@@ -87,7 +86,7 @@ Docs Markdown 확장이 설치되면 "Gauntlet"이라는 확장 코드의 이전
 
 ## <a name="known-issues"></a>알려진 문제
 
-- [DocFX 미리 보기] MacOS 및 Linux: DocFX 미리 보기에서 미리 보기를 제대로 시작하지 않습니다. 이러한 플랫폼에 대한 미리 보기는 기본적으로 VS Code Markdown 미리 보기로 설정되어 있습니다.
-- [DocFx 미리 보기] 모든 플랫폼: API에 대한 xref(상호 참조) 링크와 같은 일부 구문은 미리 보기에서 제대로 렌더링되지 않으며, 경우에 따라 콘텐츠 부족이 발생합니다.
-- [외부 책갈피] Linux: 파일 목록이 표시되지만 선택할 제목이 표시되지 않습니다.
-- [포함] Linux: 파일 목록이 표시되지만 선택이 완료되면 링크가 추가되지 않습니다.
+- DocFX 미리 보기: MacOS 및 Linux에서 DocFX 미리 보기가 미리 보기를 제대로 시작하지 않습니다. 이러한 플랫폼에 대한 미리 보기는 기본적으로 VS Code Markdown 미리 보기로 설정되어 있습니다.
+- DocFx 미리 보기: 모든 플랫폼에서 API에 대한 xref(상호 참조) 링크와 같은 일부 구문은 미리 보기에서 제대로 렌더링되지 않으며, 경우에 따라 콘텐츠 부족이 발생합니다.
+- 외부 책갈피: Linux에서 파일 목록이 표시되지만 선택할 제목이 표시되지 않습니다.
+- 포함: Linux에서 파일 목록이 표시되지만 선택이 완료되면 링크가 추가되지 않습니다.
