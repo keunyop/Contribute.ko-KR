@@ -9,10 +9,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
-ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
+ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>VS Code용 Docs Authoring Pack
 
