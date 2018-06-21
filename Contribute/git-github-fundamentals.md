@@ -1,19 +1,13 @@
 ---
 title: 설명서용 Git 및 GitHub 기본 사항
 description: 이 문서에서는 Git, GitHub 리포지토리 및 콘텐츠 구성 방법에 대한 개요와 docs.microsoft.com에 사용되는 명명 규칙에 대해 설명합니다.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/30/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469489"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239805"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Docs용 Git 및 GitHub 기본 사항
 

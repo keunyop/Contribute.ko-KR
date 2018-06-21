@@ -5,15 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469374"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238923"
 ---
 # <a name="install-content-authoring-tools"></a>콘텐츠 작성 도구 설치
 
