@@ -1,19 +1,13 @@
 ---
 title: 설명서에서 링크를 사용하는 방법
 description: 이 문서에서는 docs.microsoft.com 내의 콘텐츠에 대한 링크를 만드는 방법에 대한 지침을 제공합니다.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469535"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239729"
 ---
 # <a name="using-links-in-documentation"></a>설명서에서 링크 사용
 이 문서에서는 docs.microsoft.com에서 호스팅되는 페이지의 하이퍼 링크를 사용하는 방법에 대해 설명합니다. 링크는 몇 가지 다양한 규칙을 사용하여 Markdown에 쉽게 추가할 수 있습니다. 사용자는 링크를 통해 동일한 페이지의 콘텐츠를 가리키거나, 인접한 다른 페이지를 가리키거나, 외부 사이트 및 URL을 가리킬 수 있습니다.
@@ -63,7 +57,10 @@ docs.microsoft.com 사이트 백 엔드에서는 DFM(DocFX Flavored Markdown)을
   `[link text](../directory/article-name.md)`
 
 - docset 간에 연결하는 문서(동일한 리포지토리에 있는 경우도 해당): `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> 위의 예제에서는 `~/`를 링크의 일부로 사용하지 않습니다. 리포지토리의 루트에서 경로에 연결하는 경우 `/`로 시작합니다. GitHub에서 원본 리포지토리로 이동할 때 `~/`를 포함하면 유효하지 않은 링크가 생성됩니다. `/`로 경로를 시작하면 올바르게 해결됩니다.
+
 ## <a name="links-to-anchors"></a>앵커에 대한 링크
 
 앵커를 만들 필요가 없습니다. 앵커는 모든 H2 제목에서 게시 시간에 자동으로 생성됩니다. H2 섹션에 대한 링크를 만들기만 하면 됩니다.
