@@ -22,7 +22,9 @@
   "need_preview_pull_request": true,
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.ko-KR",
   "git_repository_branch_open_to_public_contributors": "live",
-  "contribution_branch_mappings": {},
+	"contribution_branch_mappings": {
+		       "live-sxs": "live"
+  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
