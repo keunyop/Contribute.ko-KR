@@ -2,12 +2,12 @@
 title: 설명서에서 링크를 사용하는 방법
 description: 이 문서에서는 docs.microsoft.com 내의 콘텐츠에 대한 링크를 만드는 방법에 대한 지침을 제공합니다.
 ms.date: 06/29/2017
-ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: dad0460cfb36594c17cef1b079c5fc14191f56f7
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239729"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251486"
 ---
 # <a name="using-links-in-documentation"></a>설명서에서 링크 사용
 이 문서에서는 docs.microsoft.com에서 호스팅되는 페이지의 하이퍼 링크를 사용하는 방법에 대해 설명합니다. 링크는 몇 가지 다양한 규칙을 사용하여 Markdown에 쉽게 추가할 수 있습니다. 사용자는 링크를 통해 동일한 페이지의 콘텐츠를 가리키거나, 인접한 다른 페이지를 가리키거나, 외부 사이트 및 URL을 가리킬 수 있습니다.
@@ -148,12 +148,12 @@ URL의 구조체:
 
 &lt;moniker-name&gt; 부분은 선택 사항입니다. 생략된 경우 콘텐츠의 최신 버전으로 이동합니다. &lt;service-name&gt; 부분은 다음과 같은 기본 URL에 표시되는 예제의 하나입니다.
 
-- Azure PowerShell(AzureRM) 콘텐츠: https://docs.microsoft.com/powershell/azure/
-- Azure PowerShell(ASM) 콘텐츠: https://docs.microsoft.com/powershell/azure/_servicemanagement_
-- Azure Active Directory(AzureAD) PowerShell 콘텐츠: https://docs.microsoft.com/powershell/azure/_active-directory_
-- Azure Service Fabric PowerShell: https://docs.microsoft.com/powershell/azure/_service-fabric_
-- Azure Information Protection PowerShell: https://docs.microsoft.com/powershell/azure/_aip_
-- Azure Elastic DB 작업 PowerShell: https://docs.microsoft.com/powershell/azure/_elasticdbjobs_
+- Azure PowerShell(AzureRM) 콘텐츠: [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
+- Azure PowerShell(ASM) 콘텐츠: [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)
+- AzureAD(Azure Active Directory) PowerShell 콘텐츠: [https://docs.microsoft.com/powershell/azure/_active-directory_](https://docs.microsoft.com/powershell/azure/active-directory)
+- Azure Service Fabric PowerShell: [https://docs.microsoft.com/powershell/azure/_service-fabric_](https://docs.microsoft.com/powershell/azure/service-fabric)
+- Azure Information Protection PowerShell: [https://docs.microsoft.com/powershell/azure/_aip_](https://docs.microsoft.com/powershell/azure/aip)
+- Azure Elastic DB 작업 PowerShell: [https://docs.microsoft.com/powershell/azure/_elasticdbjobs_](https://docs.microsoft.com/powershell/azure/elasticdbjobs)
 
 이러한 URL을 사용하는 경우 콘텐츠의 최신 버전으로 이동합니다. 이러한 방식으로 버전 모니커를 지정할 필요가 없습니다. 그러면 버전이 변경될 때 업데이트되어야 하는 개념 콘텐츠에 대한 링크가 표시되지 않습니다.
 

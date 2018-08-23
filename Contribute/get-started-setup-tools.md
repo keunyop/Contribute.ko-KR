@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238923"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251457"
 ---
 # <a name="install-content-authoring-tools"></a>콘텐츠 작성 도구 설치
 
 이 문서에서는 Git 클라이언트 도구 및 Visual Studio Code를 대화형으로 설치하는 단계를 설명합니다.
 > [!div class="checklist"]
-> * [Git for Windows](https://git-scm.com/download/win) 설치
+> * [Git](https://git-scm.com/) 설치
 > * [Visual Studio Code](https://code.visualstudio.com/) 설치
 > * [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) 설치
 
@@ -25,9 +25,13 @@ ms.locfileid: "36238923"
 >
 > 주요 참가자는 [중요한/장기 실행 변경 워크플로](how-to-write-workflows-major.md)를 사용할 수 있도록 이러한 단계를 완료하는 것이 좋습니다. 기본 리포지토리에 대한 쓰기 권한이 있는 경우에도 *리포지토리를 포크하고 복제하는 것이 좋습니다(이 가이드에서 이렇게 가정)*. 그러면 포크에서 제안된 변경 내용을 저장하기 위한 읽기/쓰기 권한이 있게 됩니다.
 
-## <a name="install-git-client-tools-on-windows"></a>Windows에 Git 클라이언트 도구 설치
+## <a name="install-git-client-tools"></a>Git 클라이언트 도구 설치 
 
- 최신 버전의 [Software Freedom Conservancy Git 클라이언트 도구](https://git-scm.com/download/)를 설치합니다. 설치에는 Git 버전 제어 시스템 및 로컬 Git 리포지토리와 상호 작용하는 데 사용하는 명령줄 앱인 Git Bash가 포함됩니다.
+ 해당 플랫폼용 최신 버전의 [Software Freedom Conservancy Git 클라이언트 도구](https://git-scm.com/download/)를 설치합니다. 
+
+* [Windows용 Git](https://git-scm.com/download/win). 이 설치에는 Git 버전 제어 시스템 및 로컬 Git 리포지토리와 상호 작용하는 데 사용하는 명령줄 앱인 Git Bash가 포함됩니다.
+* Mac용 Git은 Xcode 명령줄 도구의 일부로 제공됩니다. 명령줄에서 `git`을 실행하면 됩니다. 필요한 경우 명령줄 도구를 설치하라는 메시지가 표시됩니다. Software Freedom Conservancy에서 [Mac용 Git](https://git-scm.com/download/mac)을 다운로드할 수도 있습니다.
+* [Linux 및 Unix용 Git](https://git-scm.com/download/linux)
 
 CLI(명령줄 인터페이스)보다 GUI(그래픽 사용자 인터페이스)를 선호하는 경우 [Software Freedom Conservancy의 사용 가능한 GUI 클라이언트 페이지](https://git-scm.com/downloads/guis), [GitHub의 GitHub 데스크톱](https://desktop.github.com/) 또는 [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)에서 인기 있는 옵션을 참조하세요.
 

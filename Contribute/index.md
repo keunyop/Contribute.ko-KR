@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239772"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251437"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 기여자 가이드 개요
 
 [docs.microsoft.com](https://docs.microsoft.com)(Docs) 참여자 가이드를 시작합니다!
 
-GitHub에 호스트된 Microsoft의 여러 설명서 집합은 오픈 소스입니다. 더 많은 팀에서 항상 이 모델을 채택하고 있습니다. 완전히 오픈 소스가 아닌 문서 집합에도 초대되어 끌어오기 요청을 할 수 있는 공용 리포지토리가 있습니다. 이는 제품 엔지니어와 콘텐츠 팀, 고객 간 커뮤니케이션을 간소화하고 개선합니다. 오픈으로 작업하면 다음과 같은 여러 가지 이점이 있습니다.
+GitHub에 호스트된 Microsoft의 여러 설명서 집합은 오픈 소스입니다. Microsoft의 많은 팀에서 항상 이 모델을 채택하고 있습니다. 완전히 오픈 소스가 아닌 문서 집합에도 초대되어 끌어오기 요청을 할 수 있는 공용 리포지토리가 있습니다. 이는 제품 엔지니어와 콘텐츠 팀, 고객 간 커뮤니케이션을 간소화하고 개선합니다. 오픈으로 작업하면 다음과 같은 여러 가지 이점이 있습니다.
 
 - 오픈의 오픈 소스 리포지토리 계획은 가장 필요한 문서에 대한 피드백을 받습니다.
 - 오픈의 오픈 소스 리포지토리 검토는 첫 번째 릴리스에서 가장 유용한 콘텐츠를 게시할 수 있습니다.

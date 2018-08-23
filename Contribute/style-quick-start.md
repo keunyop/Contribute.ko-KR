@@ -2,22 +2,22 @@
 title: Docs 스타일 가이드 - 빠른 시작
 description: 이 문서는 스타일 고려 사항에 대한 간략한 가이드이며 docs.microsoft.com을 시작하기 위한 필수 항목을 포함하고 있습니다.
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239606"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243026"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 스타일 및 음성 빠른 시작
 
-이 빠른 시작은 최소의 시간으로 docs.microsoft.com에서 문서를 작성할 때 가장 중요한 Docs 스타일 컨셉을 적용하는 방법을 설명합니다. 이러한 지침은 새로운 설명서를 만들거나 기존 설명서를 업데이트하는 경우에 적용됩니다.
+이 빠른 시작은 docs.microsoft.com에 게시할 기술 콘텐츠를 작성하는 방법에 대한 간략한 가이드입니다. 이러한 지침은 새로운 설명서를 만들거나 기존 설명서를 업데이트하는 경우에 적용됩니다.
 
-최소한 다음을 기억해주세요.
+모범 사례:
 
 - Word에 복사하고 붙여넣은 후 맞춤법과 문법을 확인해야 하는 경우에도 문서의 맞춤법과 문법을 확인합니다.
 - 다른 사람과 일대일로 대화하는 것처럼 편안하고 친숙한 음성을 사용합니다.
-- 간단한 문장을 사용합니다. 이해하기 쉽고 번역가나 기계 번역으로 쉽게 번역할 수 있습니다.
+- 간단한 문장을 사용합니다. 읽기 쉬운 문장이란 귀하가 공유하는 지침을 독자가 빨리 사용할 수 있음을 의미합니다.
 
 ## <a name="use-the-microsoft-voice-principles"></a>Microsoft 음성 원칙을 사용합니다.
 
