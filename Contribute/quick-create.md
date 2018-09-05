@@ -6,14 +6,14 @@ author: syntaxc4
 manager: erifkin
 ms.date: 07/24/2018
 ms.author: cfowler
-zone_pivot_groups: keyvault-languages, keyvault-platforms
+zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8b758274203748bb6e04c03dec5de38fb77947b4
-ms.sourcegitcommit: b0105f322f91bb4dbde47f6da35b3c12271d5b03
+ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43239579"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308827"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>빠른 시작: Azure Key Vault에서 비밀을 설정하고 검색
 
@@ -29,24 +29,17 @@ ms.locfileid: "43239579"
 
 계속 진행하기 전에 [기본 개념](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts)을 숙지하시기 바랍니다.
 
->[!NOTE]
-아래 자습서가 모범 사례인 이유를 이해하려면 몇 가지 개념을 이해해야 합니다. Key Vault는 프로그래밍 방식으로 비밀을 저장하는 중앙 리포지토리입니다. 하지만 이렇게 하려면 응용 프로그램/사용자가 먼저 Key Vault에 인증해야 합니다. 즉, 비밀을 입력해야 합니다. 보안 모범 사례를 따르기 위해 이 첫 번째 비밀도 정기적으로 순환해야 합니다. 하지만 [관리 서비스 ID](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)를 사용하면 Azure에서 실행되는 응용 프로그램에 Azure에서 자동으로 관리하는 ID가 제공됩니다. 이렇게 하면 **비밀 도입 문제**가 해결되므로 사용자/응용 프로그램이 모범 사례를 준수할 수 있고 첫 번째 비밀의 순환에 대해 걱정할 필요가 없습니다.
+> [!NOTE]
+> 아래 자습서가 모범 사례인 이유를 이해하려면 몇 가지 개념을 이해해야 합니다. Key Vault는 프로그래밍 방식으로 비밀을 저장하는 중앙 리포지토리입니다. 하지만 이렇게 하려면 응용 프로그램/사용자가 먼저 Key Vault에 인증해야 합니다. 즉, 비밀을 입력해야 합니다. 보안 모범 사례를 따르기 위해 이 첫 번째 비밀도 정기적으로 순환해야 합니다. 하지만 [관리 서비스 ID](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)를 사용하면 Azure에서 실행되는 응용 프로그램에 Azure에서 자동으로 관리하는 ID가 제공됩니다. 이렇게 하면 **비밀 도입 문제**가 해결되므로 사용자/응용 프로그램이 모범 사례를 준수할 수 있고 첫 번째 비밀의 순환에 대해 걱정할 필요가 없습니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end
-
-::: zone pivot="dotnet, windows"
+* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
 * 다음 작업을 지원하는 [Visual Studio 2017 버전 15.7.3 이상](https://www.microsoft.com/net/download/windows):
   * ASP.NET 및 웹 개발
   * .NET Core 플랫폼 간 개발
 * [.NET Core 2.1 SDK 이상](https://www.microsoft.com/net/download/windows) :::zone-end
-
-::: zone pivot="dotnet, mac"
-* [Mac용 Visual Studio의 새로운 기능](https://visualstudio.microsoft.com/vs/mac/)을 참조하세요.
-:::zone-end
-
 * Git([다운로드](https://git-scm.com/downloads)).
 * Azure 구독. Azure 구독이 없는 경우 시작하기 전에 [체험 계정](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)을 만듭니다.
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) 버전 2.0.4 이상을 사용하세요. Windows, Mac 및 Linux에서 사용할 수 있습니다.
@@ -168,10 +161,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
     ```bash
     git remote add azure <url>
     ```
+    
 ::: zone-end
 
 ::: zone pivot="dotnet"
-
 ## <a name="open-and-edit-the-solution"></a>솔루션 열기 및 편집
 
 특정 Key Vault 이름으로 샘플을 실행하도록 program.cs 파일을 편집합니다.
@@ -197,7 +190,6 @@ Visual Studio 2017의 주 메뉴에서 디버깅하지 않고 **디버그** > **
 5. **만들기**를 선택합니다.
 
 >[!VIDEO https://sec.ch9.ms/ch9/e93d/a6ac417f-2e63-4125-a37a-8f34bf0fe93d/KeyVault_high.mp4]
-
 ::: zone-end
 
 ## <a name="enable-managed-service-identities"></a>관리 서비스 ID 사용
@@ -242,7 +234,9 @@ git push azure master
 ```
 
 그런 다음 https://<app_name>.azurewebsites.net을 검색하면 비밀 값을 볼 수 있습니다.
-<YourKeyVaultName> 이름을 해당 Vault 이름으로 바꿨는지 확인합니다. ::: zone-end
+<YourKeyVaultName> 이름을 해당 자격 증명 모음 이름으로 바꿔야 합니다.
+
+::: zone-end
 
 ::: zone pivot="dotnet" 이제 응용 프로그램을 실행하면 검색된 비밀 값이 표시됩니다.
 ::: zone-end
