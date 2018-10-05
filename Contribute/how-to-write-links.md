@@ -2,12 +2,12 @@
 title: 설명서에서 링크를 사용하는 방법
 description: 이 문서에서는 docs.microsoft.com 내의 콘텐츠에 대한 링크를 만드는 방법에 대한 지침을 제공합니다.
 ms.date: 06/29/2017
-ms.openlocfilehash: dad0460cfb36594c17cef1b079c5fc14191f56f7
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
+ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251486"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48030936"
 ---
 # <a name="using-links-in-documentation"></a>설명서에서 링크 사용
 이 문서에서는 docs.microsoft.com에서 호스팅되는 페이지의 하이퍼 링크를 사용하는 방법에 대해 설명합니다. 링크는 몇 가지 다양한 규칙을 사용하여 Markdown에 쉽게 추가할 수 있습니다. 사용자는 링크를 통해 동일한 페이지의 콘텐츠를 가리키거나, 인접한 다른 페이지를 가리키거나, 외부 사이트 및 URL을 가리킬 수 있습니다.
@@ -158,7 +158,7 @@ URL의 구조체:
 이러한 URL을 사용하는 경우 콘텐츠의 최신 버전으로 이동합니다. 이러한 방식으로 버전 모니커를 지정할 필요가 없습니다. 그러면 버전이 변경될 때 업데이트되어야 하는 개념 콘텐츠에 대한 링크가 표시되지 않습니다.
 
 올바른 링크를 만들려면 브라우저에서 연결하려는 페이지를 찾고 URL을 복사합니다.
-그런 다음, “https://docs.microsoft.com” 및 로캘 정보를 제거합니다.
+그런 다음, ´ “https://docs.microsoft.com” ´ 및 로캘 정보를 제거합니다.
 
 TOC에서 연결하는 경우 로캘 정보 없이 전체 URL을 사용해야 합니다.
 
