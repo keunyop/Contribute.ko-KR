@@ -2,12 +2,12 @@
 title: Docs 스타일 가이드 - 빠른 시작
 description: 이 문서는 스타일 고려 사항에 대한 간략한 가이드이며 docs.microsoft.com을 시작하기 위한 필수 항목을 포함하고 있습니다.
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805585"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 스타일 및 음성 빠른 시작
 
@@ -51,5 +51,5 @@ ms.locfileid: "49084402"
 
 - 로컬라이제이션된 문서에 참여하는 경우 [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx)을 참조하세요.
 - 로컬라이제이션 지침, 기술 게시에서 언어 스타일 및 사용에 대한 정보 및 특정 시장 데이터 형식에 대한 정보는 해당 언어의 [스타일 가이드](https://www.microsoft.com/Language/StyleGuides)를 다운로드합니다.
-- Microsoft 로컬라이제이션된 용어는 [특정 제품에 승인된 용어](https://www.microsoft.com/Language/Default.aspx)를 검색하고 해당 언어의 [Microsoft Terminology Collection](https://www.microsoft.com/Language/Terminology.aspx)을 다운로드합니다.
+- Microsoft 로컬라이제이션된 용어는 [특정 제품에 승인된 용어](https://www.microsoft.com/Language/Default.aspx)를 검색하고 해당 언어의 [Microsoft Terminology Collection](https://www.microsoft.com/language/Terminology)을 다운로드합니다.
 - 지역화에 대한 자세한 내용은 [Microsoft 작성 스타일 가이드](https://docs.microsoft.com/style-guide/global-communications)의 “Global communications”(글로벌 커뮤니케이션)를 참조하세요.
