@@ -3,14 +3,13 @@ title: 로컬로 Git 리포지토리 설정
 description: 이 문서에서는 로컬 Git 리포지토리를 만들고, 포크 및 복제 프로세스를 포함하여 문서화에 참여하기 위한 지침을 제공합니다.
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238992"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805680"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>설명서를 위한 Git 리포지토리 로컬로 설정
 
@@ -60,7 +59,7 @@ GitHub에 익숙하지 않은 경우 아래 비디오를 시청하고 분기 및
 ## <a name="fork-the-repository"></a>리포지토리 포크
 GitHub 웹 사이트를 통해 적절한 리포지토리를 사용하여 자신의 GitHub 계정에 리포지토리 포크를 만듭니다.
 
-모든 기본 설명서 리포지토리에서 읽기 전용 액세스를 제공하므로 개인 포크가 필요합니다. 즉 리포지토리에 있는 콘텐츠는 직접 변경할 수 없습니다. 변경하려면 [끌어오기 요청](git-github-fundamentals.md#pull-requests)을 포크에서 기본 리포지토리로 제출해야 합니다. 이 프로세스를 용이하게 하려면 먼저 쓰기 액세스 권한이 있는 리포지토리의 복사본이 필요합니다. GitHub *포크*로 이 작업을 수행할 수 있습니다.
+모든 기본 문서 리포지토리는 읽기 전용 액세스를 제공하므로 개인 포크가 필요합니다. 변경하려면 [끌어오기 요청](git-github-fundamentals.md#pull-requests)을 포크에서 기본 리포지토리로 제출해야 합니다. 이 프로세스를 용이하게 하려면 먼저 쓰기 액세스 권한이 있는 리포지토리의 복사본이 필요합니다. GitHub *포크*로 이 작업을 수행할 수 있습니다.
 
 1. 기본 리포지토리의 GitHub 페이지로 이동하여 오른쪽 상단의 **포크** 단추를 클릭합니다.
 

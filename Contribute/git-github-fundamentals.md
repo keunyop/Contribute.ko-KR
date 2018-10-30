@@ -2,12 +2,12 @@
 title: 설명서용 Git 및 GitHub 기본 사항
 description: 이 문서에서는 Git, GitHub 리포지토리 및 콘텐츠 구성 방법에 대한 개요와 docs.microsoft.com에 사용되는 명명 규칙에 대해 설명합니다.
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805703"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Docs용 Git 및 GitHub 기본 사항
 
@@ -46,7 +46,7 @@ GitHub는 [docs.microsoft.com](https://docs.microsoft.com) 콘텐츠를 저장�
 
 앞서 언급한 대로 프로젝트의 기본/마스터 분기는 프로젝트에 대한 현재 버전의 콘텐츠로 사용됩니다. 마스터 분기 및 이 분기에서 생성된 분기의 콘텐츠는 해당 Docs 페이지의 문서 구성에 맞추어 대체적으로 조정됩니다. 하위 디렉토리는 유사 콘텐츠(예: 서비스), 미디어 콘텐츠(예: 이미지 파일) 및 "포함" 파일을 분리하는 데 사용됩니다.
 
-기본 `articles` 디렉터리는 일반적으로 리포지토리의 루트에 있습니다. 문서 디렉터리에는 하위 디렉터리 집합이 포함되어 있습니다. 하위 디렉터리의 문서는 *.md* 확장명을 사용하는 Markdown 파일로 서식이 지정됩니다. 여러 서비스를 지원하는 일부 리포지토리는 [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs) 리포지토리와 같은 일반 `/articles` 하위 디렉터리를 사용합니다. 다른 리포지토리는 `/IntuneDocs`를 사용하는 [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) 리포지토리와 같은 서비스 특정 이름을 사용할 수 있습니다.
+기본 `articles` 디렉터리는 일반적으로 리포지토리의 루트에 있습니다. 문서 디렉터리에는 하위 디렉터리 집합이 포함되어 있습니다. 하위 디렉터리의 문서는 *.md* 확장명을 사용하는 Markdown 파일로 서식이 지정됩니다. 여러 서비스를 지원하는 일부 리포지토리는 [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs) 리포지토리와 같은 일반 `/articles` 하위 디렉터리를 사용합니다. 다른 리포지토리는 `/IntuneDocs`를 사용하는 [IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs) 리포지토리와 같은 서비스 특정 이름을 사용할 수 있습니다.
 
 이 디렉토리의 루트 내에서 전반적인 서비스 또는 제품과 관련된 일반적인 문서를 발견할 수 있습니다. 또한 일반적으로 기능/서비스 또는 일반적인 시나리오와 일치하는 다른 하위 디렉토리 시리즈를 찾을 수 있습니다. 예를 들어 Azure "가상 머신" 문서는 `/virtual-machines` 하위 디렉터리에 있으며, Intune "이해 및 탐색" 문서는 `/understand-explore` 하위 디렉터리에 있습니다.
 

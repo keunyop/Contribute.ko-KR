@@ -8,12 +8,12 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805749"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>빠른 시작: Azure Key Vault에서 비밀을 설정하고 검색
 
@@ -35,11 +35,14 @@ ms.locfileid: "43308827"
 ## <a name="prerequisites"></a>필수 조건
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node JS](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * 다음 작업을 지원하는 [Visual Studio 2017 버전 15.7.3 이상](https://www.microsoft.com/net/download/windows):
   * ASP.NET 및 웹 개발
   * .NET Core 플랫폼 간 개발
-* [.NET Core 2.1 SDK 이상](https://www.microsoft.com/net/download/windows) :::zone-end
+* [.NET Core 2.1 SDK 이상](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git([다운로드](https://git-scm.com/downloads)).
 * Azure 구독. Azure 구독이 없는 경우 시작하기 전에 [체험 계정](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)을 만듭니다.
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) 버전 2.0.4 이상을 사용하세요. Windows, Mac 및 Linux에서 사용할 수 있습니다.
@@ -110,7 +113,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>종속성 설치
 
-여기서 종속성을 설치합니다. cd key-vault-node-quickstart npm install 명령을 실행합니다.
+여기서 종속성을 설치합니다. 다음 명령을 실행합니다.
+
+    cd key-vault-node-quickstart
+    npm install
 
 이 프로젝트에서는 다음 2개 노드 모듈을 사용합니다.
 
@@ -119,14 +125,14 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="publish-the-web-application-to-azure"></a>Azure에 웹 응용 프로그램 게시
 
-다음은 수행해야 할 몇 가지 단계입니다.
+다음은 응용 프로그램을 Azure에 게시하기 위해 수행해야 할 몇 가지 단계입니다.
 
 * 첫 번째 단계는 [Azure App Service](https://azure.microsoft.com/services/app-service/) 계획을 만드는 것입니다. 이 계획에 여러 웹앱을 저장할 수 있습니다.
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* 다음으로 웹앱을 만듭니다. 다음 예제에서는 <app_name>을 전역적으로 고유한 앱 이름으로 바꿉니다(유효한 문자는 a-z, 0-9 및 -). 런타임은 NODE|6.9로 설정됩니다. 지원되는 모든 런타임을 보려면 az webapp list-runtimes를 실행합니다.
+* 다음으로 웹앱을 만듭니다. 다음 예제에서는 <app_name>을 전역적으로 고유한 앱 이름으로 바꿉니다(유효한 문자는 a-z, 0-9 및 -). 런타임은 NODE|6.9로 설정됩니다. 지원되는 모든 런타임을 보려면 `az webapp list-runtimes`를 실행합니다.
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -238,7 +244,8 @@ git push azure master
 
 ::: zone-end
 
-::: zone pivot="dotnet" 이제 응용 프로그램을 실행하면 검색된 비밀 값이 표시됩니다.
+::: zone pivot="dotnet"
+이제 응용 프로그램이 실행되면 검색된 비밀 값이 표시됩니다.
 ::: zone-end
 
 ## <a name="next-steps"></a>다음 단계
@@ -247,10 +254,12 @@ git push azure master
 * [Azure Key Vault 홈페이지](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault 설명서](https://docs.microsoft.com/azure/key-vault/)
 * [Node용 Azure SDK](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [Azure REST API Reference](https://docs.microsoft.com/rest/api/keyvault/)(Azure REST API 참조) ::: zone-end
+* [Azure REST API 참조](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Azure Key Vault 홈페이지](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault 설명서](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK For .NET](https://github.com/Azure/azure-sdk-for-net)(.NET용 Azure SDK)
-* [Azure REST API reference](https://docs.microsoft.com/rest/api/keyvault/)(Azure REST API 참조) ::: zone-end
+* [Azure REST API 참조](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

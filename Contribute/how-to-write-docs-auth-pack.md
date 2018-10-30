@@ -1,20 +1,19 @@
 ---
-title: VS Code용 Docs Authoring Pack
-description: 이 문서에서는 docs.microsoft.com용 Markdown 작성을 용이하게 하는 VS Code 확장 팩을 설명합니다.
+title: Visual Studio Code용 Docs Authoring Pack
+description: 이 문서에서는 docs.microsoft.com용 Markdown 작성을 용이하게 하는 Visual Studio Code 확장 팩을 설명합니다.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805657"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>VS Code용 Docs Authoring Pack
 
-Docs Authoring Pack은 docs.microsoft.com용 Markdown 작성을 지원하는 VS Code 확장 모음입니다. 이 팩은 [VS Code Marketplace에서 사용](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)할 수 있으며 포함된 확장은 다음과 같습니다.
+Docs Authoring Pack은 docs.microsoft.com용 Markdown 작성을 지원하는 Visual Studio Code 확장 모음입니다. 이 팩은 [VS Code Marketplace에서 사용](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)할 수 있으며 포함된 확장은 다음과 같습니다.
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint): David Anson이 개발한 인기 있는 Markdown linter이며, Markdown에서 모범 사례를 따르도록 보장합니다.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)(Code 맞춤법 검사기): Street Side Software에서 제공하는 완전한 오프라인 맞춤법 검사기입니다.
@@ -103,7 +102,7 @@ Docs 문서 템플릿은 VS Code 작성자가 중앙 저장소의 Markdown 템�
 |----------|---------------|
 |author    |VS Code 설정 파일에 지정한 경우 해당 GitHub ID.|
 |ms.author |VS Code 설정 파일에 지정한 경우 해당 Microsoft 별칭. Microsoft 직원이 아닌 경우 지정되지 않은 채로 두세요.|
-|ms.date   |Docs 지원 형식, MM/DD/YYYY의 현재 날짜. 이후에 파일을 업데이트하는 경우 날짜가 자동으로 업데이트되지 않으므로, 문서 새로 고침 날짜를 나타내도록 이를 수동으로 업데이트해야 합니다.|
+|ms.date   |Docs 지원 형식, MM/DD/YYYY의 현재 날짜. 이후에 파일을 업데이트하면 날짜가 자동으로 업데이트되지 않습니다. docs.microsoft.com 사이트에서 가장 최근의 게시 날짜를 나타내기 위해 ms.date 값을 수동으로 업데이트해야 합니다.|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>author(GitHub ID) 및/또는 ms.author(Microsoft 별칭)를 설정하려면
 

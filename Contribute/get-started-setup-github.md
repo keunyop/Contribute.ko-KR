@@ -2,18 +2,18 @@
 title: GitHub 계정 설정 단계
 description: 이 문서에서는 docs.microsoft.com 콘텐츠에 참여하는 데 필요한 GitHub 계정을 설정하는 프로세스를 단계별로 안내합니다.
 ms.date: 02/27/2018
-ms.openlocfilehash: 15fa7c11090a5c4faefe38d00d273e92c231329b
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805499"
 ---
 # <a name="github-account-setup"></a>GitHub 계정 설정
 
 ## <a name="set-up-your-github-account"></a>GitHub 계정 설정
 
-Docs 기술 콘텐츠에 참여하려면 자신의 GitHub 계정을 설정해야 합니다. 대부분의 단계는 한 번만 수행하면 됩니다.
+Docs 기술 콘텐츠에 참여하려면 자신의 GitHub 계정을 설정해야 합니다. 좋은 소식은 일반적으로 이러한 단계를 한 번만 수행하면 된다는 것입니다.
 
 ### <a name="1-create-a-github-account-and-set-up-your-profile"></a>1. GitHub 계정 만들기 및 프로필 설정
 

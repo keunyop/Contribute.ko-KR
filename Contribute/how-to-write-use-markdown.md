@@ -2,18 +2,18 @@
 title: Markdown을 사용하여 Docs를 작성하는 방법
 description: 이 문서에서는 docs.microsoft.com 문서를 작성하는 데 사용되는 Markdown 언어에 대한 기본 사항 및 참조 정보를 제공합니다.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805730"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown을 사용하여 Docs를 작성하는 방법
 
-Docs.microsoft.com 문서는 읽기 쉽고 배우기 쉬운 [Markdown](https://daringfireball.net/projects/markdown/)이라는 가벼운 마크업 언어로 작성되었습니다. 그렇기 때문에 신속하게 산업 표준이 되고 있습니다.
+[Docs.microsoft.com](http://docs.microsoft.com) 문서는 읽기 쉽고 배우기 쉬운 [Markdown](https://daringfireball.net/projects/markdown/)이라는 가벼운 마크업 언어로 작성되었습니다. 그렇기 때문에 신속하게 산업 표준이 되고 있습니다.
 
-Docs 콘텐츠가 GitHub에 저장되기 때문에 일반적인 형식 요구 사항에 추가 기능을 제공하는 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)이라는 Markdown의 상위 집합을 사용할 수 있습니다. 또한 OPS(Open Publishing Services)는 Markdig Markdown Parser를 구현합니다. Markdig은 GFM(GitHub Flavored Markdown)과 호환성이 뛰어나 Docs 전용 기능을 사용할 수 있는 기능을 추가합니다.
+Docs 콘텐츠가 GitHub에 저장되기 때문에 일반적인 형식 요구 사항에 추가 기능을 제공하는 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)이라는 Markdown의 상위 집합을 사용할 수 있습니다. 또한 OPS(Open Publishing Services)는 Markdig Markdown Parser를 구현합니다. Markdig은 GFM과 호환성이 뛰어나 Docs 전용 기능을 사용할 수 있는 기능을 추가합니다.
 
 * Markdig은 빠르고 강력하며 CommonMark와 호환되며 .NET에 대해 확장 가능한 Markdown 프로세서입니다.
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Docs 콘텐츠가 GitHub에 저장되기 때문에 일반적인 형식 요구 �
 제목을 만들려면 다음과 같이 해시 표시(#)를 사용합니다.
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>굵게 기울임꼴 텍스트
@@ -38,19 +38,19 @@ Docs 콘텐츠가 GitHub에 저장되기 때문에 일반적인 형식 요구 �
 텍스트 서식을 **굵게** 지정하려면 두 개의 별표로 묶습니다.
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 텍스트 서식을 *기울임꼴*로 지정하려면 한 개의 별표로 묶습니다.
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 텍스트 서식을 ***굵게 기울임꼴***로 지정하려면 세 개의 별표로 묶습니다.
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>목록
@@ -107,16 +107,16 @@ Docs 콘텐츠가 GitHub에 저장되기 때문에 일반적인 형식 요구 �
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 다음과 같이 렌더링됩니다.
 
 1. 첫 번째 지침
-    1. 하위 지침
-    2. 하위 지침
+   1. 하위 지침
+   2. 하위 지침
 2. 두 번째 지침
 
 ### <a name="tables"></a>보세요.
@@ -150,7 +150,7 @@ Docs 콘텐츠가 GitHub에 저장되기 때문에 일반적인 형식 요구 �
 - [Markdown 테이블 생성기](https://www.tablesgenerator.com/markdown_tables) 웹앱
 - [Adam Pritchard의 Markdown 참고 자료](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
 - [Michel Fortin의 Markdown 추가 자료](https://michelf.ca/projects/php-markdown/extra/#table)
-- [HTML 테이블을 Markdown으로 전환](https://jmalarcon.github.io/markdowntables/)
+- [HTML 테이블을 Markdown으로 변환](https://jmalarcon.github.io/markdowntables/)
 
 ### <a name="links"></a>링크
 
@@ -212,6 +212,7 @@ Markdown에서는 코드 조각을 문장에서 인라인으로 배치하거나 
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ Markdig은 해당 코드 조각 확장을 통해 문서에 대한 고급 코드 
 밑줄이 포함된 대체 텍스트를 올바르게 렌더링되지 않습니다. 예를 들어 아래 텍스트를 사용하는 대신
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 다음과 같이 밑줄을 이스케이프 처리합니다.
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>아포스트로피 및 큰따옴표
 
-Word에서 Markdown 편집기로 복사하는 경우 텍스트에 "스마트"(둥근) 아포스트로피 및 큰따옴표가 포함될 수 있습니다. 이러한 기호는 인코딩하거나 기본 아포스트로피 또는 큰따옴표로 변경해야 합니다. 그렇지 않을 경우 파일이 게시되면 Itâ€™s와 같이 표시됩니다.
+Word에서 Markdown 편집기로 복사하는 경우 텍스트에 "스마트"(둥근) 아포스트로피 및 큰따옴표가 포함될 수 있습니다. 이러한 기호는 인코딩하거나 기본 아포스트로피 또는 큰따옴표로 변경해야 합니다.
+그렇지 않을 경우 파일이 게시되면 Itâ€™s와 같이 표시됩니다.
 
 이러한 "스마트" 버전 문장 부호를 다음과 같이 인코딩합니다.
 
@@ -358,14 +360,15 @@ Word에서 Markdown 편집기로 복사하는 경우 텍스트에 "스마트"(�
 
 ### <a name="angle-brackets"></a>대괄호
 
-예를 들어 자리 표시자를 나타내는 것과 같이 파일에 있는 텍스트(코드 아님)에서 대괄호를 사용하는 경우 대괄호를 수동으로 인코딩해야 합니다. 그렇지 않으면 Markdown에서는 해당 기호가 HTML 태그로 인식합니다.
+자리 표시자를 나타내는 데 대괄호를 사용하는 것이 일반적입니다. 텍스트(코드 아님)에서 이 작업을 수행할 때는 대괄호를 인코딩해야 합니다. 그렇지 않으면 Markdown에서는 해당 기호가 HTML 태그로 인식합니다.
 
 예를 들어 `<script name>`을 `&lt;script name&gt;`로 인코딩합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목:
 
 ### <a name="markdown-resources"></a>Markdown 리소스
 
 - [Markdown 소개](https://daringfireball.net/projects/markdown/syntax)
 - [Docs Markdown 참고 자료](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [GitHub의 Markdown 기본 사항](https://help.github.com/articles/markdown-basics/)
+- [Markdown 가이드](https://www.markdownguide.org/)
