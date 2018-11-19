@@ -11,6 +11,11 @@
 ## [스타일 및 음성 빠른 시작](style-quick-start.md)
 ## [링크](how-to-write-links.md)
 ## [Docs Authoring Pack](how-to-write-docs-auth-pack.md)
+# 문서 집합별 지침
+## [.NET 문서](dotnet-contribute.md)
+### [.NET 문서에 참여](dotnet-contribute-process.md)
+### [.NET 문서 스타일 규칙](dotnet-style-guide.md)
+### [음성 및 톤 가이드](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content

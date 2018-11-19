@@ -4,12 +4,12 @@ description: 이 문서에서는 로컬 Git 리포지토리를 만들고, 포크
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805680"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609502"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>설명서를 위한 Git 리포지토리 로컬로 설정
 
@@ -29,7 +29,7 @@ ms.locfileid: "49805680"
 
 ## <a name="overview"></a>개요
 
-Microsoft의 설명서 사이트에 참여하려면 해당 설명서 리포지토리를 복제하여 Markdown 파일을 로컬로 만들고 편집하면 됩니다. Microsoft에서는 포크에서 제안된 변경 내용을 저장하기 위한 읽기/쓰기 권한이 있도록 적절한 리포지토리를 자신의 GitHub 계정에 포크하도록 요구합니다. 그런 다음, 끌어오기 요청을 사용하여 변경 내용을 읽기 전용 중앙 공유 리포지토리에 병합합니다.
+Microsoft의 설명서 사이트에 참여하려면 해당 설명서 리포지토리를 복제하여 Markdown 파일을 로컬로 만들고 편집하면 됩니다. Microsoft에서는 제안된 변경 내용을 저장하기 위한 읽기/쓰기 권한이 있도록 적절한 리포지토리를 고유의 GitHub 계정에 포크하도록 요구합니다. 그런 다음, 끌어오기 요청을 사용하여 변경 내용을 읽기 전용 중앙 공유 리포지토리에 병합합니다.
 
 ![GitHub Triangle](./media/git-and-github-initial-setup.png)
 
@@ -41,7 +41,7 @@ GitHub에 익숙하지 않은 경우 아래 비디오를 시청하고 분기 및
 
 [docs.microsoft.com](https://docs.microsoft.com)에 호스트된 설명서는 [github.com](https://www.github.com)의 다양한 리포지토리에 있습니다.
 
-1. 사용할 리포지토리를 잘 모르는 경우 웹 브라우저를 사용하여 docs.microsoft.com에서 문서를 방문합니다. 문서의 오른쪽 위에 있는 **편집** 링크(연필 아이콘)를 선택합니다.
+1. 사용할 리포지토리를 잘 모르는 경우 웹 브라우저를 사용하여 [docs.microsoft.com](https://docs.microsoft.com)에 있는 문서를 방문합니다. 문서의 오른쪽 위에 있는 **편집** 링크(연필 아이콘)를 선택합니다.
 
    ![편집을 클릭하여 리포지토리 및 파일 위치를 확인합니다.](media/index/edit-article.png)
 

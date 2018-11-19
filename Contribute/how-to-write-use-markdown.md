@@ -2,12 +2,12 @@
 title: Markdown을 사용하여 Docs를 작성하는 방법
 description: 이 문서에서는 docs.microsoft.com 문서를 작성하는 데 사용되는 Markdown 언어에 대한 기본 사항 및 참조 정보를 제공합니다.
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805730"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609525"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown을 사용하여 Docs를 작성하는 방법
 
@@ -33,6 +33,14 @@ Docs 콘텐츠가 GitHub에 저장되기 때문에 일반적인 형식 요구 �
 #### This is heading 4
 ```
 
+제목은 atx-style을 사용하여 수행해야 합니다. 즉, 줄의 시작 부분에 1-6 해시 문자(#)를 사용하여 HTML 제목 수준 H1~H6에 해당하는 제목을 표시합니다. 위의 1~4번째 수준 헤더의 예가 사용됩니다.
+
+항목에는 첫 번째 수준 제목(H1)이 하나만 **있어야 하며**, 해당 페이지 제목으로 표시됩니다.
+
+제목이 `#` 문자로 끝나는 경우 제목을 올바르게 랜더링하려면 끝에 나머지 `#` 문자를 추가해야 합니다. 예: `# Async Programming in F# #`.
+
+두 번째 수준 제목은 해당 페이지 제목 아래의 “이 문서의 내용” 섹션에 나타나는 해당 페이지의 TOC를 생성합니다.
+
 ### <a name="bold-and-italic-text"></a>굵게 기울임꼴 텍스트
 
 텍스트 서식을 **굵게** 지정하려면 두 개의 별표로 묶습니다.
@@ -52,6 +60,18 @@ This text is *italic*.
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>Blockquotes
+
+Blockquotes는 `>` 문자를 사용하여 생성됩니다.
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+앞의 예는 다음과 같이 렌더링됩니다.
+
+> 가뭄은 지금 천만년 동안 지속되었고 끔찍한 도마뱀의 통치는 끝난 지 오래되었습니다. 언젠가 아프리카로 알려질 이 적도에서 생존을 위한 투쟁은 새로운 격렬한 절정에 이르렀고, 승자는 아직 보이지 않았습니다. 이 황량하고 메마른 땅에서는 작고 빠르거나 사나운 존재만이 번성하거나 생존할 수 있을 뿐입니다.
 
 ### <a name="lists"></a>목록
 
@@ -93,8 +113,8 @@ This is text is both ***bold and italic***.
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 다음과 같이 렌더링됩니다.
@@ -108,8 +128,8 @@ This is text is both ***bold and italic***.
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 다음과 같이 렌더링됩니다.
@@ -118,6 +138,8 @@ This is text is both ***bold and italic***.
    1. 하위 지침
    2. 하위 지침
 2. 두 번째 지침
+
+'1'을 모든 항목에 대해 사용합니다. 최신 업데이트에 새 단계가 포함되거나 기존 단계가 제거될 때 더 쉽게 검토할 수 있습니다.
 
 ### <a name="tables"></a>보세요.
 
@@ -194,6 +216,8 @@ Markdown에서는 코드 조각을 문장에서 인라인으로 배치하거나 
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|브라우저의 C#|csharp-interactive|
+|콘솔|콘솔|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Markdown에서는 코드 조각을 문장에서 인라인으로 배치하거나 
 |VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+`csharp-interactive` 이름은 C# 언어와 브라우저에서 샘플을 실행하는 기능을 지정합니다. 이러한 코드 조각은 Docker 컨테이너에서 컴파일되고 실행되며, 해당 프로그램 실행 결과는 사용자의 브라우저 창에 표시됩니다.
 
 #### <a name="example-c"></a>예: C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __렌더링__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ Docs 문서는 문단, 링크, 목록, 제목 등 대부분의 문서 서식에 
 
 일반적으로 참고 블록은 문맥을 끊을 수 있기 때문에 제한적으로 사용되어야 합니다. 참고 블록에 코드 블록, 이미지, 목록, 링크를 적용할 수는 있지만 참고 블록은 간단하고 단순하게 유지하도록 합니다.
 
+예제:
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+다음과 같이 렌더링됩니다.
+
+> [!NOTE]
+> 참고입니다.
+
+> [!WARNING]
+> 경고입니다.
+
+> [!TIP]
+> 팁입니다.
+
+> [!IMPORTANT]
+> 중요합니다.
+
 ### <a name="includes"></a>포함되는 내용
 
 문서 파일에 포함되어야 하는 재사용 가능 텍스트 또는 이미지 파일이 있는 경우 Markdig 파일 포함 기능을 통해 "포함되는 내용" 파일에 대한 참조를 사용할 수 있습니다. 이 기능은 빌드 시 OPS에서 지정된 파일을 문서 파일에 포함하도록 지시하여 게시된 문서의 일부로 만듭니다. 콘텐츠를 재사용하기 위해 사용 가능한 포함되는 내용에는 3가지 유형이 있습니다.
@@ -317,13 +373,29 @@ Docs 문서는 문단, 링크, 목록, 제목 등 대부분의 문서 서식에 
 - 정규 문서에서 포함되는 내용 파일 간에 미디어를 공유하지 않습니다. 각 포함되는 내용 및 문서에 고유한 이름을 가진 별도의 파일을 사용합니다. 포함되는 내용과 연결된 미디어 폴더에 미디어 파일을 저장합니다.
 - 포함되는 내용을 문서의 유일한 콘텐츠로 사용하지 않습니다.  포함되는 내용은 나머지 문서에서 콘텐츠를 보충해야 합니다.
 
+예제:
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>선택기
 
-동일한 문서의 다양한 버전을 작성하는 경우 기술 문서에서 선택기를 사용하여 기술 또는 플랫폼에서 구현 중에 차이점을 해결합니다. 이 기능은 일반적으로 개발자를 위한 모바일 플랫폼 콘텐츠에 적용할 수 있습니다. Markdig에는 단일 선택기 및 다중 선택기라는 두 가지 종류의 선택기가 있습니다.
+동일한 문서의 다양한 버전을 작성하는 경우 기술 문서에서 선택기를 사용하여 기술 또는 플랫폼 간의 구현 차이를 해결합니다. 이 기능은 일반적으로 개발자를 위한 모바일 플랫폼 콘텐츠에 적용할 수 있습니다. Markdig에는 단일 선택기 및 다중 선택기라는 두 가지 종류의 선택기가 있습니다.
 
 동일한 선택기 Markdown은 선택 항목의 각 문서에 포함되므로 문서의 선택기가 포함되는 내용에 배치하는 것이 좋습니다. 그런 다음 동일한 선택기를 사용하는 모든 문서에서 해당 포함되는 내용을 참조할 수 있습니다.
 
-### <a name="code-snippets"></a>코드 조각
+다음은 예제 선택기입니다.
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+[Azure 문서](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic)에서 실행 중인 선택기의 예를 볼 수 있습니다.
+
+### <a name="code-includes"></a>코드 포함
 
 Markdig은 해당 코드 조각 확장을 통해 문서에 대한 고급 코드 포함 기능을 지원합니다. 이 기능은 프로그래밍 언어 선택과 구문 색 지정 및 다음과 같은 멋진 기능을 기반으로 하는 GFM 기능에서 빌드하는 고급 렌더링을 제공합니다.
 
@@ -348,8 +420,7 @@ Markdig은 해당 코드 조각 확장을 통해 문서에 대한 고급 코드 
 
 ### <a name="apostrophes-and-quotation-marks"></a>아포스트로피 및 큰따옴표
 
-Word에서 Markdown 편집기로 복사하는 경우 텍스트에 "스마트"(둥근) 아포스트로피 및 큰따옴표가 포함될 수 있습니다. 이러한 기호는 인코딩하거나 기본 아포스트로피 또는 큰따옴표로 변경해야 합니다.
-그렇지 않을 경우 파일이 게시되면 Itâ€™s와 같이 표시됩니다.
+Word에서 Markdown 편집기로 복사하는 경우 텍스트에 "스마트"(둥근) 아포스트로피 및 큰따옴표가 포함될 수 있습니다. 이러한 기호는 인코딩하거나 기본 아포스트로피 또는 큰따옴표로 변경해야 합니다. 그렇지 않을 경우 파일이 게시되면 Itâ€™s와 같이 표시됩니다.
 
 이러한 "스마트" 버전 문장 부호를 다음과 같이 인코딩합니다.
 

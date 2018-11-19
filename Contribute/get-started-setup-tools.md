@@ -5,12 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251457"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609394"
 ---
 # <a name="install-content-authoring-tools"></a>콘텐츠 작성 도구 설치
 
@@ -47,7 +47,7 @@ Markdown은 읽기 쉽고 배우기 쉬운 가벼운 마크업 언어입니다. 
 
 Markdown 텍스트는 확장명이 .md인 파일에 저장됩니다.
 
-OPS 사용자 지정 Markdown 확장에서 지원하는 Markdown 기본 사항 및 기능을 포함하여 Markdown으로 작성하는 방법에 대한 추가 내용은 나중에 [Markdown 사용 방법](how-to-write-use-markdown.md) 문서에서 다룹니다.
+Markdown 기본 사항과 OPS(Open Publishing Services) 사용자 지정 Markdown 확장에서 지원하는 기능을 포함하여 Markdown으로 작성하는 방법에 대한 추가 세부 정보는 [문서 작성을 위한 Markdown 사용 방법](how-to-write-use-markdown.md) 및 [OPS에 대한 Markdown 참조](markdown-reference.md) 문서에서 다룹니다.
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
