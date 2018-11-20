@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805908"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609548"
 ---
 # <a name="markdown-reference-for-ops"></a>OPS에 대한 Markdown 참조
 
-Markdown은 일반 텍스트 서식 구문을 사용하는 경량 생성 언어입니다. OPS는 Markdown에 대한 CommonMark 표준과 docs.microsoft.com에서 더 풍부한 콘텐츠를 제공하도록 설계된 사용자 지정 Markdown 확장을 지원합니다. 이 문서에서는 OPS에서 docs.microsoft.com에 대해 Markdown을 사용하기 위한 사전순 참조를 제공합니다.
+Markdown은 일반 텍스트 서식 구문을 사용하는 경량 생성 언어입니다. OPS(Open Publishing Services)는 Markdown에 대한 CommonMark 표준과 docs.microsoft.com에서 더 풍부한 콘텐츠를 제공하도록 설계된 사용자 지정 Markdown 확장을 지원합니다. 이 문서에서는 OPS에서 docs.microsoft.com에 대해 Markdown을 사용하기 위한 사전순 참조를 제공합니다.
 
 텍스트 편집기를 사용하여 Markdown을 작성할 수 있습니다. 표준 Markdown 구문과 사용자 지정 OPS 확장을 쉽게 삽입할 수 있는 편집기의 경우 [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack)이 설치된 [VS Code](https://code.visualstudio.com/)를 사용하는 것이 좋습니다.
 
@@ -25,7 +25,7 @@ OPS는 모든 새로운 리포지토리를 위해 Markdig에서 표준화했으�
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>경고(alert)(참고, 팁, 중요, 주의, 경고(warning))
 
-OPS 관련 Markdown 확장을 경고하여 docs.microsoft.com에서 콘텐츠의 중요도를 색과 아이콘으로 표시하여 렌더링하는 블록 따옴표를 만듭니다. 다음과 같은 경고 유형이 지원됩니다.
+경고는 콘텐츠의 중요도를 나타내는 색과 아이콘을 사용하여 docs.microsoft.com에서 렌더링되는 블록 따옴표를 만들기 위한 OPS별 Markdown 확장입니다. 다음과 같은 경고 유형이 지원됩니다.
 
 ```markdown
 > [!NOTE]
@@ -308,7 +308,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > * 목록 항목 2
 > * 목록 항목 3
 
-문서의 처음이나 끝에 있는 검사 목록을 사용하여 “배울 내용” 또는 “배운 내용” 콘텐츠를 요약합니다. 문서 전체에 임의의 검사 목록을 추가하지 마세요.
+문서의 처음이나 끝에 있는 검사 목록을 사용하여 “학습할 내용” 또는 “학습한 내용” 콘텐츠를 요약합니다. 문서 전체에 임의의 검사 목록을 추가하지 마세요.
 <!-- is this guidance still accurate? -->
 
 ## <a name="next-step-action"></a>다음 단계 작업

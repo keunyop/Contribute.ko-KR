@@ -1,13 +1,15 @@
 ---
 title: 설명서에서 링크를 사용하는 방법
 description: 이 문서에서는 docs.microsoft.com 내의 콘텐츠에 대한 링크를 만드는 방법에 대한 지침을 제공합니다.
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805772"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609433"
 ---
 # <a name="using-links-in-documentation"></a>설명서에서 링크 사용
 이 문서에서는 docs.microsoft.com에서 호스팅되는 페이지의 하이퍼 링크를 사용하는 방법에 대해 설명합니다. 링크는 몇 가지 다양한 규칙을 사용하여 Markdown에 쉽게 추가할 수 있습니다. 사용자는 링크를 통해 동일한 페이지의 콘텐츠를 가리키거나, 인접한 다른 페이지를 가리키거나, 외부 사이트 및 URL을 가리킬 수 있습니다.
@@ -22,7 +24,7 @@ docs.microsoft.com 사이트 백 엔드에서는 DFM(DocFX Flavored Markdown)을
 링크 텍스트에 포함하는 단어는 친근해야 합니다. 즉, 일반적인 영어(한국어) 단어 또는 연결하는 페이지의 제목이어야 합니다.
 
 > [!IMPORTANT]
-> "여기를 클릭하세요."를 사용하지 않습니다. SEO에 올바르지 않고 대상을 적절하게 설명하지 않습니다.
+> "여기를 클릭하세요."를 사용하지 않습니다. 검색 엔진 최적화에 좋지 않으며 대상을 적절하게 설명하지 못합니다.
 
 **올바름:**
 
@@ -56,7 +58,7 @@ docs.microsoft.com 사이트 백 엔드에서는 DFM(DocFX Flavored Markdown)을
 
   `[link text](../directory/article-name.md)`
 
-- docset 간에 연결하는 문서(동일한 리포지토리에 있는 경우도 해당): `[link text](./directory/article-name)`
+- docset 간에 연결하는 문서(동일한 리포지토리에 있는 경우도 해당):  `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > 위의 예제에서는 `~/`를 링크의 일부로 사용하지 않습니다. 리포지토리의 루트에서 경로에 연결하는 경우 `/`로 시작합니다. GitHub에서 원본 리포지토리로 이동할 때 `~/`를 포함하면 유효하지 않은 링크가 생성됩니다. `/`로 경로를 시작하면 올바르게 해결됩니다.
@@ -84,17 +86,23 @@ docs.microsoft.com 사이트 백 엔드에서는 DFM(DocFX Flavored Markdown)을
 
 포함되는 파일은 다른 디렉토리에 위치하기 때문에 더 긴 상대 경로를 사용해야 합니다. 포함되는 파일의 문서에 연결하려면 이 형식을 사용합니다.
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>선택기의 링크
 
-Azure 문서 팀이 수행하는 대로 포함되는 내용에 포함된 선택기가 있는 경우 다음과 같은 링크 구조체를 사용합니다.
+선택기는 설명서 문서에 드롭다운 목록으로 표시되는 탐색 구성 요소입니다. reader가 드롭다운에서 값을 선택하면 브라우저가 선택한 문서를 엽니다. 일반적으로 선택기 목록에는 밀접하게 관련된 문서에 대한 링크가 포함되어 있습니다(예: 여러 프로그래밍 언어의 동일한 주제 또는 밀접하게 관련된 문서 시리즈). 
 
-    > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
-    - [(Text1 | Example1 )](../articles/folder/article-name1.md)
-    - [(Text1 | Example2 )](../articles/folder/article-name2.md)
-    - [(Text2 | Example3 )](../articles/folder/article-name3.md)
-    - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+포함되는 내용에 포함된 선택기가 있는 경우 다음과 같은 링크 구조체를 사용합니다.
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>참조 스타일 링크
 
@@ -102,23 +110,29 @@ Azure 문서 팀이 수행하는 대로 포함되는 내용에 포함된 선택�
 
 인라인 텍스트:
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 문서 끝의 링크 참조:
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 링크 앞에 쉼표 뒤에 공백이 있어야 합니다. 다른 기술 문서에 연결할 때 공백을 포함하지 못한 경우 게시된 문서에서 링크가 작동하지 않습니다.
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>기술 문서 집합의 일부가 아닌 페이지에 대한 링크
 
 다른 Microsoft 속성의 페이지(가격 책정 페이지, SLA 페이지 또는 설명서 문서가 아닌 다른 페이지)에 연결하려면 절대 URL을 사용하지만 로캘을 생략합니다. 여기서 목적은 링크가 GitHub 및 렌더링된 사이트에서 작동하는 것입니다.
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>타사 사이트에 대한 링크
 
 멋진 사용자 환경은 사용자를 다른 사이트에 보내는 작업을 최소화합니다. 따라서 간혹 필요한 타사 사이트에 대한 링크는 다음 정보를 기반으로 합니다.
@@ -146,7 +160,7 @@ URL의 구조체:
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-&lt;moniker-name&gt; 부분은 선택 사항입니다. 생략된 경우 콘텐츠의 최신 버전으로 이동합니다. &lt;service-name&gt; 부분은 다음과 같은 기본 URL에 표시되는 예제의 하나입니다.
+`<moniker-name>` 부분은 선택 사항입니다. 생략된 경우 콘텐츠의 최신 버전으로 이동합니다. `<service-name>` 부분은 다음과 같은 기본 URL에 표시되는 예제의 하나입니다.
 
 - Azure PowerShell(AzureRM) 콘텐츠: [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Azure PowerShell(ASM) 콘텐츠: [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)
