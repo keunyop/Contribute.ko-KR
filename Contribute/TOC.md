@@ -16,6 +16,7 @@
 ### [.NET 문서에 참여](dotnet-contribute-process.md)
 ### [.NET 문서 스타일 규칙](dotnet-style-guide.md)
 ### [음성 및 톤 가이드](dotnet-voice-tone.md)
+# [추가 리소스](additional-resources.md)
 
 <!--
 ## Creating new content
@@ -79,4 +80,3 @@
 
      Open question: How to keep this up to date?
    -->
-## [추가 리소스](additional-resources.md)
