@@ -2,12 +2,12 @@
 title: .NET 문서용 템플릿 및 치트 시트
 description: 이 문서에는 .NET 문서 리포지토리에 대한 새 문서를 작성하는 데 사용할 수 있는 편리한 템플릿이 포함되어 있습니다.
 ms.date: 11/07/2018
-ms.openlocfilehash: 8980f5e39213d8f2edd1d29e66d900f2c3d04bbc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609742"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299663"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 문서용 메타데이터 및 Markdown 템플릿
 
@@ -79,9 +79,11 @@ Markdown은 서식 지정에 \*, \` 및 \#과 같은 특수 문자를 사용합�
 - 대부분의 경우 상대 링크는 GitHub의 소스에서 해결되기 때문에 상대 링크를 사용하고, 링크에서 `~/`의 사용을 권장하지 않습니다. 그러나 종속 리포지토리의 파일에 연결할 때마다 `~/` 문자를 사용하여 경로를 제공합니다. 종속 리포지토리에 있는 파일은 GitHub의 다른 위치에 있기 때문에 링크는 작성된 방법에 관계없이 상대 링크로 올바르게 해결되지 않습니다.
 - C# 언어 사양 및 Visual Basic 언어 사양은 언어 리포지토리의 원본을 포함하여 .NET 문서에 포함됩니다. markdown 원본은 [csharplang](https://github.com/dotnet/csharplang) 및 [vblang](https://github.com/dotnet/vblang) 리포지토리에서 관리됩니다.
 
-사양에 대한 링크는 해당 사양이 포함된 원본 디렉터리를 가리켜야 합니다. C#의 경우 **~/_csharplang/spec**이고, VB의 경우 **~/_vblang/spec**입니다.
+사양에 대한 링크는 해당 사양이 포함된 원본 디렉터리를 가리켜야 합니다. 다음 예제와 같이 C#의 경우 **~/_csharplang/spec**이고, VB의 경우 **~/_vblang/spec**입니다.
 
-- 예: `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)`
+```markdown
+[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+```
 
 ### <a name="links-to-apis"></a>API에 대한 링크
 
@@ -111,13 +113,13 @@ Markdown은 서식 지정에 \*, \` 및 \#과 같은 특수 문자를 사용합�
 - System.Exception.\#ctor은 `System.Exception.%23ctor`이 됩니다.
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode)은 `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`가 됩니다.
 
-`https://xref.docs.microsoft.com/autocomplete`에서 형식, 멤버 오버로드 목록 또는 특정 오버로드된 멤버의 UID를 찾을 수 있습니다. 쿼리 문자열 "?text=*\<type-member-name>*"은 UID를 보려는 형식 또는 멤버를 식별합니다. 예를 들어 `https://xref.docs.microsoft.com/autocomplete?text=string.format`은 [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) 오버로드를 검색합니다. 도구는 UID의 모든 부분에서 제공된 `text` 쿼리 매개 변수를 검색합니다. 예를 들어 멤버 이름(ToString), 부분 멤버 이름(ToStri), 형식 및 멤버 이름(Double.ToString) 등을 검색할 수 있습니다.
+`https://xref.docs.microsoft.com/autocomplete`에서 형식, 멤버 오버로드 목록 또는 특정 오버로드된 멤버의 UID를 찾을 수 있습니다. 쿼리 문자열 `?text=*\<type-member-name>*`은 UID를 보려는 형식 또는 멤버를 식별합니다. 예를 들어 `https://xref.docs.microsoft.com/autocomplete?text=string.format`은 [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) 오버로드를 검색합니다. 도구는 UID의 모든 부분에서 제공된 `text` 쿼리 매개 변수를 검색합니다. 예를 들어 멤버 이름(ToString), 부분 멤버 이름(ToStri), 형식 및 멤버 이름(Double.ToString) 등을 검색할 수 있습니다.
 
-UID 뒤에 \*(또는 %2A)를 추가하면 링크는 특정 API가 아닌 오버로드 페이지를 나타냅니다. 예를 들어 [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_)처럼 특정 오버로드 대신 일반적인 방법으로 [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) 페이지에 연결하려는 경우 사용할 수 있습니다. 또한 멤버가 오버로드되지 않은 경우 \*를 사용하여 구성원 페이지에 연결할 수 있습니다. 이렇게 하면 매개 변수 목록을 UID에 포함하지 않아도 됩니다.
+UID 뒤에 \*(또는 `%2A`)를 추가하면 링크는 특정 API가 아닌 오버로드 페이지를 나타냅니다. 예를 들어 [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_)처럼 특정 오버로드 대신 일반적인 방법으로 [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) 페이지에 연결하려는 경우 사용할 수 있습니다. 또한 멤버가 오버로드되지 않은 경우 \*를 사용하여 구성원 페이지에 연결할 수 있습니다. 이렇게 하면 매개 변수 목록을 UID에 포함하지 않아도 됩니다.
 
 특정 메서드 오버로드에 연결하려면 각 메서드 매개 변수의 정규화된 형식 이름을 포함해야 합니다. 예를 들어 \<xref:System.DateTime.ToString>은 매개 변수가 없는 [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) 메서드에 연결되는 반면 \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)>은 [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) 메서드에 연결됩니다.
 
-[System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1)와 같은 제네릭 형식에 연결하려면 \`(%60) 문자 다음에 제네릭 형식 매개 변수의 수를 사용합니다. 예를 들어 \<xref:System.Nullable%601>은 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 형식에 연결되는 반면 \<xref:System.Func%602>는 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 대리자에 연결됩니다.
+[System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1)와 같은 제네릭 형식에 연결하려면 \`(`%60`) 문자 다음에 제네릭 형식 매개 변수의 수를 사용합니다. 예를 들어 `<xref:System.Nullable%601>`은 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 형식에 연결되는 반면 `<xref:System.Func%602>`는 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 대리자에 연결됩니다.
 
 ## <a name="code"></a>코드
 

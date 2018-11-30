@@ -1,13 +1,13 @@
 ---
 title: .NET 문서 리포지토리에 참여
-description: 이 문서는 .NET 문서를 구성하는 리포지토리입니다.
+description: 이 문서에서는 .NET 설명서에서 구성되는 리포지토리의 문서 및 코드 샘플에 참여하는 프로세스를 다룹니다.
 ms.date: 11/07/2018
-ms.openlocfilehash: 364a38a0b9adbc9465531eb7d174864cc7b7a1e0
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9104e4215538d2a9eeea7128a2572608b6adde8a
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609719"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299594"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>.NET 문서 리포지토리에 참여하는 방법 알아보기
 
