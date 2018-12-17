@@ -2,12 +2,12 @@
 title: .NET 문서 리포지토리에 대한 참여 프로세스
 description: 이 문서에서는 .NET 문서 리포지토리에 참여에 대한 간략한 소개를 제공합니다. 사용된 리포지토리, 콘텐츠를 구성하는 프로세스, 코드 샘플 및 기타 자산을 관리하기 위한 정책을 알아봅니다.
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609765"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245852"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>.NET 문서에 참여하는 프로세스
 
@@ -24,7 +24,7 @@ ms.locfileid: "51609765"
 
 ## <a name="make-a-contribution-to-net-docs"></a>.NET 문서에 기여하기
 
-**1단계** 작은 변경 내용은 이 단계를 건너뜁니다. 새 콘텐츠를 작성하거나 기존 콘텐츠를 완전히 개정하려는 경우 수행할 작업을 설명하는 [문제](https://github.com/dotnet/docs/issues)를 엽니다.
+**1단계:** 작은 변경 내용은 이 단계를 건너뜁니다. 새 콘텐츠를 작성하거나 기존 콘텐츠를 완전히 개정하려는 경우 수행할 작업을 설명하는 [문제](https://github.com/dotnet/docs/issues)를 엽니다.
 
 **문서** 폴더 내의 콘텐츠는 TOC(목차)에 반영된 섹션으로 구성됩니다. 토픽에서 TOC에 있는 위치를 정의합니다. 제안에 대한 피드백을 받으세요.
 
@@ -42,7 +42,7 @@ ms.locfileid: "51609765"
 
 수행할 작업을 선택한 후 [시작하기](get-started-setup-github.md) 가이드에 따라 GitHub 계정을 만들고 환경을 설정합니다.
 
-**2단계:** 필요한 경우 `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` 또는 `dotnet/ml-api-docs`를 선택하여 변경 내용에 대한 분기를 만듭니다.
+**2단계:** 필요한 경우 `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` 또는 `dotnet/ml-api-docs` 리포지토리를 선택하여 변경 내용에 대한 분기를 만듭니다.
 
 작은 변경 내용은 기여자 가이드의 [홈 페이지](index.md#quick-edits-to-existing-documents)에서 GitHub의 편집 지침을 참조하세요.
 
@@ -65,7 +65,7 @@ ms.locfileid: "51609765"
             /porting-overview
                 portability_report.png
 
-**4단계:** 분기에서 마스터 분기로 PR(Pull Request)을 제출합니다.
+**4단계:** 분기에서 마스터 분기로 PR(끌어오기 요청)을 제출합니다.
 
 > [!IMPORTANT]
 > 지금은 [주석 자동화](how-to-write-workflows-major.md#review-and-sign-off) 기능을 .NET 리포지토리에서 사용할 수 없습니다. .NET 문서 팀의 구성원이 PR을 검토하고 병합합니다.
@@ -76,7 +76,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 .NET 팀은 PR을 검토하고 승인을 위해 필요한 다른 업데이트/변경 내용이 있는지 알려줍니다.
 
-**5단계:** 팀과 논의한 대로 분기에 필요한 업데이트를 하세요.
+**5단계:** 팀과 논의한 대로 분기에 필요한 업데이트를 수행합니다.
 
 유지관리자는 피드백이 적용되고 변경 내용이 승인되면 PR을 마스터 분기 내에 병합합니다.
 
@@ -131,6 +131,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 2. 샘플에 설명된 개념을 설명하는 항목을 작성합니다(예: `docs/standard/linq/where-clause.md`).
 3. 샘플을 작성합니다(예: `WhereClause-Sample1.cs`).
 4. 샘플을 호출하는 주 진입점이 있는 Program.cs를 만듭니다. 이미 있는 경우에는 샘플에 호출을 추가합니다.
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
         }
     }
     ```
+
 [.NET Core SDK](https://www.microsoft.com/net/download)와 함께 설치할 수 있는 .NET Core CLI를 사용하여 .NET Core 코드 조각 또는 샘플을 빌드합니다. 샘플을 빌드하고 실행하려면:
 
 1. 샘플 폴더로 이동하여 오류를 확인하기 위해 빌드합니다.
