@@ -1,6 +1,6 @@
 ---
-title: OPS 및 docs.microsoft.com에 대한 Markdown 참조
-description: Markdown 및 DFM(DocFX Flavored Markdown) 확장에 대한 OPS 플랫폼 가이드입니다.
+title: docs.microsoft.com에 대한 Markdown 참조
+description: Markdown에 대한 Docs 플랫폼 가이드입니다.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
@@ -8,24 +8,24 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609548"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245875"
 ---
-# <a name="markdown-reference-for-ops"></a>OPS에 대한 Markdown 참조
+# <a name="markdown-reference"></a>Markdown 참조
 
-Markdown은 일반 텍스트 서식 구문을 사용하는 경량 생성 언어입니다. OPS(Open Publishing Services)는 Markdown에 대한 CommonMark 표준과 docs.microsoft.com에서 더 풍부한 콘텐츠를 제공하도록 설계된 사용자 지정 Markdown 확장을 지원합니다. 이 문서에서는 OPS에서 docs.microsoft.com에 대해 Markdown을 사용하기 위한 사전순 참조를 제공합니다.
+Markdown은 일반 텍스트 서식 구문을 사용하는 경량 생성 언어입니다. Docs 플랫폼은 Markdown에 대한 CommonMark 표준과 docs.microsoft.com에서 더 풍부한 콘텐츠를 제공하도록 설계된 사용자 지정 Markdown 확장을 지원합니다. 이 문서에서는 docs.microsoft.com에 대해 Markdown을 사용하기 위한 사전순 참조를 제공합니다.
 
-텍스트 편집기를 사용하여 Markdown을 작성할 수 있습니다. 표준 Markdown 구문과 사용자 지정 OPS 확장을 쉽게 삽입할 수 있는 편집기의 경우 [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack)이 설치된 [VS Code](https://code.visualstudio.com/)를 사용하는 것이 좋습니다.
+텍스트 편집기를 사용하여 Markdown을 작성할 수 있습니다. 표준 Markdown 구문과 사용자 지정 Docs 확장을 쉽게 삽입할 수 있는 편집기의 경우 [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack)이 설치된 [VS Code](https://code.visualstudio.com/)를 사용하는 것이 좋습니다.
 
-OPS는 모든 새로운 리포지토리를 위해 Markdig에서 표준화했으며, 이전 리포지토리는 Markdig로 마이그레이션하고 있습니다. [https://babelmark.github.io/](https://babelmark.github.io/)에서 Markdig 및 기타 엔진에 대한 Markdown의 렌더링을 테스트할 수 있습니다.
+Docs에서는 Markdig Markdown 엔진을 사용합니다. [https://babelmark.github.io/](https://babelmark.github.io/)에서 Markdig 및 기타 엔진에 대한 Markdown의 렌더링을 테스트할 수 있습니다.
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>경고(alert)(참고, 팁, 중요, 주의, 경고(warning))
 
-경고는 콘텐츠의 중요도를 나타내는 색과 아이콘을 사용하여 docs.microsoft.com에서 렌더링되는 블록 따옴표를 만들기 위한 OPS별 Markdown 확장입니다. 다음과 같은 경고 유형이 지원됩니다.
+Docs Markdown 확장을 경고하여 docs.microsoft.com에서 콘텐츠의 중요도를 색과 아이콘으로 표시하여 렌더링하는 블록 따옴표를 만듭니다. 다음과 같은 경고 유형이 지원됩니다.
 
 ```markdown
 > [!NOTE]
@@ -71,7 +71,7 @@ Markdown 파일에 코드 조각을 포함할 수 있습니다.
 
 ## <a name="headings"></a>제목
 
-OPS는 6가지 수준의 Markdown 제목을 지원합니다.
+Docs는 6가지 수준의 Markdown 제목을 지원합니다.
 
 ```markdown
 # This is a first level heading (H1)
@@ -92,7 +92,7 @@ OPS는 6가지 수준의 Markdown 제목을 지원합니다.
 
 ## <a name="html"></a>HTML
 
-Markdown은 인라인 HTML을 지원하지만 HTML은 OPS를 통한 게시에는 권장되지 않으며 제한된 값 목록을 제외하고는 빌드 오류 또는 경고가 발생합니다. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Markdown은 인라인 HTML을 지원하지만 HTML은 Docs에 게시하도록 권장되지 않으며 제한된 값 목록을 제외하고는 빌드 오류 또는 경고가 발생합니다. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
 
 ## <a name="images"></a>이미지
 
@@ -116,7 +116,7 @@ Example:
 
 ## <a name="links"></a>링크
 
-대부분의 경우 OPS는 다른 파일 및 페이지에 대한 표준 Markdown 링크를 사용합니다. 링크 유형은 아래의 하위 섹션에서 설명합니다.
+대부분의 경우 Docs는 다른 파일 및 페이지에 대한 표준 Markdown 링크를 사용합니다. 링크 유형은 아래의 하위 섹션에서 설명합니다.
 
 > [!TIP]
 > VS Code용 Docs Authoring Pack은 경로를 찾는 번거로움 없이 상대 링크와 책갈피를 올바르게 삽입하는 데 도움을 줄 수 있습니다.
@@ -132,7 +132,7 @@ Example:
 
 ### <a name="relative-links-to-files-in-the-same-doc-set"></a>동일한 문서 집합에서 파일에 대한 상대 링크
 
-상대 경로는 현재 파일을 기준으로 대상 파일에 대한 경로입니다. OPS에서는 상대 경로를 사용하여 동일한 문서 집합 내의 다른 파일에 연결할 수 있습니다. 상대 경로에 대한 구문은 다음과 같습니다.
+상대 경로는 현재 파일을 기준으로 대상 파일에 대한 경로입니다. Docs에서는 상대 경로를 사용하여 동일한 문서 세트 내의 다른 파일에 연결할 수 있습니다. 상대 경로에 대한 구문은 다음과 같습니다.
 
 ```markdown
 [link text](../../folder/filename.md)
@@ -142,7 +142,7 @@ Example:
 
 - 상대 경로는 빌드 중에 .md 확장명 제거를 포함하여 확인됩니다.
 - “../”를 사용하여 부모 폴더의 파일에 연결할 수 있지만, 해당 파일이 같은 문서 집합에 있어야 합니다. “../”를 사용하여 다른 문서 집합 폴더의 파일에 연결할 수는 없습니다.
-- OPS는 또한 “~”로 시작하는 특별한 양식의 상대 경로(예: ~/foo/bar.md)도 지원됩니다. 이 구문은 문서 집합의 루트 폴더를 기준으로 한 파일임을 나타냅니다. 이러한 종류의 경로도 빌드 중에 유효성이 검사되고 확인됩니다.
+- Docs는 또한 "~"로 시작하는 특별한 양식의 상대 경로(예: ~/foo/bar.md)도 지원됩니다. 이 구문은 문서 집합의 루트 폴더를 기준으로 한 파일임을 나타냅니다. 이러한 종류의 경로도 빌드 중에 유효성이 검사되고 확인됩니다.
 
 > [!IMPORTANT]
 > 상대 경로에 파일 확장명을 포함합니다. 빌드는 상대 경로의 대상 파일이 있는지를 확인합니다. 상대 경로에 파일 확장명이 포함되어 있지 않으면 빌드가 끊어진 링크 경고를 보고합니다. 예를 들어 다음을 사용합니다.
@@ -153,7 +153,7 @@ Example:
 >
 > `[link text](../../folder/filename)`
 
-### <a name="absolute-links-to-other-files-in-ops"></a>OPS에서 다른 파일에 대한 절대 링크
+### <a name="site-relative-links-to-other-files-on-docs"></a>Docs의 다른 파일에 대한 사이트 상대 경로
 
 ```markdown
 [Azure and Linux](/articles/virtual-machines/linux/overview)
@@ -252,7 +252,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 번호 매기기 목록을 만들려면, 모두 1을 사용할 수 있으며 이것은 게시할 때 순차 목록으로 렌더링됩니다. 소스 가독성을 높이기 위해 목록을 증가시킬 수 있습니다.
 
-중첩 목록을 포함하여 목록에 문자를 사용하지 마세요. OPS를 통해 게시할 때 올바르게 렌더링되지 않습니다. 숫자를 사용하여 중첩된 목록은 게시될 때 소문자로 렌더링됩니다. 예:
+중첩 목록을 포함하여 목록에 문자를 사용하지 마세요. Docs에 게시할 때 올바르게 렌더링되지 않습니다. 숫자를 사용하여 중첩된 목록은 게시될 때 소문자로 렌더링됩니다. 예:
 
 ```markdown
 1. This is
@@ -423,14 +423,6 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-<!-- uncomment and link when Cory's topic is live
-## Tabbed content
-
-Tabs are a Markdown extension for docs.microsoft.com that allow us to present different versions of content, such as procedural steps to accomplish the same task on different platforms, in a tabbed format.
-
-Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
--->
-
 ## <a name="tables"></a>보세요.
 
 Markdown에서 테이블을 만드는 가장 간단한 방법은 파이프 및 줄을 사용하는 것입니다. 헤더가 있는 표준 테이블을 만들려면 첫 번째 선을 파선으로 그립니다.
@@ -535,13 +527,13 @@ HTML 테이블은 docs.microsoft.com에 사용하지 않는 것이 좋습니다.
 
 ### <a name="embedding-videos-into-a-markdown-page"></a>Markdown 페이지에 비디오 포함
 
-현재, OPS는 다음 3가지 위치 중 하나에 게시된 비디오를 지원할 수 있습니다.
+현재 Docs는 다음 3개 위치 중 하나에 게시된 비디오를 지원할 수 있습니다.
 
 - YouTube
 - Channel9
 - Microsoft 고유 'One Player' 시스템
 
-다음 구문으로 비디오를 포함할 수 있으며, 포함하면 OPS에서 렌더링합니다.
+다음 구문으로 비디오를 포함할 수 있으며, 그러면 Docs에서 렌더링합니다.
 
 ```markdown
 > [!VIDEO <embedded_video_link>]

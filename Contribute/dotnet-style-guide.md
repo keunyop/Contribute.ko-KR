@@ -2,12 +2,12 @@
 title: .NET 문서용 템플릿 및 치트 시트
 description: 이 문서에는 .NET 문서 리포지토리에 대한 새 문서를 작성하는 데 사용할 수 있는 편리한 템플릿이 포함되어 있습니다.
 ms.date: 11/07/2018
-ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
-ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
+ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
+ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52299663"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53264505"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 문서용 메타데이터 및 Markdown 템플릿
 
@@ -31,9 +31,9 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 
 - 콜론(:)과 메타데이터 요소의 값 사이에는 공백이 **있어야 합니다**.
 - 값의 콜론(예: 제목)이 메타데이터 구문 분석기를 중단시킵니다. 이 경우 제목을 큰따옴표로 둘러쌉니다(예: `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
-- **제목**: 검색 엔진 결과에 나타납니다. 제목은 H1 제목의 제목과 동일해서는 안 되며 60자 이하여야 합니다.
-- **문서**: 문서의 내용을 요약합니다. 일반적으로 검색 결과 페이지에 표시되지만 검색 순위 지정에는 사용되지 않습니다. 길이는 공백을 포함하여 115-145자여야 합니다.
-- **작성자**: 작성자 필드에는 작성자의 **GitHub 사용자 이름**이 포함되어야 합니다.
+- **title**: 검색 엔진 결과에 나타납니다. 제목은 H1 제목의 제목과 동일해서는 안 되며 60자 이하여야 합니다.
+- **description**: 문서의 내용을 요약합니다. 일반적으로 검색 결과 페이지에 표시되지만 검색 순위 지정에는 사용되지 않습니다. 길이는 공백을 포함하여 115-145자여야 합니다.
+- **author**: 작성자 필드에는 작성자의 **GitHub 사용자 이름**이 포함되어야 합니다.
 - **ms.date**: 마지막 중요 업데이트 날짜입니다. 전체 문서를 검토하고 업데이트한 경우 기존 문서에서 이를 업데이트합니다. 오타와 같은 작은 수정 사항은 업데이트를 보증하지 않습니다.
 
 각 문서에 다른 메타데이터가 연결되어 있지만 일반적으로 **docfx.json**에 지정된 폴더 수준에서 대부분의 메타데이터 값을 적용합니다.
@@ -244,13 +244,13 @@ Button 링크:
 
 ```markdown
 > [!div class="button"]
-[button links](dotnet-contribute.md)
+> [button links](dotnet-contribute.md)
 ```
 
 이는 다음과 같이 렌더링됩니다.
 
 > [!div class="button"]
-[단추 링크](dotnet-contribute.md)
+> [단추 링크](dotnet-contribute.md)
 
 [Visual Studio 문서](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio)에서 실행 중인 단추의 예를 볼 수 있습니다.
 
@@ -258,8 +258,8 @@ Button 링크:
 
 ```markdown
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+> [Pre](../docs/csharp/expression-trees-interpreting.md)
+> [Next](../docs/csharp/expression-trees-translating.md)
 ```
 
 [C# 가이드](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure)에서 실행 중인 단계별 예를 볼 수 있습니다.
