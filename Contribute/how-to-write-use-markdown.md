@@ -2,12 +2,12 @@
 title: Markdown을 사용하여 Docs를 작성하는 방법
 description: 이 문서에서는 docs.microsoft.com 문서를 작성하는 데 사용되는 Markdown 언어에 대한 기본 사항 및 참조 정보를 제공합니다.
 ms.date: 07/13/2017
-ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
+ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245898"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53615838"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown을 사용하여 Docs를 작성하는 방법
 
@@ -232,7 +232,8 @@ Markdown에서는 코드 조각을 문장에서 인라인으로 배치하거나 
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
-|Power Apps 수식|powerappsfl|
+|PowerApps(점 10진 구분 기호)|powerapps-dot|
+|PowerApps(쉼표 10진 구분 기호)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
