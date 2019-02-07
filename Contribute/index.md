@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609364"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712858"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 기여자 가이드 개요
 
@@ -37,7 +37,7 @@ GitHub에 호스트된 Microsoft의 여러 설명서 집합은 오픈 소스입�
 
 그런 후 다음 그림에 표시된 연필 아이콘을 클릭하여 문서를 편집합니다.
 
-![연필 아이콘의 위치](./media/index/editicon.png)
+![연필 아이콘의 위치](./media/index/edit-icon.png)
 
 > [!NOTE]
 > 연필 아이콘이 회색으로 표시되는 경우 GitHub 계정으로 로그인하거나 새 계정을 만들어야 합니다.
