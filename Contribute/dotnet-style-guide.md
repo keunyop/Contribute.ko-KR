@@ -2,12 +2,12 @@
 title: .NET 문서용 템플릿 및 치트 시트
 description: 이 문서에는 .NET 문서 리포지토리에 대한 새 문서를 작성하는 데 사용할 수 있는 편리한 템플릿이 포함되어 있습니다.
 ms.date: 11/07/2018
-ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
-ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
+ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53264505"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712927"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 문서용 메타데이터 및 Markdown 템플릿
 
@@ -123,7 +123,7 @@ UID 뒤에 \*(또는 `%2A`)를 추가하면 링크는 특정 API가 아닌 오�
 
 ## <a name="code"></a>코드
 
-코드를 포함하기 위한 가장 좋은 방법은 작동하는 샘플의 코드 조각을 포함하는 것입니다. [.NET에 참여](dotnet-contribute-process.md#contributing-to-samples) 문서의 지침에 따라 샘플을 만듭니다. 코드 포함에 대한 기본 규칙은 [코드](how-to-write-use-markdown.md#code-includes)에 대한 일반 지침에 있습니다.
+코드를 포함하기 위한 가장 좋은 방법은 작동하는 샘플의 코드 조각을 포함하는 것입니다. [.NET에 참여](dotnet-contribute-process.md#contributing-to-samples) 문서의 지침에 따라 샘플을 만듭니다. 코드 포함에 대한 기본 규칙은 [코드](how-to-write-use-markdown.md#code-snippets)에 대한 일반 지침에 있습니다.
 
 다음 구문을 사용하여 코드를 포함할 수 있습니다.
 
