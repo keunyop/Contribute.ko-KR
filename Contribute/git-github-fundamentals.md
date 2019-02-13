@@ -2,12 +2,12 @@
 title: 설명서용 Git 및 GitHub 기본 사항
 description: 이 문서에서는 Git, GitHub 리포지토리 및 콘텐츠 구성 방법에 대한 개요와 docs.microsoft.com에 사용되는 명명 규칙에 대해 설명합니다.
 ms.date: 06/30/2017
-ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805703"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712881"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Docs용 Git 및 GitHub 기본 사항
 
@@ -25,8 +25,8 @@ GitHub는 [docs.microsoft.com](https://docs.microsoft.com) 콘텐츠를 저장�
 
 또한 Git은 계층화된 구조체를 사용하여 프로젝트에 대한 콘텐츠를 저장하고 관리합니다.
 
-- *리포지토리*: *리포지토리*라고 하며 가장 높은 저장 단위입니다. 리포지토리는 하나 이상의 분기를 포함합니다.
-- *분기*: 프로젝트의 콘텐츠 세트를 구성하는 파일과 폴더가 포함된 저장 단위입니다. 분기는 작업의 스트림(일반적으로 버전이라고 함)을 구분합니다. 언제나 기여가 이루어지며 특정 분기로 범위가 정해집니다. 모든 리포지토리는 기본 분기(일반적으로 "마스터"라고 함)를 포함하며 하나 이상의 분기는 마스터 분기에 병합되도록 지정됩니다. 마스터 분기는 현재 버전의 역할을 하며 프로젝트에 대한 "정확한 정보를 확인할 수 있는 단일 소스"입니다. 리포지토리의 나머지 분기들은 부모인 마스터 분기에서 생성됩니다.
+- 리포지토리: 리포지토리는 가장 높은 스토리지 단위입니다. 리포지토리는 하나 이상의 분기를 포함합니다.
+- 분기: 프로젝트의 콘텐츠 세트를 구성하는 파일과 폴더가 포함된 스토리지 단위입니다. 분기는 작업의 스트림(일반적으로 버전이라고 함)을 구분합니다. 언제나 기여가 이루어지며 특정 분기로 범위가 정해집니다. 모든 리포지토리는 기본 분기(일반적으로 "마스터"라고 함)를 포함하며 하나 이상의 분기는 마스터 분기에 병합되도록 지정됩니다. 마스터 분기는 현재 버전의 역할을 하며 프로젝트에 대한 "정확한 정보를 확인할 수 있는 단일 소스"입니다. 리포지토리의 나머지 분기들은 부모인 마스터 분기에서 생성됩니다.
 
 참여자는 Git와 상호 작용하여 로컬 및 GitHub 수준에서 리포지토리를 업데이트하고 조작합니다.
 
@@ -58,7 +58,7 @@ GitHub는 [docs.microsoft.com](https://docs.microsoft.com) 콘텐츠를 저장�
 
 두 개 이상의 문서에서 공유되는 재사용 가능 콘텐츠는 언제나 기본 `articles` 디렉터리 아래 `/includes` 하위 디렉터리에 배치됩니다. 포함 파일을 사용하는 Markdown 파일에서 해당 "포함" Markdown 확장은 포함 파일을 참조해야 하는 위치에 배치됩니다.
 
-추가적인 지침은 [Markdown 사용 방법 - 포함되는 내용](how-to-write-use-markdown.md#includes)을 참조하세요.
+추가적인 지침은 [Markdown 사용 방법: 포함되는 내용](how-to-write-use-markdown.md#include-files)을 참조하세요.
 
 ### <a name="markdown-file-template"></a>Markdown 파일 템플릿
 

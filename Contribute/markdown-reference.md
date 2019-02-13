@@ -1,19 +1,17 @@
 ---
 title: docs.microsoft.com에 대한 Markdown 참조
-description: Markdown에 대한 Docs 플랫폼 가이드입니다.
+description: Microsoft Docs 플랫폼에서 사용되는 Markdown 기능 및 구문을 알아봅니다.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-audience: internal,external
-ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245875"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712950"
 ---
 # <a name="markdown-reference"></a>Markdown 참조
 

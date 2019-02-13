@@ -4,17 +4,17 @@ description: 이 문서에서는 docs.microsoft.com 내의 콘텐츠에 대한 �
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609433"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887255"
 ---
 # <a name="using-links-in-documentation"></a>설명서에서 링크 사용
 이 문서에서는 docs.microsoft.com에서 호스팅되는 페이지의 하이퍼 링크를 사용하는 방법에 대해 설명합니다. 링크는 몇 가지 다양한 규칙을 사용하여 Markdown에 쉽게 추가할 수 있습니다. 사용자는 링크를 통해 동일한 페이지의 콘텐츠를 가리키거나, 인접한 다른 페이지를 가리키거나, 외부 사이트 및 URL을 가리킬 수 있습니다.
 
-docs.microsoft.com 사이트 백 엔드에서는 DFM(DocFX Flavored Markdown)을 구현하는 OPS(Open Publishing Services)를 사용합니다. DFM은 GFM(GitHub Flavored Markdown)과 잘 호환되며, Markdown 확장을 통해 추가 기능을 추가합니다.
+docs.microsoft.com 사이트 백 엔드에는 [Markdig](https://github.com/lunet-io/markdig)를 통해 구문 분석되는 [CommonMark](https://commonmark.org/) 규격 markdown을 지원하고 [DFM(DocFX Flavored Markdown)](https://dotnet.github.io/docfx/)도 지원하는 OPS(Open Publishing Services)가 사용됩니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
 
 > [!IMPORTANT]
 > 대상이 링크를 지원하는 경우(대부분 지원) 모든 링크는 보안 링크여야 합니다(`https` 및 `http`).
@@ -137,12 +137,12 @@ docs.microsoft.com 사이트 백 엔드에서는 DFM(DocFX Flavored Markdown)을
 
 멋진 사용자 환경은 사용자를 다른 사이트에 보내는 작업을 최소화합니다. 따라서 간혹 필요한 타사 사이트에 대한 링크는 다음 정보를 기반으로 합니다.
 
-- **책임성:** 공유하려는 정보가 타사 정보인 경우 타사 콘텐츠에 연결합니다. 예를 들어 사용자에게 Android 개발자 도구를 사용하는 방법을 알려주는 것은 Microsoft이 해야 할 일이 아닙니다. 해당 작업은 Google에서 담당하게 됩니다. 필요한 경우 Azure*에서* Android 개발자 도구를 사용하는 방법을 설명할 수 있지만 Google에서도 해당 도구를 사용하는 방법을 설명해야 합니다.
+- **책임감**: 공유하려는 정보가 타사 정보인 경우 타사 콘텐츠에 연결합니다. 예를 들어 사용자에게 Android 개발자 도구를 사용하는 방법을 알려주는 것은 Microsoft이 해야 할 일이 아닙니다. 해당 작업은 Google에서 담당하게 됩니다. 필요한 경우 Azure*에서* Android 개발자 도구를 사용하는 방법을 설명할 수 있지만 Google에서도 해당 도구를 사용하는 방법을 설명해야 합니다.
 - **PM 승인**: 타사 콘텐츠에 대해 Microsoft에서 승인하도록 요청합니다. 링크를 설정한다는 것은 Microsoft가 해당 사이트를 신뢰한다는 것을 의미하며 사람들이 지침을 따를 경우 Microsoft에도 의무가 있다는 것을 나타냅니다.
-- **유효 시간 검토:** 타사 정보가 최신 정보이고 정확하며 관련성이 있는지 확인하고 링크가 변경되지 않도록 합니다.
-- **오프사이트:** 사용자가 다른 사이트로 이동한다는 점을 인식하도록 합니다. 이에 대한 명확한 내용이 없을 경우 설명하는 문구를 추가합니다. 예: "필수 조건에는 Android 개발자 도구가 포함되며 Android Studio 사이트에서 다운로드할 수 있습니다."
-- **다음 단계:** "다음 단계" 섹션에서 예를 들어 MVP 블로그에 대한 링크를 추가할 수 있습니다. 다시 한 번 사용자가 사이트를 벗어난다는 점을 인식하도록 합니다.
-- **법적 정보:** 모든 ms.com 페이지의 **사용 조건** 바닥글에 **타사 사이트에 대한 링크**의 법적 정보가 설명되어 있습니다.
+- **유효 시간 검토**: 타사 정보가 최신 정보이고 정확하며 관련성이 있는지 확인하고 링크가 변경되지 않도록 합니다.
+- **오프사이트**: 사용자가 다른 사이트로 이동한다는 점을 인식하도록 합니다. 이에 대한 명확한 내용이 없을 경우 설명하는 문구를 추가합니다. 예: “필수 조건은 Android 개발자 도구를 포함하며 Android Studio 사이트에서 다운로드할 수 있습니다.”
+- **다음 단계**: “다음 단계” 섹션에서 예를 들어 MVP 블로그에 대한 링크를 추가할 수 있습니다. 다시 한 번 사용자가 사이트를 벗어난다는 점을 인식하도록 합니다.
+- **법적 정보**: 모든 ms.com 페이지의 **사용 약관** 바닥글에 **타사 사이트에 대한 링크**의 법적 정보가 설명되어 있습니다.
 
 ## <a name="links-to-msdn-or-technet"></a>MSDN 또는 TechNet에 대한 링크
 

@@ -1,24 +1,19 @@
 ---
 title: Markdown을 사용하여 Docs를 작성하는 방법
 description: 이 문서에서는 docs.microsoft.com 문서를 작성하는 데 사용되는 Markdown 언어에 대한 기본 사항 및 참조 정보를 제공합니다.
-ms.date: 07/13/2017
-ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
-ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
+ms.date: 01/29/2019
+ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53615838"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887301"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown을 사용하여 Docs를 작성하는 방법
 
 [Docs.microsoft.com](http://docs.microsoft.com) 문서는 읽기 쉽고 배우기 쉬운 [Markdown](https://daringfireball.net/projects/markdown/)이라는 가벼운 마크업 언어로 작성되었습니다. 그렇기 때문에 신속하게 산업 표준이 되고 있습니다.
 
-Docs 콘텐츠가 GitHub에 저장되기 때문에 일반적인 형식 요구 사항에 추가 기능을 제공하는 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)이라는 Markdown의 상위 집합을 사용할 수 있습니다. 또한 OPS(Open Publishing Services)는 Markdig Markdown Parser를 구현합니다. Markdig은 GFM과 호환성이 뛰어나 Docs 전용 기능을 사용할 수 있는 기능을 추가합니다.
-
-* Markdig은 빠르고 강력하며 CommonMark와 호환되며 .NET에 대해 확장 가능한 Markdown 프로세서입니다.
-* https://github.com/lunet-io/markdig
-* 커뮤니티 지원 향상
-* 표준 지원 향상
+docs.microsoft.com 사이트 백 엔드에는 [Markdig](https://github.com/lunet-io/markdig)를 통해 구문 분석되는 [CommonMark](https://commonmark.org/) 규격 markdown을 지원하고 [DFM(DocFX Flavored Markdown)](https://dotnet.github.io/docfx/)도 지원하는 OPS(Open Publishing Services)가 사용됩니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
 
 ## <a name="markdown-basics"></a>Markdown 기본 사항
 
@@ -220,6 +215,7 @@ Markdown에서는 코드 조각을 문장에서 인라인으로 배치하거나 
 |콘솔|콘솔|
 |CSHTML|cshtml|
 |DAX|dax|
+|Docker|dockerfile|
 |F#|fsharp|
 |Go|go|
 |HTML|html|
@@ -227,8 +223,8 @@ Markdown에서는 코드 조각을 문장에서 인라인으로 배치하거나 
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Kusto 쿼리 언어|kusto|
 |Markdown|md|
-|NodeJS|nodejs|
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
@@ -243,7 +239,6 @@ Markdown에서는 코드 조각을 문장에서 인라인으로 배치하거나 
 |Swift|swift|
 |TypeScript|typescript|
 |VB|vb|
-|VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
 
