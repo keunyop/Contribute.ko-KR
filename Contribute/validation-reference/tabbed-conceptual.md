@@ -17,7 +17,7 @@
 
 두 개의 탭 및 탭 그룹 종결자(---)가 있는 단일 수준 탭 섹션의 예제:
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...
