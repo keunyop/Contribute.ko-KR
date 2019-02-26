@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: f5603dee7efe5c7ce3eaa4fa944031d94a9283d8
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: d7697c8449e451879c137d9d6cdf42327e597be6
+ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713249"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56431464"
 ---
 # <a name="ms-date-missing"></a>ms-date-missing
 
@@ -28,6 +28,12 @@ ms.locfileid: "55713249"
 ## <a name="resolution"></a>해결 방법
 
 문서가 손상된 콘텐츠 없이 최신 상태인지 확인한 후 YYYY/MM/DD 형식으로 유효한 날짜를 추가합니다.
+
+```yml
+---
+ms.date: 02/19/2019
+---
+```
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

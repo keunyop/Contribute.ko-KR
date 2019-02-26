@@ -1,19 +1,19 @@
 ---
-title: ms-date-invalid
-description: Docs 빌드 문제 ms-date-invalid에 대한 설명 및 해결 방법
+title: ms-topic-invalid
+description: Docs 빌드 문제 ms-topic-invalid에 대한 설명 및 해결 방법
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 1/15/2019
+ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: e960bc2d8e9013e480f2bb391cdfa0c1da043b8b
+ms.openlocfilehash: e7b10f3f146ee33cd00bcd31d16b01e8d99f7134
 ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/20/2019
-ms.locfileid: "56431510"
+ms.locfileid: "56431672"
 ---
-# <a name="ms-date-invalid"></a>ms-date-invalid
+# <a name="ms-topic-invalid"></a>ms-topic-invalid
 
 **서비스 예정!**
 
@@ -21,17 +21,13 @@ ms.locfileid: "56431510"
 
 ## <a name="suggestion"></a>제안
 
-`Invalid value for ms.date: '{value}'. Must be a date in format MM/DD/YYYY.`
+`Invalid value for ms.topic: '{value}'.`
 
 ## <a name="resolution"></a>해결 방법
 
-문서가 손상된 콘텐츠 없이 최신 상태인지 확인한 후 YYYY/MM/DD 형식으로 유효한 날짜를 추가합니다.
+문서 형식을 나타내는 `ms.topic`의 유효한 값을 추가합니다.
 
-```yml
----
-ms.date: 02/19/2019
----
-```
+유효한 값은 [이 Microsoft 내부 사이트](https://docsmetadatatool.azurewebsites.net/whitelists)에서 찾을 수 있습니다.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
