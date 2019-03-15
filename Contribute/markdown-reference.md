@@ -572,7 +572,7 @@ HTML 테이블은 docs.microsoft.com에 사용하지 않는 것이 좋습니다.
 모든 새 비디오는 다음 프로세스에 따라 업로드해야 합니다.
 
 1. IDWEB에서 **docs_video_users** 그룹에 조인합니다.
-1. https://aka.ms/VideoUploadRequest로 이동하고 비디오에 대한 세부 사항을 입력합니다. 다음이 필요합니다(이러한 항목은 공개되지 않음).
+1. [https://aka.ms/VideoUploadRequest](https://aka.ms/VideoUploadRequest)로 이동하고 비디오에 대한 세부 사항을 입력합니다. 다음이 필요합니다(이러한 항목은 공개되지 않음).
     1. 비디오의 제목
     1. 비디오가 관련된 제품/서비스 목록
     1. 비디오가 호스트되는 대상 페이지 또는 (아직 페이지가 없는 경우) 문서 집합
