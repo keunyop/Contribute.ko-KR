@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 92e8b17c3b5c96d544d12d394534a494ada3b901
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 20706a44da0320c1a3fc85592a4636efba364dc7
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713272"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987586"
 ---
 # <a name="ms-prod-and-technology-invalid"></a>ms-prod-and-technology-invalid
 
@@ -29,9 +29,7 @@ ms.locfileid: "55713272"
 
 `ms.prod` 값이 문서에 적합한지 확인합니다. 그런 다음, 유효한 `ms.technology` 값을 선택합니다.
 
-유효한 값은 [이 Microsoft 내부 사이트](https://docsmetadatatool.azurewebsites.net/whitelists)에서 찾을 수 있습니다.
-
-<!-- Can we link to whitelist externally? -->
+유효한 값은 [이 Microsoft 내부 사이트](https://docsmetadatatool.azurewebsites.net/allowlists)에서 찾을 수 있습니다.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

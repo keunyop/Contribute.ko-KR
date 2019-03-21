@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/2/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 2bc425726f82840565978072b2efdf13a1284ec0
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 7c5860d9ef50598ad5b3e9546100af0ba436e69f
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713088"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987724"
 ---
 # <a name="ms-service-missing"></a>ms-service-missing
 
@@ -29,7 +29,7 @@ ms.locfileid: "55713088"
 
 지정한 `ms.subservice` 값이 문서에 적합한지 확인합니다. 그런 다음, `ms.subservice`에 유효한 부모인 적절한 `ms.service` 값을 추가합니다.
 
-유효한 값은 [이 Microsoft 내부 사이트](https://docsmetadatatool.azurewebsites.net/whitelists)에서 찾을 수 있습니다.
+유효한 값은 [이 Microsoft 내부 사이트](https://docsmetadatatool.azurewebsites.net/allowlists)에서 찾을 수 있습니다.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
