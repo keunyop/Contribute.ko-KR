@@ -1,21 +1,29 @@
-# <a name="tabbed-conceptual"></a><span data-ttu-id="8c33f-101">탭 개념</span><span class="sxs-lookup"><span data-stu-id="8c33f-101">Tabbed conceptual</span></span>
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987824"
+---
+# <a name="tabbed-conceptual"></a><span data-ttu-id="ad547-101">탭 개념</span><span class="sxs-lookup"><span data-stu-id="ad547-101">Tabbed conceptual</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="8c33f-102">탭 개념 구문이 사용되지 않으므로 새 탭이 추가되지 않야아 합니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="8c33f-103">이 문서에서 설명된 유효성 검사는 대체 기능이 지원될 때까지 탭 개념을 사용하도록 승인된 콘텐츠 세트에 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
+> <span data-ttu-id="ad547-102">탭 개념 구문이 사용되지 않으므로 새 탭이 추가되지 않야아 합니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="ad547-103">이 문서에서 설명된 유효성 검사는 대체 기능이 지원될 때까지 탭 개념을 사용하도록 승인된 콘텐츠 세트에 지원됩니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
 
-## <a name="tab-syntax"></a><span data-ttu-id="8c33f-104">탭 구문</span><span class="sxs-lookup"><span data-stu-id="8c33f-104">Tab syntax</span></span>
+## <a name="tab-syntax"></a><span data-ttu-id="ad547-104">탭 구문</span><span class="sxs-lookup"><span data-stu-id="ad547-104">Tab syntax</span></span>
 
-<span data-ttu-id="8c33f-105">탭의 구문은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-105">The syntax for tabs is as follows:</span></span>
+<span data-ttu-id="ad547-105">탭의 구문은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-105">The syntax for tabs is as follows:</span></span>
 
-<span data-ttu-id="8c33f-106">단일 수준 탭:</span><span class="sxs-lookup"><span data-stu-id="8c33f-106">Single level tab:</span></span>
+<span data-ttu-id="ad547-106">단일 수준 탭:</span><span class="sxs-lookup"><span data-stu-id="ad547-106">Single level tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id)`
 
-<span data-ttu-id="8c33f-107">선택적 종속 탭:</span><span class="sxs-lookup"><span data-stu-id="8c33f-107">Optional dependent tab:</span></span>
+<span data-ttu-id="ad547-107">선택적 종속 탭:</span><span class="sxs-lookup"><span data-stu-id="ad547-107">Optional dependent tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id/tab-condition)`
 
-<span data-ttu-id="8c33f-108">두 개의 탭 및 탭 그룹 종결자(---)가 있는 단일 수준 탭 섹션의 예제:</span><span class="sxs-lookup"><span data-stu-id="8c33f-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
+<span data-ttu-id="ad547-108">두 개의 탭 및 탭 그룹 종결자(---)가 있는 단일 수준 탭 섹션의 예제:</span><span class="sxs-lookup"><span data-stu-id="ad547-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
 
 ```markdown
 # [Linux](#tab/linux)
@@ -29,7 +37,7 @@ Content for Windows...
 ---
 ```
 
-<span data-ttu-id="8c33f-109">탭에는 선택적으로 보조 탭 또는 종속성 탭이 포함될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="8c33f-110">그러면 탭이 다른 일련의 탭에서 선택 영역에 종속됩니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="8c33f-111">예를 들면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-111">Here's an example:</span></span>
+<span data-ttu-id="ad547-109">탭에는 선택적으로 보조 탭 또는 종속성 탭이 포함될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="ad547-110">그러면 탭이 다른 일련의 탭에서 선택 영역에 종속됩니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="ad547-111">예를 들면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-111">Here's an example:</span></span>
 
 ```markdown
 # [Azure CLI](#tab/azure-cli/linux)
@@ -51,22 +59,22 @@ PowerShell content for Windows...
 ---
 ```
 
-<span data-ttu-id="8c33f-112">다음 유효성 검사는 탭 구문에 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-112">The following validations apply to tab syntax:</span></span>
+<span data-ttu-id="ad547-112">다음 유효성 검사는 탭 구문에 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-112">The following validations apply to tab syntax:</span></span>
 
-- <span data-ttu-id="8c33f-113">탭 구문은 정확해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-113">Tab syntax must be correct.</span></span>
-- <span data-ttu-id="8c33f-114">종속 탭은 이전 탭 그룹에서 정의되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-114">Dependent tabs must have been defined in a previous tab group.</span></span>
-- <span data-ttu-id="8c33f-115">한 개 수준의 종속성만 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-115">Only one level of dependency is allowed.</span></span>
-- <span data-ttu-id="8c33f-116">두 개 이상의 탭이 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-116">No fewer than two tabs are allowed.</span></span>
-- <span data-ttu-id="8c33f-117">네 개 이하의 탭이 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-117">No more than four tabs are allowed.</span></span>
-- <span data-ttu-id="8c33f-118">탭이 허용 목록으로 지정되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-118">Tabs must be whitelisted.</span></span>
-- <span data-ttu-id="8c33f-119">탭/ID 쌍이 유효해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-119">Tab/ID pairs must be valid.</span></span>
-- <span data-ttu-id="8c33f-120">하나의 탭 그룹에 여러 번 동일한 탭 ID가 있을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
+- <span data-ttu-id="ad547-113">탭 구문은 정확해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-113">Tab syntax must be correct.</span></span>
+- <span data-ttu-id="ad547-114">종속 탭은 이전 탭 그룹에서 정의되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-114">Dependent tabs must have been defined in a previous tab group.</span></span>
+- <span data-ttu-id="ad547-115">한 개 수준의 종속성만 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-115">Only one level of dependency is allowed.</span></span>
+- <span data-ttu-id="ad547-116">두 개 이상의 탭이 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-116">No fewer than two tabs are allowed.</span></span>
+- <span data-ttu-id="ad547-117">네 개 이하의 탭이 허용됩니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-117">No more than four tabs are allowed.</span></span>
+- <span data-ttu-id="ad547-118">탭이 승인되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-118">Tabs must be approved.</span></span>
+- <span data-ttu-id="ad547-119">탭/ID 쌍이 유효해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-119">Tab/ID pairs must be valid.</span></span>
+- <span data-ttu-id="ad547-120">하나의 탭 그룹에 여러 번 동일한 탭 ID가 있을 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
 
-## <a name="tab-whitelist"></a><span data-ttu-id="8c33f-121">탭 허용 목록</span><span class="sxs-lookup"><span data-stu-id="8c33f-121">Tab whitelist</span></span>
+## <a name="approved-tabs"></a><span data-ttu-id="ad547-121">승인된 탭</span><span class="sxs-lookup"><span data-stu-id="ad547-121">Approved tabs</span></span>
 
-<span data-ttu-id="8c33f-122">다음 탭 이름/탭 ID 쌍은 허용 목록으로 지정됩니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-122">The following tab name/tab ID pairs are whitelisted.</span></span> <span data-ttu-id="8c33f-123">종속 탭 ID는 페어링되지 않지만 탭 ID 열에 대해 유효해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="8c33f-124">이 값은 대/소문자를 구분합니다.</span><span class="sxs-lookup"><span data-stu-id="8c33f-124">The values are case-sensitive</span></span>
+<span data-ttu-id="ad547-122">다음 탭 이름/탭 ID 쌍은 승인됩니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-122">The following tab name/tab ID pairs are approved.</span></span> <span data-ttu-id="ad547-123">종속 탭 ID는 페어링되지 않지만 탭 ID 열에 대해 유효해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="ad547-124">이 값은 대/소문자를 구분합니다.</span><span class="sxs-lookup"><span data-stu-id="ad547-124">The values are case-sensitive</span></span>
 
-|<span data-ttu-id="8c33f-125">탭 이름</span><span class="sxs-lookup"><span data-stu-id="8c33f-125">Tab name</span></span>              |<span data-ttu-id="8c33f-126">탭 ID</span><span class="sxs-lookup"><span data-stu-id="8c33f-126">Tab ID</span></span>            |
+|<span data-ttu-id="ad547-125">탭 이름</span><span class="sxs-lookup"><span data-stu-id="ad547-125">Tab name</span></span>              |<span data-ttu-id="ad547-126">탭 ID</span><span class="sxs-lookup"><span data-stu-id="ad547-126">Tab ID</span></span>            |
 |----------------------|------------------|
 |`[.NET]`              |`(#tab/dotnet)`   |
 |`[.NET Core 1.x]`     |`(#tab/netcore1x)`|
