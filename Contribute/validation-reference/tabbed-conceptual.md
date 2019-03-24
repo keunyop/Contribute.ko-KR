@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987824"
+---
 # <a name="tabbed-conceptual"></a>탭 개념
 
 > [!IMPORTANT]
@@ -58,13 +66,13 @@ PowerShell content for Windows...
 - 한 개 수준의 종속성만 허용됩니다.
 - 두 개 이상의 탭이 허용됩니다.
 - 네 개 이하의 탭이 허용됩니다.
-- 탭이 허용 목록으로 지정되어야 합니다.
+- 탭이 승인되어야 합니다.
 - 탭/ID 쌍이 유효해야 합니다.
 - 하나의 탭 그룹에 여러 번 동일한 탭 ID가 있을 수 없습니다.
 
-## <a name="tab-whitelist"></a>탭 허용 목록
+## <a name="approved-tabs"></a>승인된 탭
 
-다음 탭 이름/탭 ID 쌍은 허용 목록으로 지정됩니다. 종속 탭 ID는 페어링되지 않지만 탭 ID 열에 대해 유효해야 합니다. 이 값은 대/소문자를 구분합니다.
+다음 탭 이름/탭 ID 쌍은 승인됩니다. 종속 탭 ID는 페어링되지 않지만 탭 ID 열에 대해 유효해야 합니다. 이 값은 대/소문자를 구분합니다.
 
 |탭 이름              |탭 ID            |
 |----------------------|------------------|
