@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b4ac631a4ebdf7daf00bc39be80fe2e479720392
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712950"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987885"
 ---
 # <a name="markdown-reference"></a>Markdown 참조
 
@@ -90,7 +90,7 @@ Docs는 6가지 수준의 Markdown 제목을 지원합니다.
 
 ## <a name="html"></a>HTML
 
-Markdown은 인라인 HTML을 지원하지만 HTML은 Docs에 게시하도록 권장되지 않으며 제한된 값 목록을 제외하고는 빌드 오류 또는 경고가 발생합니다. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Markdown은 인라인 HTML을 지원하지만 HTML은 Docs에 게시하도록 권장되지 않으며 제한된 값 목록을 제외하고는 빌드 오류 또는 경고가 발생합니다.
 
 ## <a name="images"></a>이미지
 
@@ -110,7 +110,7 @@ Example:
 - .jpg
 - .png
 
-문서 집합에 대한 docfx.json 파일<!--add link to reference when available-->에 리소스로 추가하여 다른 이미지 형식에 대한 지원을 추가할 수 있습니다.
+문서 세트의 docfx.json 파일에 리소스로 추가하여 다른 이미지 형식에 대한 지원을<!--add link to reference when available--> 추가할 수 있습니다.
 
 ## <a name="links"></a>링크
 
@@ -169,7 +169,7 @@ Example:
 
 ### <a name="bookmark-links"></a>책갈피 링크
 
-같은 리포지토리의 다른 파일 제목에 대한 책갈피 링크
+같은 리포지토리의 다른 파일 제목에 대한 책갈피 링크입니다. 예:
 
 ```markdown
 [Managed Disks](../../linux/overview.md#managed-disks)
@@ -181,7 +181,12 @@ Example:
 [Managed Disks](#managed-disks)
 ```
 
-해시 태그 다음에 구두점이 제거되고 공백이 대시로 바뀐 제목의 단어를 사용하세요.
+`#` 해시 표시 뒤에 제목의 단어를 사용합니다. 제목 텍스트를 링크 텍스트로 변경하려면 다음을 적용합니다.
+- 모두 소문자 사용
+- 문장 부호 제거
+- 공백을 대시로 바꾸기
+
+예를 들어, 제목 이름이 "2.2 Security concerns"인 경우 책갈피 링크 텍스트는 "#22-security-concerns"입니다.
 
 ### <a name="explicit-anchor-links"></a>명시적 앵커 링크
 
@@ -336,7 +341,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 ## <a name="section-definition"></a>섹션 정의
 
-<!-- more info about this would be helpful! --> 섹션을 정의해야 할 수도 있습니다. 이 구문은 대개 코드 테이블에 사용됩니다.
+<!-- more info about this would be helpful! -->
+섹션을 정의해야 하는 경우가 있습니다. 이 구문은 대개 코드 테이블에 사용됩니다.
 다음 예제를 참조하세요.
 
 ````
@@ -360,7 +366,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 ## <a name="selectors"></a>선택기
 
-<!-- could be more clear! --> 같은 문서의 다른 페이지에 연결하려면 선택기를 사용할 수 있습니다. 그러면 독자는 해당 페이지 간에 전환할 수 있습니다.
+<!-- could be more clear! -->
+같은 문서의 다른 페이지에 연결할 때 선택기를 사용할 수 있습니다. 그러면 독자는 해당 페이지 간에 전환할 수 있습니다.
 
 > [!NOTE]
 > 이 확장은 docs.microsoft.com과 MSDN에서 서로 다르게 작동합니다. <!-- should we keep info about MSDN? If so say how they differ?-->
