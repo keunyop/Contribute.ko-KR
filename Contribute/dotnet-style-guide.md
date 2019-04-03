@@ -2,12 +2,12 @@
 title: .NET 문서용 템플릿 및 치트 시트
 description: 이 문서에는 .NET 문서 리포지토리에 대한 새 문서를 작성하는 데 사용할 수 있는 편리한 템플릿이 포함되어 있습니다.
 ms.date: 11/07/2018
-ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712927"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653623"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 문서용 메타데이터 및 Markdown 템플릿
 
@@ -132,7 +132,7 @@ UID 뒤에 \*(또는 `%2A`)를 추가하면 링크는 특정 API가 아닌 오�
 ```
 
 * `-<language>`(*선택 사항*이지만 *권장됨*)
-  * 참조되고 있는 코드 조각의 언어입니다. 지원되는 값 목록은 [지원되는 언어](#supported-languages)를 참조하세요.
+  * 참조되고 있는 코드 조각의 언어입니다.
 
 * `<name>`(*선택 사항*)
   * 코드 조각의 이름입니다. 출력 HTML에는 아무런 영향이 없지만, 이를 사용하여 Markdown 소스의 가독성을 개선할 수 있습니다.
