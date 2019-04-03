@@ -2,12 +2,12 @@
 title: .NET 문서 리포지토리에 대한 참여 프로세스
 description: 이 문서에서는 .NET 문서 리포지토리에 참여에 대한 간략한 소개를 제공합니다. 사용된 리포지토리, 콘텐츠를 구성하는 프로세스, 코드 샘플 및 기타 자산을 관리하기 위한 정책을 알아봅니다.
 ms.date: 11/07/2018
-ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: 121f6c885ef6d292968e5bb3961cae8e9c22942b
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245852"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637509"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>.NET 문서에 참여하는 프로세스
 
