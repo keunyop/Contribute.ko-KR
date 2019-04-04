@@ -4,13 +4,18 @@ description: 이 가이드에서는 Microsoft 설명서 사이트인 docs.micros
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
+ms.openlocfilehash: 9b091f864f5191c9f7a00900ec11a4a1cffdb698
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653508"
 ---
-
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 기여자 가이드 개요
 
 [docs.microsoft.com](https://docs.microsoft.com)(Docs) 참여자 가이드를 시작합니다!
 
-여러 Microsoft 설명서 세트는 오픈 소스이며 GitHub에서 호스트됩니다. 일부 문서 세트는 완전히 오픈 소스는 아니지만, 많은 문서 세트에는 초대되어 끌어오기 요청을 할 수 있는 공용 리포지토리가 있습니다. 이는 제품 엔지니어와 콘텐츠 팀, 고객 간 커뮤니케이션을 간소화하고 개선합니다. 오픈으로 작업하면 다음과 같은 여러 가지 이점이 있습니다.
+여러 Microsoft 설명서 세트는 오픈 소스이며 GitHub에서 호스트됩니다. 일부 문서 세트는 완전히 오픈 소스는 아니지만, 많은 문서 세트에는 끌어오기 요청을 통해 제안된 변경을 수행할 수 있는 공용 리포지토리가 있습니다. 이 오픈 소스 방법은 제품 엔지니어와 콘텐츠 팀, 고객 간 커뮤니케이션을 간소화하고 개선하며 다음과 같은 기타 이점이 있습니다.
 
 - _오픈의 오픈 소스 리포지토리 계획_은 가장 필요한 문서에 대한 피드백을 받습니다.
 - _오픈의 오픈 소스 리포지토리 검토_는 첫 번째 릴리스에서 가장 유용한 콘텐츠를 게시할 수 있습니다.
@@ -72,7 +77,7 @@ Microsoft의 문서는 계속 진행 중인 작업입니다. 좋은 문제는 �
 
 많은 Microsoft의 설명서 페이지에는 페이지 아래쪽에 클릭하여 해당 문서와 관련된 문제를 추적하기 위해 **제품 피드백** 또는 **콘텐츠 피드백**을 남길 수 있는 **피드백** 섹션이 있습니다.
 
-문제를 통해 필요한 사항에 대한 대화가 시작됩니다. 콘텐츠 팀은 추가할 수 있는 아이디어를 가지고 이러한 문제에 응답하며 사용자의 의견을 구합니다. 사용자가 초안을 만들면 Microsoft에서 [PR 검토](#review-open-PRs)를 요청할 것입니다.
+문제를 통해 필요한 사항에 대한 대화가 시작됩니다. 콘텐츠 팀은 추가할 수 있는 아이디어를 가지고 이러한 문제에 응답하며 사용자의 의견을 구합니다. 사용자가 초안을 만들면 Microsoft에서 [PR 검토](#review-open-prs)를 요청할 것입니다.
 
 ## <a name="get-more-involved"></a>더 많이 참여하기
 

@@ -1,19 +1,18 @@
 ---
 title: Markdown을 사용하여 Docs를 작성하는 방법
 description: 이 문서에서는 docs.microsoft.com 문서를 작성하는 데 사용되는 Markdown 언어에 대한 기본 사항 및 참조 정보를 제공합니다.
-ms.date: 01/29/2019
-ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.date: 03/26/2019
+ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887301"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637486"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown을 사용하여 Docs를 작성하는 방법
 
-[Docs.microsoft.com](http://docs.microsoft.com) 문서는 읽기 쉽고 배우기 쉬운 [Markdown](https://daringfireball.net/projects/markdown/)이라는 가벼운 마크업 언어로 작성되었습니다. 그렇기 때문에 신속하게 산업 표준이 되고 있습니다.
+[Docs.microsoft.com](http://docs.microsoft.com) 문서는 읽기 쉽고 배우기 쉬운 [Markdown](https://daringfireball.net/projects/markdown/)이라는 가벼운 마크업 언어로 작성되었습니다. 그렇기 때문에 신속하게 산업 표준이 되고 있습니다. 문서 사이트는 Markdown의 [Markdig 유형](#markdown-flavor)을 사용합니다.
 
-docs.microsoft.com 사이트 백 엔드에는 [Markdig](https://github.com/lunet-io/markdig)를 통해 구문 분석되는 [CommonMark](https://commonmark.org/) 규격 markdown을 지원하고 [DFM(DocFX Flavored Markdown)](https://dotnet.github.io/docfx/)도 지원하는 OPS(Open Publishing Services)가 사용됩니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
 
 ## <a name="markdown-basics"></a>Markdown 기본 사항
 
@@ -162,7 +161,6 @@ Blockquotes는 `>` 문자를 사용하여 생성됩니다.
 
 테이블을 만드는 방법에 대한 자세한 내용은 다음을 참조하세요.
 
-- 넓은 테이블의 서식을 지정하는 데 도움이 되는 Markdig [테이블 래핑 기능](#table-wrapping)
 - GitHub의 [테이블 구성 정보](https://help.github.com/articles/organizing-information-with-tables/)
 - [Markdown 테이블 생성기](https://www.tablesgenerator.com/markdown_tables) 웹앱
 - [Adam Pritchard의 Markdown 참고 자료](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
@@ -207,6 +205,7 @@ Markdown에서는 코드 조각을 문장에서 인라인으로 배치하거나 
 |AzCopy|azcopy|
 |Azure CLI|azurecli|
 |Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
@@ -430,6 +429,10 @@ Word에서 Markdown 편집기로 복사하는 경우 텍스트에 "스마트"(�
 자리 표시자를 나타내는 데 대괄호를 사용하는 것이 일반적입니다. 텍스트(코드 아님)에서 이 작업을 수행할 때는 대괄호를 인코딩해야 합니다. 그렇지 않으면 Markdown에서는 해당 기호가 HTML 태그로 인식합니다.
 
 예를 들어 `<script name>`을 `&lt;script name&gt;`로 인코딩합니다.
+
+## <a name="markdown-flavor"></a>Markdown 유형
+
+docs.microsoft.com 사이트 백 엔드는 [Markdig](https://github.com/lunet-io/markdig) 구문 분석 엔진을 통해 구문 분석되는 [CommonMark](https://commonmark.org/) 규격 markdown을 지원하는 OPS(Open Publishing Services)를 사용합니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
 
 ## <a name="see-also"></a>참고 항목:
 
