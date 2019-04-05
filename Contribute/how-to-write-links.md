@@ -4,17 +4,17 @@ description: 이 문서에서는 docs.microsoft.com 내의 콘텐츠에 대한 �
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.openlocfilehash: 464c6b2ae8976252828d73390f9cbeea67f4e3ce
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887255"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637555"
 ---
 # <a name="using-links-in-documentation"></a>설명서에서 링크 사용
 이 문서에서는 docs.microsoft.com에서 호스팅되는 페이지의 하이퍼 링크를 사용하는 방법에 대해 설명합니다. 링크는 몇 가지 다양한 규칙을 사용하여 Markdown에 쉽게 추가할 수 있습니다. 사용자는 링크를 통해 동일한 페이지의 콘텐츠를 가리키거나, 인접한 다른 페이지를 가리키거나, 외부 사이트 및 URL을 가리킬 수 있습니다.
 
-docs.microsoft.com 사이트 백 엔드에는 [Markdig](https://github.com/lunet-io/markdig)를 통해 구문 분석되는 [CommonMark](https://commonmark.org/) 규격 markdown을 지원하고 [DFM(DocFX Flavored Markdown)](https://dotnet.github.io/docfx/)도 지원하는 OPS(Open Publishing Services)가 사용됩니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
+docs.microsoft.com 사이트 백 엔드는 [Markdig](https://github.com/lunet-io/markdig) 구문 분석 엔진을 통해 구문 분석되는 [CommonMark](https://commonmark.org/) 규격 markdown을 지원하는 OPS(Open Publishing Services)를 사용합니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
 
 > [!IMPORTANT]
 > 대상이 링크를 지원하는 경우(대부분 지원) 모든 링크는 보안 링크여야 합니다(`https` 및 `http`).
