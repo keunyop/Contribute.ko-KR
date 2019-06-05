@@ -2,12 +2,12 @@
 title: Markdown을 사용하여 Docs를 작성하는 방법
 description: 이 문서에서는 docs.microsoft.com 문서를 작성하는 데 사용되는 Markdown 언어에 대한 기본 사항 및 참조 정보를 제공합니다.
 ms.date: 03/26/2019
-ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 9fcd76e6103761465815784e4bf24e7042fb9f34
+ms.sourcegitcommit: 5f7212a091e9fc4e9cd1320fdfa8efaff51384c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637486"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373121"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown을 사용하여 Docs를 작성하는 방법
 
