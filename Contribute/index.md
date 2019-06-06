@@ -13,24 +13,24 @@ ms.locfileid: "58653508"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 기여자 가이드 개요
 
-[docs.microsoft.com](https://docs.microsoft.com)(Docs) 참여자 가이드를 시작합니다!
+[docs.microsoft.com](https://docs.microsoft.com)(Docs) 참여자 가이드에 관심을 가져주셔서 감사합니다.
 
-몇몇 Microsoft 설명서 집합은 오픈 소스로, GitHub에서 호스트됩니다. 모든 문서 집합이 완벽한 오픈 소스는 아니지만, 많은 문서 집합에는 끌어오기 요청을 통해 제안된 변경을 수행할 수 있는 공용 리포지토리가 있습니다. 이러한 오픈 소스 접근 방법은 제품 엔지니어와 콘텐츠 팀, 고객 간 커뮤니케이션을 간소화하고 개선하며 그 외 다음과 같은 이점이 있습니다.
+몇몇 Microsoft 설명서 집합은 오픈 소스로, GitHub에서 호스트됩니다. 모든 문서 집합이 완벽한 오픈 소스는 아니지만, 많은 문서 집합에는 끌어오기 요청을 통해 제안된 변경을 수행할 수 있는 공용 리포지토리가 있습니다. 이러한 오픈 소스 방식은 제품 엔지니어와 콘텐츠 팀, 고객 간 커뮤니케이션을 간소화하고 개선하며 다음과 같은 이점을 제공합니다.
 
-- _오픈의 오픈 소스 리포지토리 계획_ 은 가장 필요한 문서에 대한 피드백을 받습니다.
-- _오픈의 오픈 소스 리포지토리 검토_ 는 첫 번째 릴리스에서 가장 유용한 콘텐츠를 게시할 수 있습니다.
-- _오픈의 오픈 소스 리포지토리 업데이트_ 는 콘텐츠를 계속 개선하기 쉽습니다.
+- 오픈 소스 리포지토리의_공개 계획_을 통해 가장 필요한 문서에 대한 피드백을 받습니다.
+- 오픈 소스 리포지토리의_공개 검토_를 통해 첫 번째 릴리스에서 가장 유용한 콘텐츠를 게시할 수 있습니다.
+- 오픈 소스 리포지토리의_공개 업데이트_를 통해 콘텐츠를 지속적으로 개선할 수 있습니다.
 
-[docs.microsoft.com](https://docs.microsoft.com)의 사용자 환경은 [GitHub](https://github.com) 워크플로와 직접 통합되어 훨씬 더 간단합니다. [보고 있는 문서를 편집](#quick-edits-to-existing-documents)하여 시작하세요. 또는 [새 항목을 검토](#review-open-prs)하여 도움을 주거나 [품질 문제를 만드세요](#create-quality-issues).
+[docs.microsoft.com](https://docs.microsoft.com)의 사용자 환경은 [GitHub](https://github.com) 워크플로와 직접 통합되어 훨씬 더 간단합니다. [보고 있는 문서를 편집](#quick-edits-to-existing-documents)하여 시작하세요. 또는 [새 항목을 검토](#review-open-prs)하여 도움을 주거나 [품질 이슈를 작성하세요](#create-quality-issues).
 
 > [!IMPORTANT]
 > docs.microsoft.com에 게시하는 모든 리포지토리는 [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)(Microsoft 오픈 소스 규정) 또는 [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)(.NET Foundation 규정)를 채택했습니다. 자세한 내용은 [준수 사항 FAQ](https://opensource.microsoft.com/codeofconduct/faq/)를 참조하세요. 또는 [opencode@microsoft.com](mailto:opencode@microsoft.com)이나 [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org)에 궁금한 사항을 문의하거나 의견을 제시하세요.<br>
 >
-> 공용 리포지토리의 설명서 및 코드 예제에 대한 사소한 수정 또는 확인 내용은 [docs.microsoft.com 사용 약관](https://docs.microsoft.com/legal/termsofuse)에서 다룹니다. 변경 내용이 새롭거나 중요한 내용일 경우 Microsoft 직원이 아닌 경우에 한해 끌어오기 요청에서 온라인 CLA(참가 라이선스 계약)를 제출하도록 요청하는 주석이 생성됩니다. 온라인 양식 작성을 먼저 완료해야 Microsoft에서 끌어오기 요청을 검토하거나 수락할 수 있습니다.
+> 공용 리포지토리의 설명서 및 코드 예제에 대한 사소한 수정 또는 확인 내용은 [docs.microsoft.com 사용 약관](https://docs.microsoft.com/legal/termsofuse)에서 다룹니다. 변경 내용이 새롭거나 중요한 내용일 경우 Microsoft 직원이 아닌 경우에 한해 끌어오기 요청에서 온라인 CLA(참가 라이선스 계약)를 제출하도록 요청하는 주석이 생성됩니다. 온라인 양식을 먼저 작성한 후 Microsoft에서 끌어오기 요청을 검토하거나 수락할 수 있습니다.
 
 ## <a name="quick-edits-to-existing-documents"></a>기존 문서의 빠른 편집
 
-빠른 편집은 문서의 사소한 오류 및 누락을 보고하고 수정하는 프로세스를 간소화합니다. 모든 노력에도 불구하고, 게시되는 문서에는 사소한 문법 및 맞춤법 오류가 _있습니다_. 문제를 만들어 실수를 보고할 수 있지만, PR(끌어오기 요청)을 만들면 문제를 더 빠르고 쉽게 해결할 수 있습니다(옵션을 사용할 수 있는 경우).
+빠른 편집은 문서의 사소한 오류 및 누락을 보고하고 수정하는 프로세스를 간소화합니다. 모든 노력에도 불구하고, 게시되는 문서에는 사소한 문법 및 맞춤법 오류가 _있습니다_. 이슈를 작성해 오류를 보고할 수도 있지만, PR(끌어오기 요청)을 만들면 문제를 더 빠르고 쉽게 해결할 수 있습니다(옵션을 사용할 수 있는 경우).
 
 1. 일부 문서 페이지의 경우 브라우저에서 직접 콘텐츠를 편집할 수 있습니다. 해당하는 경우 아래 표시된 것처럼 **편집** 단추가 표시됩니다. **편집**(또는 지역화된) 단추를 클릭하면 GitHub의 원본 파일로 이동합니다. **편집** 단추(텍스트 없는 연필 아이콘)가 없는 경우 설명서 페이지를 변경할 수 없습니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "58653508"
 
 6. 이것으로 끝입니다. 콘텐츠 팀 구성원이 PR을 검토하고 병합합니다. 변경을 많이 수행한 경우 변경을 요청하는 피드백을 받을 수 있습니다.
 
-GitHub 편집 UI는 리포지토리에 대한 사용 권한에 응답합니다. 대상 리포지토리에 대한 쓰기 권한이 없는 contributor의 경우 이전 이미지가 정확합니다. GitHub는 해당 계정의 대상 리포지토리의 포크를 자동으로 만듭니다. 대상 리포지토리에 대한 쓰기 권한이 있는 경우 GitHub는 대상 리포지토리에 새 분기를 만듭니다. 분기 이름의 형식은 GitHub ID와 패치 분기에 대한 숫자 식별자를 사용하는 **\<GitHubId\>-patch-n**입니다.
+GitHub 편집 UI는 리포지토리에 대한 사용 권한에 따라 달라집니다. 대상 리포지토리에 대한 쓰기 권한이 없는 contributor의 경우 이전 이미지가 정확합니다. GitHub는 해당 계정의 대상 리포지토리의 포크를 자동으로 만듭니다. 대상 리포지토리에 대한 쓰기 권한이 있는 경우 GitHub는 대상 리포지토리에 새 분기를 만듭니다. 분기 이름의 형식은 GitHub ID와 패치 분기에 대한 숫자 식별자를 사용하는 **\<GitHubId\>-patch-n**입니다.
 
 쓰기 권한이 있는 기여자의 경우에도, Microsoft는 모든 변경 내용에 대해 끌어오기 요청을 사용합니다. 대부분의 리포지토리에는 보호되는 `master` 분기가 있으므로 업데이트는 끌어오기 요청으로 제출되어야 합니다.
 
@@ -73,7 +73,7 @@ GitHub 편집 UI는 리포지토리에 대한 사용 권한에 응답합니다. 
 
 ## <a name="create-quality-issues"></a>품질 문제 만들기
 
-Microsoft의 문서는 계속 진행 중인 작업입니다. 좋은 문제는 커뮤니티의 가장 높은 우선 순위에 집중하는 데 도움이 됩니다. 더 자세한 정보를 제공할수록 문제에 더 도움이 됩니다. 찾은 정보를 알려주세요. 사용한 검색 용어를 알려주세요. 시작할 수 없는 경우 친숙한 기술 탐색을 시작하려는 방법을 알려주세요.
+Microsoft의 문서는 계속 진행 중인 작업입니다. 좋은 문제는 커뮤니티의 가장 높은 우선 순위에 집중하는 데 도움이 됩니다. 더 자세한 정보를 제공할수록 문제에 더 도움이 됩니다. 찾은 정보를 알려주세요. 사용한 검색 용어를 알려주세요. 시작하기가 어렵다면 새로운 기술을 어떻게 활용하면 좋을지 공유해 주세요.
 
 많은 Microsoft의 설명서 페이지에는 페이지 아래쪽에 클릭하여 해당 문서와 관련된 문제를 추적하기 위해 **제품 피드백** 또는 **콘텐츠 피드백**을 남길 수 있는 **피드백** 섹션이 있습니다.
 
