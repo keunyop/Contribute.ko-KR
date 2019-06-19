@@ -1,5 +1,5 @@
 ---
-title: Microsoft Docs 기여자 가이드 개요
+title: Microsoft Docs 참여자 가이드 개요
 description: 이 가이드에서는 Microsoft 설명서 사이트인 docs.microsoft.com에 참여할 수 있는 방법에 대해 설명합니다.
 author: billwagner
 ms.author: wiwagn
@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 03/29/2019
 ms.locfileid: "58653508"
 ---
-# <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 기여자 가이드 개요
+# <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 참여자 가이드 개요
 
 [docs.microsoft.com](https://docs.microsoft.com)(Docs) 참여자 가이드에 관심을 가져주셔서 감사합니다.
 
@@ -21,18 +21,18 @@ ms.locfileid: "58653508"
 - 오픈 소스 리포지토리의_공개 검토_를 통해 첫 번째 릴리스에서 가장 유용한 콘텐츠를 게시할 수 있습니다.
 - 오픈 소스 리포지토리의_공개 업데이트_를 통해 콘텐츠를 지속적으로 개선할 수 있습니다.
 
-[docs.microsoft.com](https://docs.microsoft.com)의 사용자 환경은 [GitHub](https://github.com) 워크플로와 직접 통합되어 훨씬 더 간단합니다. [보고 있는 문서를 편집](#quick-edits-to-existing-documents)하여 시작하세요. 또는 [새 항목을 검토](#review-open-prs)하여 도움을 주거나 [품질 이슈를 작성하세요](#create-quality-issues).
+[docs.microsoft.com](https://docs.microsoft.com)의 사용자 환경은 [GitHub](https://github.com) 워크플로와 직접 통합되어 훨씬 더 간단합니다. [보고 있는 문서를 편집](#quick-edits-to-existing-documents)하여 시작하세요. 또는 [새 항목을 검토](#review-open-prs)하여 도움을 주거나 [품질 이슈를 작성](#create-quality-issues)하세요.
 
 > [!IMPORTANT]
-> docs.microsoft.com에 게시하는 모든 리포지토리는 [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)(Microsoft 오픈 소스 규정) 또는 [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)(.NET Foundation 규정)를 채택했습니다. 자세한 내용은 [준수 사항 FAQ](https://opensource.microsoft.com/codeofconduct/faq/)를 참조하세요. 또는 [opencode@microsoft.com](mailto:opencode@microsoft.com)이나 [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org)에 궁금한 사항을 문의하거나 의견을 제시하세요.<br>
+> docs.microsoft.com에 게시하는 모든 리포지토리는 [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)(Microsoft 오픈 소스 규정) 또는 [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)(.NET Foundation 규정)를 준수합니다. 자세한 내용은 [준수 사항 FAQ](https://opensource.microsoft.com/codeofconduct/faq/)를 참조하세요. 또는 [opencode@microsoft.com](mailto:opencode@microsoft.com)이나 [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org)에 궁금한 사항을 문의하거나 의견을 제시하세요.<br>
 >
 > 공용 리포지토리의 설명서 및 코드 예제에 대한 사소한 수정 또는 확인 내용은 [docs.microsoft.com 사용 약관](https://docs.microsoft.com/legal/termsofuse)에서 다룹니다. 변경 내용이 새롭거나 중요한 내용일 경우 Microsoft 직원이 아닌 경우에 한해 끌어오기 요청에서 온라인 CLA(참가 라이선스 계약)를 제출하도록 요청하는 주석이 생성됩니다. 온라인 양식을 먼저 작성한 후 Microsoft에서 끌어오기 요청을 검토하거나 수락할 수 있습니다.
 
 ## <a name="quick-edits-to-existing-documents"></a>기존 문서의 빠른 편집
 
-빠른 편집은 문서의 사소한 오류 및 누락을 보고하고 수정하는 프로세스를 간소화합니다. 모든 노력에도 불구하고, 게시되는 문서에는 사소한 문법 및 맞춤법 오류가 _있습니다_. 이슈를 작성해 오류를 보고할 수도 있지만, PR(끌어오기 요청)을 만들면 문제를 더 빠르고 쉽게 해결할 수 있습니다(옵션을 사용할 수 있는 경우).
+빠른 편집은 문서의 사소한 오류 및 누락을 보고하고 수정하는 프로세스를 간소화합니다. 오류를 최소화하려는 모든 노력에도 불구하고 게시되는 문서에서 사소한 문법 및 맞춤법 _오류가 발견될 수 있습니다_. 이슈를 작성해 오류를 보고할 수도 있지만, PR(끌어오기 요청)을 만들면 문제를 더 빠르고 쉽게 해결할 수 있습니다(옵션을 사용할 수 있는 경우).
 
-1. 일부 문서 페이지의 경우 브라우저에서 직접 콘텐츠를 편집할 수 있습니다. 해당하는 경우 아래 표시된 것처럼 **편집** 단추가 표시됩니다. **편집**(또는 지역화된) 단추를 클릭하면 GitHub의 원본 파일로 이동합니다. **편집** 단추(텍스트 없는 연필 아이콘)가 없는 경우 설명서 페이지를 변경할 수 없습니다.
+1. 일부 문서 페이지의 경우 브라우저에서 직접 콘텐츠를 편집할 수 있습니다. 해당하는 경우 아래 표시된 것처럼 **편집** 단추가 표시됩니다. **편집**(또는 지역화된) 단추를 클릭하면 GitHub의 원본 파일로 이동합니다. **편집** 단추(텍스트 없는 연필 아이콘)가 없는 경우 설명서 페이지를 수정할 수 없습니다.
 
    ![편집 링크의 위치](./media/index/edit-article.png)
 
@@ -57,9 +57,9 @@ ms.locfileid: "58653508"
 
 GitHub 편집 UI는 리포지토리에 대한 사용 권한에 따라 달라집니다. 대상 리포지토리에 대한 쓰기 권한이 없는 contributor의 경우 이전 이미지가 정확합니다. GitHub는 해당 계정의 대상 리포지토리의 포크를 자동으로 만듭니다. 대상 리포지토리에 대한 쓰기 권한이 있는 경우 GitHub는 대상 리포지토리에 새 분기를 만듭니다. 분기 이름의 형식은 GitHub ID와 패치 분기에 대한 숫자 식별자를 사용하는 **\<GitHubId\>-patch-n**입니다.
 
-쓰기 권한이 있는 기여자의 경우에도, Microsoft는 모든 변경 내용에 대해 끌어오기 요청을 사용합니다. 대부분의 리포지토리에는 보호되는 `master` 분기가 있으므로 업데이트는 끌어오기 요청으로 제출되어야 합니다.
+쓰기 권한이 있는 기여자의 경우에도, Microsoft는 모든 변경 내용에 대해 끌어오기 요청을 사용합니다. 대부분의 리포지토리에는 보호되는 `master` 분기가 있으므로 업데이트는 끌어오기 요청으로 제출해야 합니다.
 
-브라우저 내 편집 환경은 변경 내용이 적거나 자주 변경하지 않는 경우 적합합니다. 많이 자주 변경하거나 고급 Git 기능(예: 분기 관리, 고급 병합 충돌 해결)을 사용하는 경우 [리포지토리를 포크하고 로컬에서 작업](how-to-write-workflows-major.md)해야 합니다.
+브라우저 내 편집 환경은 변경 내용이 적거나 자주 변경하지 않는 경우 적합합니다. 편집 적용 범위가 넓거나 고급 Git 기능(예: 분기 관리, 고급 병합 충돌 해결)을 사용하는 경우 [리포지토리를 포크하고 로컬에서 작업](how-to-write-workflows-major.md)해야 합니다.
 
 > [!NOTE]
 > 활성화된 경우 문서를 **임의 언어**로 편집하고, 편집 유형에 따라 다음 작업이 수행됩니다.
@@ -69,11 +69,11 @@ GitHub 편집 UI는 리포지토리에 대한 사용 권한에 따라 달라집�
 
 ## <a name="review-open-prs"></a>진행 중인 PR 검토
 
-현재 진행 중인 PR을 확인하여 새 항목이 게시되기 전에 읽을 수 있습니다. 검토는 [GitHub 흐름](https://guides.github.com/introduction/flow/) 프로세스를 따릅니다. 공개 리포지토리에서 제안된 업데이트 또는 새 문서를 볼 수 있습니다. 이를 검토하고 주석을 추가하세요. 원하는 문서 리포지토리를 살펴보고, 관심 있는 영역의 진행 중인 PR(끌어오기 요청)을 확인합니다. 제안된 업데이트에 대한 커뮤니티 피드백은 전체 커뮤니티에 도움이 됩니다.
+현재 진행 중인 PR을 확인하여 새 항목이 게시되기 전에 읽을 수 있습니다. 검토는 [GitHub 흐름](https://guides.github.com/introduction/flow/) 프로세스를 따릅니다. 공개 리포지토리에서 제안된 업데이트 또는 새 문서를 볼 수 있습니다. 이를 검토하고 댓글을 추가하세요. 원하는 문서 리포지토리를 살펴보고, 관심 있는 영역의 진행 중인 PR(끌어오기 요청)을 확인합니다. 제안된 업데이트에 대한 커뮤니티 피드백은 전체 커뮤니티에 도움이 됩니다.
 
-## <a name="create-quality-issues"></a>품질 문제 만들기
+## <a name="create-quality-issues"></a>품질 이슈 작성하기
 
-Microsoft의 문서는 계속 진행 중인 작업입니다. 좋은 문제는 커뮤니티의 가장 높은 우선 순위에 집중하는 데 도움이 됩니다. 더 자세한 정보를 제공할수록 문제에 더 도움이 됩니다. 찾은 정보를 알려주세요. 사용한 검색 용어를 알려주세요. 시작하기가 어렵다면 새로운 기술을 어떻게 활용하면 좋을지 공유해 주세요.
+Microsoft의 문서는 계속 진행 중인 작업입니다. 유용한 이슈들 덕분에 커뮤니티에 가장 중요한 콘텐츠에 집중할 수 있습니다. 더 자세한 정보를 제공할수록 문제에 더 도움이 됩니다. 찾은 정보를 알려주세요. 사용한 검색 용어를 알려주세요. 시작하기가 어렵다면 새로운 기술을 어떻게 활용하면 좋을지 공유해 주세요.
 
 많은 Microsoft의 설명서 페이지에는 페이지 아래쪽에 클릭하여 해당 문서와 관련된 문제를 추적하기 위해 **제품 피드백** 또는 **콘텐츠 피드백**을 남길 수 있는 **피드백** 섹션이 있습니다.
 
