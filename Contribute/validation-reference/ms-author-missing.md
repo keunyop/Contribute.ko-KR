@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/20/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: 2eb4899febda438ca7d0fd370cd313a6e1542ccd
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: b343cd3f7f1a6a66d0970450863a98a210cd1062
+ms.sourcegitcommit: 1311ccbbf38312bfe6947082870bc9e90d38c986
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637348"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791539"
 ---
 # <a name="ms-author-missing"></a>ms-author-missing
 
@@ -19,11 +19,13 @@ ms.locfileid: "58637348"
 
 ## <a name="suggestion"></a>제안
 
-`Missing attribute: ms.author. Add a valid Microsoft alias.`
+`Missing attribute: ms.author. Add the current author's Microsoft alias.`
 
 ## <a name="resolution"></a>해결 방법
 
-ms.author의 유효한 Microsoft 별칭을 추가합니다. 문서의 개별 작성자이거나 지정된 팀 별칭이어야 합니다.
+`ms.author`에 대한 현재 작성자의 Microsoft 별칭을 추가합니다. 문서의 개별 작성자이거나 지정된 팀 별칭이어야 합니다.
+
+소유권이 변경된 경우 이는 원본 작성자가 아니라 문서의 *현재* 소유자이어야 합니다.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

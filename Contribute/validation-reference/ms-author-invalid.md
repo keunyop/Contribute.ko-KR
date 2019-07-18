@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/28/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 6d6c77b9b378865913e2055abf2b64ccba8ca482
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 1ae01c34ea60cec30698d7e11264d05c3f398d1c
+ms.sourcegitcommit: 1311ccbbf38312bfe6947082870bc9e90d38c986
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58636727"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791543"
 ---
 # <a name="ms-author-invalid"></a>ms-author-invalid
 
@@ -23,7 +23,7 @@ ms.locfileid: "58636727"
 
 ## <a name="resolution"></a>해결 방법
 
-`ms.author` 값이 유효한 Microsoft 별칭인지 확인합니다. 별칭이 배포 목록이면 허용 목록에도 포함되어야 합니다.
+`ms.author` 값이 현재 작성자의 유효한 Microsoft 별칭인지 확인합니다. 별칭이 배포 목록이면 허용 목록에도 포함되어야 합니다.
 
 DL에서 유효한 값은 [이 Microsoft 내부 사이트](https://docsmetadatatool.azurewebsites.net/allowlists)에서 찾을 수 있습니다.
 
