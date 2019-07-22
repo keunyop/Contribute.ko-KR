@@ -21,7 +21,7 @@ Markdown은 일반 텍스트 서식 구문을 사용하는 경량 생성 언어�
 
 Docs에서는 Markdig Markdown 엔진을 사용합니다. [https://babelmark.github.io/](https://babelmark.github.io/)에서 Markdig 및 기타 엔진에 대한 Markdown의 렌더링을 테스트할 수 있습니다.
 
-## <a name="alerts-note-tip-important-caution-warning"></a>경고(alert)(참고, 팁, 중요, 주의, 경고(warning))
+## <a name="alerts-note-tip-important-caution-warning"></a>경고(Note, Tip, Important, Caution, Warning)
 
 Docs Markdown 확장을 경고하여 docs.microsoft.com에서 콘텐츠의 중요도를 색과 아이콘으로 표시하여 렌더링하는 블록 따옴표를 만듭니다. 다음과 같은 경고 유형이 지원됩니다.
 
@@ -45,19 +45,19 @@ Docs Markdown 확장을 경고하여 docs.microsoft.com에서 콘텐츠의 중�
 이러한 경고는 docs.microsoft.com에서 다음과 같이 보입니다.
 
 > [!NOTE]
-> 훑어보더라도 사용자가 주목해야 할 정보입니다.
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> 사용자의 성공을 돕기 위한 선택적 정보입니다.
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> 사용자 성공을 위해 필요한 필수 정보입니다.
+> Essential information required for user success.
 
 > [!CAUTION]
-> 작업의 잠재적인 부정적인 결과입니다.
+> Negative potential consequences of an action.
 
 > [!WARNING]
-> 작업의 위험한 특정 결과입니다.
+> Dangerous certain consequences of an action.
 
 ## <a name="code-snippets"></a>코드 조각
 
@@ -307,9 +307,9 @@ Using XREF may require some configuration. For more information, see XREF Servic
 이 예제는 다음과 같이 docs.microsoft.com에서 렌더링됩니다.
 
 > [!div class="checklist"]
-> * 목록 항목 1
-> * 목록 항목 2
-> * 목록 항목 3
+> * List item 1
+> * List item 2
+> * List item 3
 
 문서의 처음이나 끝에 있는 검사 목록을 사용하여 “학습할 내용” 또는 “학습한 내용” 콘텐츠를 요약합니다. 문서 전체에 임의의 검사 목록을 추가하지 마세요.
 <!-- is this guidance still accurate? -->
@@ -335,7 +335,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 이것은 다음과 같이 렌더링됩니다.
 
 > [!div class="nextstepaction"]
-> [기본 스타일에 대한 자세한 정보](style-quick-start.md)
+> [Learn about basic style](style-quick-start.md)
 
 다른 웹 페이지에 대한 Markdown 링크를 포함하여 다음 단계 작업에서 지원되는 링크를 사용할 수 있습니다. 대부분의 경우 다음 작업 링크는 동일한 문서 집합에 있는 다른 파일에 대한 상대 링크입니다.
 
@@ -389,7 +389,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 다음과 같이 렌더링됩니다.
 
 > [!div class="op_single_selector"]
-> - [유니버설 Windows](how-to-write-use-markdown.md)
+> - [Universal Windows](how-to-write-use-markdown.md)
 > - [Windows Phone](how-to-write-use-markdown.md)
 > - [iOS](how-to-write-use-markdown.md)
 > - [Android](how-to-write-use-markdown.md)
@@ -419,8 +419,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > [!div class="op_multi_selector" title1="Platform" title2="Backend"]
 > - [(iOS | .NET)](how-to-write-workflows-major.md)
 > - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows 유니버설 C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows 유니버설 C# | Javascript)](how-to-write-workflows-major.md)
+> - [(Windows universal C# | .NET)](how-to-write-workflows-major.md)
+> - [(Windows universal C# | Javascript)](how-to-write-workflows-major.md)
 > - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
 > - [(Windows Phone | Javascript)](how-to-write-workflows-major.md)
 > - [(Android | .NET)](how-to-write-workflows-major.md)
@@ -428,7 +428,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-## <a name="tables"></a>보세요.
+## <a name="tables"></a>테이블
 
 Markdown에서 테이블을 만드는 가장 간단한 방법은 파이프 및 줄을 사용하는 것입니다. 헤더가 있는 표준 테이블을 만들려면 첫 번째 선을 파선으로 그립니다.
 
@@ -506,11 +506,11 @@ Markdown에서 테이블을 만드는 경우 테이블이 오른쪽 탐색으로
 다음과 같이 렌더링됩니다.
 
 > [!div class="mx-tdBreakAll"]
-> |이름|구문|자동 설치에 필수인지 여부|설명|
+> |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|예|UI와 프롬프트를 표시하지 않고 설치 관리자를 실행합니다.|
-> |NoRestart|/norestart|아니요|다시 시작하지 않습니다. 기본적으로 다시 시작하기 전에 UI가 표시됩니다.|
-> |Help|/help|아니요|도움말 및 빠른 참조를 제공합니다. 모든 옵션 및 동작 목록을 비롯한 설정 명령의 올바른 사용법을 표시합니다.|
+> |Quiet|/quiet|Yes|Runs the installer, displaying no UI and no prompts.|
+> |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
+> |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 
 ### <a name="mx-tdcol2breakall"></a>mx-tdCol2BreakAll
 
@@ -579,7 +579,7 @@ HTML 테이블은 docs.microsoft.com에 사용하지 않는 것이 좋습니다.
 모든 새 비디오는 다음 프로세스에 따라 업로드해야 합니다.
 
 1. IDWEB에서 **docs_video_users** 그룹에 조인합니다.
-1. [https://aka.ms/VideoUploadRequest](https://aka.ms/VideoUploadRequest)로 이동하고 비디오에 대한 세부 사항을 입력합니다. 다음이 필요합니다(이러한 항목은 공개되지 않음).
+1. [https://aka.ms/VideoUploadRequest](https://aka.ms/VideoUploadRequest )로 이동하고 비디오에 대한 세부 사항을 입력합니다. 다음이 필요합니다(이러한 항목은 공개되지 않음).
     1. 비디오의 제목
     1. 비디오가 관련된 제품/서비스 목록
     1. 비디오가 호스트되는 대상 페이지 또는 (아직 페이지가 없는 경우) 문서 집합
