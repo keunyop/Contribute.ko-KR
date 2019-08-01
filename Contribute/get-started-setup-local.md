@@ -4,12 +4,12 @@ description: 이 문서에서는 로컬 Git 리포지토리를 만들고, 포크
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1053900b0af5a0ea3dec99ccd27114f16b828406
+ms.sourcegitcommit: c6a5a715af1b915ecd4ef64d40f7d18c6035c858
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609502"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68669923"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>설명서를 위한 Git 리포지토리 로컬로 설정
 
@@ -55,6 +55,7 @@ GitHub에 익숙하지 않은 경우 아래 비디오를 시청하고 분기 및
    - Visual Studio 설명서 [https://github.com/MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs)
    - .NET 설명서 [https://github.com/dotnet/docs](https://github.com/dotnet/docs)
    - Azure .Net SDK 설명서 [https://github.com/azure/azure-docs-sdk-dotnet](https://github.com/azure/azure-docs-sdk-dotnet)
+   - ConfigMgr 설명서 [https://github.com/MicrosoftDocs/SCCMdocs ](https://github.com/MicrosoftDocs/SCCMdocs/)
 
 ## <a name="fork-the-repository"></a>리포지토리 포크
 GitHub 웹 사이트를 통해 적절한 리포지토리를 사용하여 자신의 GitHub 계정에 리포지토리 포크를 만듭니다.
@@ -89,7 +90,7 @@ GitHub 웹 사이트를 통해 적절한 리포지토리를 사용하여 자신�
 
 ## <a name="create-a-local-clone"></a>로컬 복제 만들기
 
-Git Bash를 사용하는 경우 **clone** 명령을 실행하여 리포지토리(포크)의 복사본을 현재 디렉터리의 장치로 끌어오도록 준비합니다. 
+Git Bash를 사용하는 경우 **clone** 명령을 실행하여 리포지토리(포크)의 복사본을 현재 디렉터리의 디바이스로 끌어오도록 준비합니다. 
 
 ### <a name="authenticate-by-using-git-credential-manager"></a>Git 자격 증명 관리자를 사용하여 인증
 Windows용 Git의 최신 버전을 설치하고 기본 설치에 동의한 경우 기본적으로 Git 자격 증명 관리자가 사용됩니다. Git 자격 증명 관리자에서는 GitHub에서 인증된 연결 및 원격을 다시 설정할 때 개인용 액세스 토큰을 다시 호출할 필요가 없으므로 인증을 훨씬 간단하게 수행할 수 있습니다.
