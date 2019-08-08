@@ -1,12 +1,12 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: 97a5e8df1fbac10119a1bed7f979ad424db1cab0
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: 22d9b3b13856e978aa5b8a902f27e460293e0bd0
+ms.sourcegitcommit: 495d49f10df51a8897687940aa653e906c48c2a0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57457873"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68819716"
 ---
 > [!IMPORTANT]
-> 콘텐츠 팀에 영향을 측정하고 리포지토리 정리 계획을 개발할 시간을 주기 위해 처음에 이 규칙을 “제안”으로 사용할 수 있습니다. 제안은 즉각적인 조치가 필요하지 않지만, 어느 순간에 경고 또는 오류로 승격되므로 가능한 한 빨리 해결해야 합니다. 심각도가 변경되는 경우 및 사용 가능할 때 메시지에 포함될 내용에 대한 세부 정보입니다.
+> 콘텐츠 팀이 시간을 두고 영향을 가늠하고 리포지토리를 정리할 계획을 세우도록 처음에 이 규칙을 “제안”으로 활성화했습니다. **그러나 2019년 9월 1일에는 “제안”이 “경고”로 상승합니다.**
