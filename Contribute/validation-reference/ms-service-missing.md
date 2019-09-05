@@ -6,18 +6,16 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/2/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 17e2e272e3a21e14e038e27ff68866afe28bee60
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: b50d9d6f57c953569a4e5dd873961b8c511a8bb1
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58636704"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236506"
 ---
 # <a name="ms-service-missing"></a>ms-service-missing
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>제안
+## <a name="warning"></a>경고
 
 `Missing attribute: ms.service. If you specify ms.subservice, you must also specify ms.service.`
 
@@ -27,7 +25,7 @@ ms.locfileid: "58636704"
 
 지정한 `ms.subservice` 값이 문서에 적합한지 확인합니다. 그런 다음, `ms.subservice`에 유효한 부모인 적절한 `ms.service` 값을 추가합니다.
 
-유효한 값은 [이 Microsoft 내부 사이트](https://docsmetadatatool.azurewebsites.net/allowlists)에서 찾을 수 있습니다.
+유효한 값은 [이 Microsoft 내부 사이트](https://docsmetadatatool.azurewebsites.net/allowlists)에서 찾을 수 있습니다. 새 값을 요청하려면 [관련 절차](https://review.docs.microsoft.com/help/contribute/metadata-changes?branch=master)를 따르세요.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
