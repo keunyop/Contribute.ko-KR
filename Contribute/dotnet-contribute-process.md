@@ -2,12 +2,12 @@
 title: .NET 문서 리포지토리에 대한 참여 프로세스
 description: 이 문서에서는 .NET 문서 리포지토리에 참여에 대한 간략한 소개를 제공합니다. 사용된 리포지토리, 콘텐츠를 구성하는 프로세스, 코드 샘플 및 기타 자산을 관리하기 위한 정책을 알아봅니다.
 ms.date: 11/07/2018
-ms.openlocfilehash: 121f6c885ef6d292968e5bb3961cae8e9c22942b
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637509"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247314"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>.NET 문서에 참여하는 프로세스
 
@@ -80,7 +80,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 유지관리자는 피드백이 적용되고 변경 내용이 승인되면 PR을 마스터 분기 내에 병합합니다.
 
-정기적으로 마스터 분기의 모든 커밋을 라이브 분기로 푸시하면 https://docs.microsoft.com/dotnet/에서 라이브로 기여한 것을 확인할 수 있습니다. 일반적으로 업무 주간 동안 매일 게시합니다. 유지 관리 활동으로 며칠 동안 게시가 지연될 수 있습니다.
+정기적으로 마스터 분기의 모든 커밋을 라이브 분기로 푸시하면 https://docs.microsoft.com/dotnet/ 에서 라이브로 기여한 것을 확인할 수 있습니다. 일반적으로 업무 주간 동안 매일 게시합니다. 유지 관리 활동으로 며칠 동안 게시가 지연될 수 있습니다.
 
 ## <a name="contributing-to-samples"></a>샘플에 참여
 
@@ -103,7 +103,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 모든 코드에 대한 CI 시스템을 갖추기 위해 노력하고 있습니다. 샘플을 업데이트할 때 각 업데이트가 빌드 가능한 프로젝트의 일부인지 확인합니다. 이상적으로 샘플의 정확성에 대한 테스트도 추가합니다.
 
-만드는 모든 샘플에는 *readme.md* 파일이 포함되어야 합니다. 이 파일에는 샘플에 대한 간략한 설명(하나 또는 두 개의 단락)이 포함되어야 합니다. *readme.md*에서는 readers에게 이 샘플을 탐구함으로써 무엇을 배울 것인지를 알려주어야 합니다. *readme.md* 파일에는 [.NET 문서 사이트](https://docs.microsoft.com/dotnet/welcome)에 있는 라이브 문서에 대한 링크도 포함되어야 합니다. 리포지토리의 지정된 파일이 해당 사이트에 매핑되는 위치를 확인하려면 리포지토리 경로의 `/docs`를 `http://docs.microsoft.com/dotnet`으로 바꿉니다.
+만드는 모든 샘플에는 *readme.md* 파일이 포함되어야 합니다. 이 파일에는 샘플에 대한 간략한 설명(하나 또는 두 개의 단락)이 포함되어야 합니다. *readme.md*에서는 readers에게 이 샘플을 탐구함으로써 무엇을 배울 것인지를 알려주어야 합니다. *readme.md* 파일에는 [.NET 문서 사이트](https://docs.microsoft.com/dotnet/welcome)에 있는 라이브 문서에 대한 링크도 포함되어야 합니다. 리포지토리의 지정된 파일이 해당 사이트에 매핑되는 위치를 확인하려면 리포지토리 경로의 `/docs`를 `https://docs.microsoft.com/dotnet`으로 바꿉니다.
 
 항목에는 샘플에 대한 링크도 포함됩니다. GitHub의 샘플 폴더에 직접 연결합니다.
 
@@ -158,7 +158,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
     dotnet run
     ```
 
-3. 샘플의 루트 디렉터리에 readme.md를 추가합니다. 
+3. 샘플의 루트 디렉터리에 readme.md를 추가합니다.
 
    여기에는 코드에 대한 간략한 설명이 포함되어야 하며 샘플을 참조하는 문서를 참조해야 합니다.
 
