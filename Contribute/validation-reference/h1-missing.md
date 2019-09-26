@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/12/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: 677127d09349445bb80778dfb501d7d4294ea46b
-ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.openlocfilehash: 2d0b766bba5b5ba32bff68f7ac185ab639fc7557
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848493"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247411"
 ---
 # <a name="h1-missing"></a>h1-missing
 
@@ -36,7 +36,9 @@ ms.author: mbradley
 ```
 
 > [!NOTE]
-> 이 규칙은 포함된 파일에는 적용되지 않습니다. 포함된 파일에 H1 경고를 받게 되면 포함된 파일을 `includes` 폴더로 이동해야 합니다. `includes` 폴더는 파일 경로의 모든 수준에 있을 수 있습니다. 경로에 따라 문서 빌드는 파일을 포함된 파일로 인식하고 H1 유효성 검사는 실행되지 않습니다.
+> 이 규칙은 포함된 파일에는 적용되지 않습니다. 포함된 파일에 H1 결과를 받게 되면 포함된 파일을 `includes` 폴더로 이동해야 합니다. `includes` 폴더는 파일 경로의 모든 수준에 있을 수 있습니다. 경로에 따라 문서 빌드는 파일을 포함된 파일로 인식하고 H1 유효성 검사는 실행되지 않습니다.
+>
+> 부모 파일에서 H1이 누락되는 일반적인 원인으로 포함된 파일의 잘못된 사용이 있습니다. 즉, H1이 포함된 파일에 있지만 부모 파일에는 없는 경우입니다. 이 경우는 허용되지 않습니다. 포함된 파일에서 H1을 사용하는 것은 부모 파일에 중복된 H1이 있거나, 포함된 파일을 한 번만 사용함을 의미하기 때문입니다. H1은 콘텐츠 세트 내에서 고유해야 하며, 여러 파일 간에 콘텐츠를 공유하는 데만 포함된 파일을 사용해야 합니다. H1이 포함된 파일에 있어서 `h1-missing` 결과를 받는 경우에는 H1뿐만 아니라 포함된 모든 콘텐츠(포함된 파일을 한 번만 사용하는 경우)를 부모 파일로 이동하여 해결할 수 있습니다. Docs의 포함된 파일에 대한 자세한 내용은 Microsoft 내부 문서인 [Include reusable content in articles](https://review.docs.microsoft.com/en-us/help/contribute/includes-best-practices?branch=master)(문서에서 재사용 가능 콘텐츠 포함)를 참조하세요.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

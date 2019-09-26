@@ -4,12 +4,12 @@ description: 이 문서에서는 로컬 Git 리포지토리를 만들고, 포크
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 1053900b0af5a0ea3dec99ccd27114f16b828406
-ms.sourcegitcommit: c6a5a715af1b915ecd4ef64d40f7d18c6035c858
+ms.openlocfilehash: 285c25fe0e5df067ceeaa5a42da1bad5533d2c84
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68669923"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247398"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>설명서를 위한 Git 리포지토리 로컬로 설정
 
@@ -55,7 +55,7 @@ GitHub에 익숙하지 않은 경우 아래 비디오를 시청하고 분기 및
    - Visual Studio 설명서 [https://github.com/MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs)
    - .NET 설명서 [https://github.com/dotnet/docs](https://github.com/dotnet/docs)
    - Azure .Net SDK 설명서 [https://github.com/azure/azure-docs-sdk-dotnet](https://github.com/azure/azure-docs-sdk-dotnet)
-   - ConfigMgr 설명서 [https://github.com/MicrosoftDocs/SCCMdocs ](https://github.com/MicrosoftDocs/SCCMdocs/)
+   - ConfigMgr 설명서 [https://github.com/MicrosoftDocs/SCCMdocs](https://github.com/MicrosoftDocs/SCCMdocs/)
 
 ## <a name="fork-the-repository"></a>리포지토리 포크
 GitHub 웹 사이트를 통해 적절한 리포지토리를 사용하여 자신의 GitHub 계정에 리포지토리 포크를 만듭니다.
