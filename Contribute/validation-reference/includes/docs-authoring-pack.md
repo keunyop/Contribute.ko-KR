@@ -1,12 +1,15 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: a6c4b13f90aa6d09cf8971922cc35291375a499d
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
+ms.openlocfilehash: 95b283dedbb2d9dc7f9d2f43ddb597d9e63d1f3c
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57427787"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72292299"
 ---
 > [!TIP]
-> <span data-ttu-id="fbc6a-101">Docs Markdown을 쉽게 작성하려면 [VS Code용 Docs Authoring Pack](../../how-to-write-docs-auth-pack.md)을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="fbc6a-101">To easily author Docs Markdown, install the [Docs Authoring Pack for VS Code](../../how-to-write-docs-auth-pack.md).</span></span> <span data-ttu-id="fbc6a-102">이 확장 세트에는 상대 경로, 텍스트 스타일, 문서 미리 보기, Markdown linting 및 맞춤법 검사기를 포함한 링크 및 자산 삽입이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="fbc6a-102">This set of extensions includes link and asset insertion with relative paths, text styles, Docs preview, Markdown linting, and a spell checker.</span></span>
+> <span data-ttu-id="50969-101">Docs Markdown을 쉽게 작성하려면 [VS Code용 Docs Authoring Pack](../../how-to-write-docs-auth-pack.md)을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="50969-101">To easily author Docs Markdown, install the [Docs Authoring Pack for VS Code](../../how-to-write-docs-auth-pack.md).</span></span> <span data-ttu-id="50969-102">이 확장 세트에는 상대 경로, 텍스트 스타일, 문서 미리 보기, Markdown linting 및 맞춤법 검사기를 포함한 링크 및 자산 삽입이 포함됩니다.</span><span class="sxs-lookup"><span data-stu-id="50969-102">This set of extensions includes link and asset insertion with relative paths, text styles, Docs preview, Markdown linting, and a spell checker.</span></span>
