@@ -1,16 +1,18 @@
 ---
 title: 추가 Git 및 GitHub 리소스
 description: 이 문서에는 docs.microsoft.com에 참여하기 위한 Git 및 GitHub 학습에 제안된 리소스가 나와 있습니다.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: billwagner
 ms.author: wiwagn
-manager: wpickett
 ms.date: 03/29/2019
-ms.openlocfilehash: 50ec53b0f1035d470a1948e46dab2296bf38cb73
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.openlocfilehash: 63192315c66eb05750c5a59751c339f671985314
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653577"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288278"
 ---
 # <a name="additional-git-and-github-resources"></a>추가 Git 및 GitHub 리소스
 

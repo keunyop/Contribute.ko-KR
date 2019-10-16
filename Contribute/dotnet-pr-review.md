@@ -1,13 +1,16 @@
 ---
 title: .NET 문서 끌어오기 요청 검토 프로세스
 description: .NET 문서의 경우 PR Merger 웹후크를 사용할 수 없습니다. 이 문서에서는 해당 리포지토리의 PR 프로세스에 대해 설명합니다.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 01/04/2019
-ms.openlocfilehash: f710e330e31e56887d43030290d5aa6a5c62961b
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.openlocfilehash: 80877a93dc410454c939bcd5be5588861682ed11
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653600"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288520"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>.NET 문서 리포지토리에 대한 끌어오기 요청 검토 프로세스
 

@@ -1,15 +1,18 @@
 ---
 title: 로컬로 Git 리포지토리 설정
 description: 이 문서에서는 로컬 Git 리포지토리를 만들고, 포크 및 복제 프로세스를 포함하여 문서화에 참여하기 위한 지침을 제공합니다.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 285c25fe0e5df067ceeaa5a42da1bad5533d2c84
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: e73c60c439285f901c5c83e538f8971d795bd6c4
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247398"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288599"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>설명서를 위한 Git 리포지토리 로컬로 설정
 
