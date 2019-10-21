@@ -1,13 +1,16 @@
 ---
 title: 중요하거나 장기 실행되는 변경 내용에 대한 GitHub 참여 워크플로
 description: 이 문서에서는 "중요한" 기여자 워크플로를 사용하여 docs.microsoft.com 문서에 참여하는 방법을 보여 줍니다.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 87c31979e60a957586ea623b22be190bfdaa41d9
+ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609408"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310274"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>중요하거나 장기 실행되는 변경 내용에 대한 GitHub 참여 워크플로
 
@@ -28,7 +31,7 @@ ms.locfileid: "51609408"
 
 시작하기 전에 이 워크플로에서 사용되는 Git/GitHub 용어 및 monikers의 일부를 검토하겠습니다. 이 내용을 이제 이해할 수 있습니다. 이 내용에 대해 배우게 됩니다. 정의를 확인해야 하는 경우 이 섹션을 다시 참조하세요.
 
-| 이름 | 설명 |
+| Name | 설명 |
 |-----------|-------------|
 |포크|기본 GitHub 리포지토리의 복사본을 참조하는 경우 일반적으로 명사로 사용됩니다. 실제로 포크는 다른 리포지토리일 뿐입니다. 하지만 GitHub이 기본/부모 리포지토리에 다시 연결된다는 점에서 구별됩니다. "먼저 리포지토리를 포크해야 합니다."에서와 같이 동사로 사용되는 경우가 있습니다.|
 |원격|"원본" 또는 "업스트림" 원격과 같이 원격 리포지토리에 대한 명명된 연결입니다. 이 연결은 다른 컴퓨터에서 호스팅되는 리포지토리를 참조하는 데 사용되므로 Git에서는 이를 원격이라고 합니다. 이 워크플로에서 원격은 항상 GitHub 리포지토리입니다.|
@@ -40,7 +43,7 @@ ms.locfileid: "51609408"
 >[!IMPORTANT]
 > 아직 [설정](get-started-setup-github.md) 단계를 완료하지 않은 경우 해당 단계를 완료해야 합니다. 이 섹션은 GitHub 계정을 설정하고 Git Bash 및 Markdown 편집기를 설치하며 포크를 만들고 로컬 리포지토리를 설정하는 과정을 설명합니다. 리포지토리 또는 분기와 같은 Git 및 GitHub 개념에 익숙하지 않은 경우 먼저 [Git 및 GitHub 기본 사항](git-github-fundamentals.md)을 검토하세요.
 
-이 워크플로에서 반복적인 주기에서 흐름을 변경합니다. 장치의 로컬 리포지토리에서 시작하여 GitHub 포크로 이동하여 기본 GitHub 리포지토리로 이동한 다음 다른 참여자의 변경 내용을 포함하도록 다시 로컬로 돌아옵니다.
+이 워크플로에서 반복적인 주기에서 흐름을 변경합니다. 디바이스의 로컬 리포지토리에서 시작하여 GitHub 포크로 이동하여 기본 GitHub 리포지토리로 이동한 다음 다른 참여자의 변경 내용을 포함하도록 다시 로컬로 돌아옵니다.
 
 ### <a name="use-github-flow"></a>GitHub Flow 사용
 
@@ -59,4 +62,4 @@ ms.locfileid: "51609408"
 
 이것으로 끝입니다. 여러분은 docs.microsoft.com 콘텐츠에 참여하셨습니다.
 
-- Markdwon, Markdown 확장 구문과 같은 항목에 대해 자세히 알아보려면 계속해서 "필수 항목 작성" 섹션을 진행하세요.
+- Markdwon, Markdown 확장 구문과 같은 항목에 대해 자세히 알아보려면 계속해서 [필수 항목 작성](how-to-write-use-markdown.md) 문서를 진행하세요.

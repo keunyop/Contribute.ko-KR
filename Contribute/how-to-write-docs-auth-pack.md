@@ -1,15 +1,18 @@
 ---
 title: Visual Studio Code용 Docs Authoring Pack
 description: 이 문서에서는 docs.microsoft.com용 Markdown 작성을 용이하게 하는 Visual Studio Code 확장 팩을 설명합니다.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805657"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288315"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>VS Code용 Docs Authoring Pack
 
@@ -31,7 +34,7 @@ Docs Markdown 확장을 사용하여 상대 링크, 이미지 및 기타 포함�
 
 Docs Markdown 메뉴에 액세스하려면 `ALT+M`을 입력합니다. 위쪽/아래쪽 화살표를 클릭하거나 사용하여 원하는 함수를 선택하거나, 입력하여 필터링을 시작하고 원하는 함수가 메뉴에서 강조 표시되면 `ENTER` 키를 누릅니다. 다음을 사용할 수 있습니다.
 
-|기능     |설명           |
+|기능     |Description           |
 |-------------|----------------------|
 |미리 보기      |Docs Preview 확장을 사용하여 나란히 있는 창에서 활성 항목을 미리 봅니다. 이 옵션은 Docs Preview가 설치된 경우에만 사용할 수 있습니다.|
 |굵게         |텍스트를 **굵게** 서식으로 지정합니다.|

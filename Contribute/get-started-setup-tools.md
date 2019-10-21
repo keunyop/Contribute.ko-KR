@@ -1,16 +1,18 @@
 ---
 title: 콘텐츠 작성 도구 설치
 description: 이 문서의 정보를 활용하여 Git 및 Markdown 파일 편집에 필요한 클라이언트 도구를 다운로드하고 설치할 수 있습니다.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 24d47c4e094c318be75a27dbaaec11d8ead94452
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609394"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288565"
 ---
 # <a name="install-content-authoring-tools"></a>콘텐츠 작성 도구 설치
 
@@ -23,7 +25,7 @@ ms.locfileid: "51609394"
 >[!IMPORTANT]
 > 아티클에서 사소한 내용을 변경하려는 경우 이 아티클의 단계를 완료할 필요 *없이* 바로 [빠른 변경 워크플로](index.md#quick-edits-to-existing-documents)를 계속 진행할 수 있습니다.
 >
-> 주요 참가자는 [중요한/장기 실행 변경 워크플로](how-to-write-workflows-major.md)를 사용할 수 있도록 이러한 단계를 완료하는 것이 좋습니다. 기본 리포지토리에 대한 쓰기 권한이 있는 경우에도 *리포지토리를 포크하고 복제하는 것이 좋습니다(이 가이드에서 이렇게 가정)*. 그러면 포크에서 제안된 변경 내용을 저장하기 위한 읽기/쓰기 권한이 있게 됩니다.
+> 주요 참가자는 [중요한/장기 실행 변경 워크플로](how-to-write-workflows-major.md)를 사용할 수 있도록 이러한 단계를 완료하는 것이 좋습니다. 기본 리포지토리에 대한 쓰기 권한이 있는 경우에도 *리포지토리를 포크하고 복제하는 것이 좋습니다(이 가이드에서 이렇게 가정)* . 그러면 포크에서 제안된 변경 내용을 저장하기 위한 읽기/쓰기 권한이 있게 됩니다.
 
 ## <a name="install-git-client-tools"></a>Git 클라이언트 도구 설치 
 

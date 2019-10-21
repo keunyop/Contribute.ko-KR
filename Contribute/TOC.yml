@@ -1,0 +1,56 @@
+- name: 기여자 가이드 개요 및 브라우저 기반 작업
+  href: index.md
+- name: 로컬에서 설정 및 작업
+  items:
+    - name: 1. GitHub 가입
+      href: get-started-setup-github.md
+    - name: 2. Git 및 Markdown 도구 설치
+      href: get-started-setup-tools.md
+    - name: 3. 로컬 Git 리포지토리 설정
+      href: get-started-setup-local.md
+    - name: Git 및 GitHub 기본 사항
+      href: git-github-fundamentals.md
+    - name: 전체 워크플로
+      href: how-to-write-workflows-major.md
+- name: Essentials 작성
+  items:
+    - name: Markdown
+      href: how-to-write-use-markdown.md
+    - name: Markdown 참조
+      href: markdown-reference.md
+    - name: 스타일 및 음성 빠른 시작
+      href: style-quick-start.md
+    - name: 링크
+      href: how-to-write-links.md
+    - name: Docs Authoring Pack
+      href: how-to-write-docs-auth-pack.md
+- name: 문서 집합별 지침
+  items:
+    - name: .NET 문서
+      items:
+        - name: .NET 문서에 기여하는 방법
+          href: dotnet-contribute.md
+        - name: .NET 문서에 기여
+          href: dotnet-contribute-process.md
+        - name: .NET 문서 스타일 규칙
+          href: dotnet-style-guide.md
+        - name: 음성 및 톤 가이드
+          href: dotnet-voice-tone.md
+        - name: 끌어오기 요청 검토 프로세스
+          href: dotnet-pr-review.md
+    - name: PowerShell 문서
+      items:
+        - name: PowerShell 문서에 기여하는 방법
+          href: powershell\powershell-contribute.md
+        - name: PowerShell에 대한 기여 프로세스
+          href: powershell\powershell-contribute-process.md
+        - name: PowerShell 문서 작성에 대한 빠른 시작
+          href: powershell\powershell-style-basic-markdown.md
+        - name: PowerShell 스크립트 샘플 스타일 가이드
+          href: powershell\powershell-style-code.md
+        - name: PowerShell Cmdlet 참조 스타일 가이드
+          href: powershell\powershell-style-reference.md
+        - name: PowerShell에 대한 끌어오기 요청 제출
+          href: powershell\powershell-pull-requests.md
+- name: 추가 리소스
+  href: additional-resources.md

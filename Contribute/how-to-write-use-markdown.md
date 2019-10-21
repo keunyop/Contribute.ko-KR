@@ -1,13 +1,16 @@
 ---
 title: Markdown을 사용하여 Docs를 작성하는 방법
 description: 이 문서에서는 docs.microsoft.com 문서를 작성하는 데 사용되는 Markdown 언어에 대한 기본 사항 및 참조 정보를 제공합니다.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 7a42aa88bab65846ce54e2444387ac3a578779c0
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247341"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288413"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown을 사용하여 Docs를 작성하는 방법
 
@@ -291,10 +294,10 @@ CREATE TABLE T1 (
 );
 ```
 
-## <a name="ops-custom-markdown-extensions"></a>OPS 사용자 지정 Markdown 확장
+## <a name="docs-custom-markdown-extensions"></a>Docs 사용자 지정 Markdown 확장
 
 > [!NOTE]
-> OPS(Open Publishing Services)는 GFM(GitHub Flavored Markdown)과 호환성이 높은 Markdig Parser for Markdown을 구현합니다. Markdig은 Markdown 확장을 통해 몇 가지 기능을 추가합니다. 이와 같이 이 가이드에는 전체 OPS 작성 가이드 중 참조할 수 있는 일부 문서가 포함되어 있습니다. (예를 들어 목차에서 "Markdig 및 Markdown 확장" 및 "코드 조각"을 참조하세요.)
+> Docs.Microsoft.com(Docs)은 GFM(GitHub Flavored Markdown)과 호환성이 높은 Markdig Parser for Markdown을 구현합니다. Markdig은 Markdown 확장을 통해 몇 가지 기능을 추가합니다. 이와 같이 이 가이드에는 전체 OPS 작성 가이드 중 참조할 수 있는 일부 문서가 포함되어 있습니다. (예를 들어 목차에서 "Markdig 및 Markdown 확장" 및 "코드 조각"을 참조하세요.)
 
 Docs 문서는 문단, 링크, 목록, 제목 등 대부분의 문서 서식에 GFM를 사용합니다. 더 많은 형식의 경우 문서는 다음과 같은 Markdig 기능을 사용할 수 있습니다.
 
@@ -432,7 +435,7 @@ Word에서 Markdown 편집기로 복사하는 경우 텍스트에 "스마트"(�
 
 ## <a name="markdown-flavor"></a>Markdown 유형
 
-docs.microsoft.com 사이트 백 엔드는 [Markdig](https://github.com/lunet-io/markdig) 구문 분석 엔진을 통해 구문 분석되는 [CommonMark](https://commonmark.org/) 규격 markdown을 지원하는 OPS(Open Publishing Services)를 사용합니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
+Docs.microsoft.com 사이트 백 엔드는 [Markdig](https://github.com/lunet-io/markdig) 구문 분석 엔진을 통해 구문 분석된 [CommonMark](https://commonmark.org/) 규격 Markdown을 지원합니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
 
 ## <a name="see-also"></a>참고 항목:
 
