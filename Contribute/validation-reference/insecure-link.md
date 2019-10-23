@@ -6,16 +6,17 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 10/1/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: b97d4c4a0f61e5f3448331a56fe4bde442ff1cca
-ms.sourcegitcommit: 0cb0177c209abab1a72af4f411ef527fa5cf10f9
+ms.openlocfilehash: c22404e624ae85369d7b0b95f44e37d51f847368
+ms.sourcegitcommit: ab31cbb17c64a06cab4ffb37b157fd812417a499
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379519"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587694"
 ---
 # <a name="insecure-link"></a>insecure-link
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
+> [!IMPORTANT]
+> 콘텐츠 팀이 시간을 두고 영향을 가늠하고 리포지토리를 정리할 계획을 세우도록 처음에 이 규칙을 “제안”으로 활성화했습니다. **그러나 2019년 12월 20일에는 “제안”이 “경고”로 상향 조정됩니다**.
 
 ## <a name="suggestion"></a>제안
 
