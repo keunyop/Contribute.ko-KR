@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288413"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592445"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown을 사용하여 Docs를 작성하는 방법
 
@@ -23,7 +23,7 @@ ms.locfileid: "72288413"
 
 제목을 만들려면 다음과 같이 해시 표시(#)를 사용합니다.
 
-```markdown
+```md
 # This is heading 1
 ## This is heading 2
 ### This is heading 3
@@ -42,19 +42,19 @@ ms.locfileid: "72288413"
 
 텍스트 서식을 **굵게** 지정하려면 두 개의 별표로 묶습니다.
 
-```markdown
+```md
 This text is **bold**.
 ```
 
 텍스트 서식을 *기울임꼴*로 지정하려면 한 개의 별표로 묶습니다.
 
-```markdown
+```md
 This text is *italic*.
 ```
 
 텍스트 서식을 ***굵게 기울임꼴***로 지정하려면 세 개의 별표로 묶습니다.
 
-```markdown
+```md
 This is text is both ***bold and italic***.
 ```
 
@@ -62,7 +62,7 @@ This is text is both ***bold and italic***.
 
 Blockquotes는 `>` 문자를 사용하여 생성됩니다.
 
-```markdown
+```md
 > The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 ```
 
@@ -76,7 +76,7 @@ Blockquotes는 `>` 문자를 사용하여 생성됩니다.
 
 정렬되지 않은/글머리 기호 목록의 형식을 지정하려면 별표나 대시를 사용하면 됩니다. 예를 들어 아래 Markdown은
 
-```markdown
+```md
 - List item 1
 - List item 2
 - List item 3
@@ -90,7 +90,7 @@ Blockquotes는 `>` 문자를 사용하여 생성됩니다.
 
 다른 목록 안에 목록을 중첩하려면 자식 목록 항목을 들여씁니다. 예를 들어 아래 Markdown은
 
-```markdown
+```md
 - List item 1
   - List item A
   - List item B
@@ -108,7 +108,7 @@ Blockquotes는 `>` 문자를 사용하여 생성됩니다.
 
 정렬된/단계적인 목록의 형식을 지정하려면 해당하는 숫자를 사용합니다. 예를 들어 아래 Markdown은
 
-```markdown
+```md
 1. First instruction
 1. Second instruction
 1. Third instruction
@@ -122,7 +122,7 @@ Blockquotes는 `>` 문자를 사용하여 생성됩니다.
 
 다른 목록 안에 목록을 중첩하려면 자식 목록 항목을 들여씁니다. 예를 들어 아래 Markdown은
 
-```markdown
+```md
 1. First instruction
    1. Sub-instruction
    1. Sub-instruction
@@ -144,7 +144,7 @@ Blockquotes는 `>` 문자를 사용하여 생성됩니다.
 
 예를 들어 아래 Markdown은
 
-```markdown
+```md
 | Fun                  | With                 | Tables          |
 | :------------------- | -------------------: |:---------------:|
 | left-aligned column  | right-aligned column | centered column |
@@ -322,33 +322,26 @@ Docs 문서는 문단, 링크, 목록, 제목 등 대부분의 문서 서식에 
 
 예제:
 
-```markdown
+```md
 > [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> This is a TIP
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> This is IMPORTANT
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
 ```
 
-다음과 같이 렌더링됩니다.
+이러한 경고는 docs.microsoft.com에서 다음과 같이 보입니다.
 
-> [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
-
-> [!TIP]
-> This is a TIP
-
-> [!IMPORTANT]
-> This is IMPORTANT
+![게시된 Docs 페이지에서 이전 예제의 경고가 다른 아이콘 및 색으로 어떻게 표시되는지를 보여 주는 이미지](media/alerts-rendering.png)
 
 ### <a name="include-files"></a>포함되는 파일
 
@@ -373,7 +366,7 @@ Docs 문서는 문단, 링크, 목록, 제목 등 대부분의 문서 서식에 
 
 예제:
 
-```markdown
+```md
 [!INCLUDE[sample include file](../includes/sampleinclude.md)]
 ```
 
@@ -385,7 +378,7 @@ Docs 문서는 문단, 링크, 목록, 제목 등 대부분의 문서 서식에 
 
 다음은 예제 선택기입니다.
 
-```markdown
+```md
 > [!div class="op_single_selector"]
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/with-visual-studio.md)
@@ -406,13 +399,13 @@ Markdig은 해당 코드 조각 확장을 통해 문서에 대한 고급 코드 
 
 밑줄이 포함된 대체 텍스트를 올바르게 렌더링되지 않습니다. 예를 들어 아래 텍스트를 사용하는 대신
 
-```markdown
+```md
 ![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 다음과 같이 밑줄을 이스케이프 처리합니다.
 
-```markdown
+```md
 ![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
@@ -435,7 +428,7 @@ Word에서 Markdown 편집기로 복사하는 경우 텍스트에 "스마트"(�
 
 ## <a name="markdown-flavor"></a>Markdown 유형
 
-Docs.microsoft.com 사이트 백 엔드는 [Markdig](https://github.com/lunet-io/markdig) 구문 분석 엔진을 통해 구문 분석된 [CommonMark](https://commonmark.org/) 규격 Markdown을 지원합니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
+docs.microsoft.com 사이트 백 엔드는 [Markdig](https://github.com/lunet-io/markdig) 구문 분석 엔진을 통해 구문 분석된 [CommonMark](https://commonmark.org/) 규격 Markdown을 지원합니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
 
 ## <a name="see-also"></a>참고 항목:
 

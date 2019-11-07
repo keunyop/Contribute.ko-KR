@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 10/18/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 0fbc7634e00202fdfdf607b9504744a6d9846792
-ms.sourcegitcommit: 836d4d6127fabb5569ffc0809db5fb25e46038b5
+ms.openlocfilehash: 1ab511398cbd622906ccb0a67e2b24968ee29374
+ms.sourcegitcommit: 55624c641bea5367bcfa08655c085bc950e8beae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72590857"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73166838"
 ---
 # <a name="hard-coded-locale"></a>hard-coded-locale
 
@@ -20,7 +20,7 @@ ms.locfileid: "72590857"
 
 ## <a name="suggestion"></a>제안
 
-`Link '{URL}' contains locale code '{code}'. For localizability, remove '{code}' from links to Microsoft sites.`
+`Link '{URL}' contains locale code '{code}'. For localizability, remove '{code}' from links to most Microsoft sites.`
 
 `en-us`와 같은 로캘 코드는 특정 Microsoft 사이트에 연결된 링크에 포함하지 말아야 합니다. 영어 콘텐츠에 있는 링크에 로캘 코드를 포함하면 로캘 코드가 지역화된 링크에도 포함되어 잘못된 지역화된 환경이 생성될 수 있습니다. 예를 들어 독일의 지역화된 콘텐츠에 있는 링크에 `en-us`가 포함되어 있으면 독일어 버전이 있어도 독일어 고객이 영어 문서에 연결됩니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "72590857"
 
 - azure.microsoft.com
 - docs.microsoft.com
-- msdn.microsoft.com
+- msdn.microsoft.com(올바른 포럼이 연결되도록 하기 위해 로캘이 필요한 social.msdn.com 제외)
 - technet.microsoft.com
 
 ## <a name="resolution"></a>해결 방법

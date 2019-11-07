@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3142b1aee8cadb69f82bfbcd3f89c701fac5b356
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288294"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592556"
 ---
 # <a name="markdown-reference"></a>Markdown 참조
 
@@ -26,7 +26,7 @@ Docs에서는 Markdig Markdown 엔진을 사용합니다. [https://babelmark.git
 
 Docs Markdown 확장을 경고하여 docs.microsoft.com에서 콘텐츠의 중요도를 색과 아이콘으로 표시하여 렌더링하는 블록 따옴표를 만듭니다. 다음과 같은 경고 유형이 지원됩니다.
 
-```markdown
+```md
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -45,26 +45,13 @@ Docs Markdown 확장을 경고하여 docs.microsoft.com에서 콘텐츠의 중�
 
 이러한 경고는 docs.microsoft.com에서 다음과 같이 보입니다.
 
-> [!NOTE]
-> Information the user should notice even if skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Essential information required for user success.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-> [!WARNING]
-> Dangerous certain consequences of an action.
+![게시된 Docs 페이지에서 이전 예제의 경고가 다른 아이콘 및 색으로 어떻게 표시되는지를 보여 주는 이미지](media/alerts-rendering.png)
 
 ## <a name="code-snippets"></a>코드 조각
 
 Markdown 파일에 코드 조각을 포함할 수 있습니다.
 
-```markdown
+```md
 [!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
 ```
 
@@ -72,7 +59,7 @@ Markdown 파일에 코드 조각을 포함할 수 있습니다.
 
 Docs는 6가지 수준의 Markdown 제목을 지원합니다.
 
-```markdown
+```md
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -97,7 +84,7 @@ Markdown은 인라인 HTML을 지원하지만 HTML은 Docs에 게시하도록 �
 
 이미지를 포함하는 구문은 다음과 같습니다.
 
-```markdown
+```md
 ![[alt text]](<folderPath>)
 
 Example:
@@ -133,7 +120,7 @@ Example:
 
 상대 경로는 현재 파일을 기준으로 대상 파일에 대한 경로입니다. Docs에서는 상대 경로를 사용하여 동일한 문서 세트 내의 다른 파일에 연결할 수 있습니다. 상대 경로에 대한 구문은 다음과 같습니다.
 
-```markdown
+```md
 [link text](../../folder/filename.md)
 ```
 
@@ -154,7 +141,7 @@ Example:
 
 ### <a name="site-relative-links-to-other-files-on-docs"></a>Docs의 다른 파일에 대한 사이트 상대 경로
 
-```markdown
+```md
 [Azure and Linux](/articles/virtual-machines/linux/overview)
 ```
 
@@ -162,7 +149,7 @@ Example:
 
 ### <a name="links-to-external-sites"></a>외부 사이트로 연결
 
-```markdown
+```md
 [Microsoft](https://www.microsoft.com)
 ```
 
@@ -172,13 +159,13 @@ Example:
 
 같은 리포지토리의 다른 파일 제목에 대한 책갈피 링크입니다. 예:
 
-```markdown
+```md
 [Managed Disks](../../linux/overview.md#managed-disks)
 ```
 
 현재 파일의 제목에 대한 책갈피 링크
 
-```markdown
+```md
 [Managed Disks](#managed-disks)
 ```
 
@@ -197,7 +184,7 @@ Example:
 
 명시적 앵커에 연결하려면 다음 구문을 사용합니다.
 
-```markdown
+```md
 To go to a section on the same page:
 [text](#AnchorText)
 
@@ -258,7 +245,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 중첩 목록을 포함하여 목록에 문자를 사용하지 마세요. Docs에 게시할 때 올바르게 렌더링되지 않습니다. 숫자를 사용하여 중첩된 목록은 게시될 때 소문자로 렌더링됩니다. 예:
 
-```markdown
+```md
 1. This is
 1. a parent numbered list
    1. and this is
@@ -278,7 +265,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 글머리 기호 목록을 만들려면 각 줄의 시작 위치에 `-`와 공백을 사용합니다.
 
-```markdown
+```md
 - This is
 - a parent bulleted list
   - and this is
@@ -298,7 +285,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 검사 목록은 사용자 지정 Markdown 확장을 통해 docs.microsoft.com에서만 사용할 수 있습니다.
 
-```markdown
+```md
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
@@ -321,14 +308,14 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 구문은 다음과 같습니다.
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
 예:
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [Learn about basic style](style-quick-start.md)
 ```
@@ -433,7 +420,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 Markdown에서 테이블을 만드는 가장 간단한 방법은 파이프 및 줄을 사용하는 것입니다. 헤더가 있는 표준 테이블을 만들려면 첫 번째 선을 파선으로 그립니다.
 
-```markdown
+```md
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
@@ -449,7 +436,7 @@ Markdown에서 테이블을 만드는 가장 간단한 방법은 파이프 및 �
 
 헤더가 없는 테이블을 만들 수도 있습니다. 예를 들어 다중 열 목록을 만들려면:
 
-```markdown
+```md
 |   |   |
 | - | - |
 | This | table |
@@ -465,7 +452,7 @@ Markdown에서 테이블을 만드는 가장 간단한 방법은 파이프 및 �
 
 콜론을 사용하여 열을 정렬할 수 있습니다.
 
-```markdown
+```md
 |                  |
 |------------------|
 |    right aligned:|
@@ -495,7 +482,7 @@ Markdown에서 테이블을 만드는 경우 테이블이 오른쪽 탐색으로
 
 다음은 클래스 이름이 `mx-tdBreakAll`인 `div`로 래핑될 행이 세 개인 테이블의 Markdown 샘플입니다.
 
-```markdown
+```md
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -541,13 +528,13 @@ HTML 테이블은 docs.microsoft.com에 사용하지 않는 것이 좋습니다.
 
 다음 구문으로 비디오를 포함할 수 있으며, 그러면 Docs에서 렌더링합니다.
 
-```markdown
+```md
 > [!VIDEO <embedded_video_link>]
 ```
 
 예제:
 
-```markdown
+```md
 > [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
 
 > [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
@@ -591,6 +578,6 @@ HTML 테이블은 docs.microsoft.com에 사용하지 않는 것이 좋습니다.
 1. 비디오 링크를 얻었으면 작업 항목을 닫습니다.
 1. 다음 구문을 사용하여 비디오 링크를 게시물에 추가할 수 있습니다.
 
-   ```markdown
+   ```md
    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
    ```
