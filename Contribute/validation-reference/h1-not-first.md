@@ -4,20 +4,18 @@ description: Docs 빌드 문제 h1-not-first에 대한 설명 및 해결 방법
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 09/10/2019
+ms.date: 11/25/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: c5e2eeeb5c464cd2923e23110cdab9a83324e53e
-ms.sourcegitcommit: 89ec9772d9cc8281c633833c6fa51f629e9cd566
+ms.openlocfilehash: 09b91577f4c87125a92c0c116bc07bc7206c6833
+ms.sourcegitcommit: 423d9b8145a11426c91f45510b2d77319838eb27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70895465"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74528927"
 ---
 # <a name="h1-not-first"></a>h1-not-first
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>제안
+## <a name="warning"></a>경고
 
 `Markdown content is not allowed before H1.`
 

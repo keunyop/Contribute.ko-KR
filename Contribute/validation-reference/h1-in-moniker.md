@@ -4,20 +4,18 @@ description: Docs 빌드 문제 h1-in-moniker에 대한 설명 및 해결 방법
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 10/09/2019
+ms.date: 11/25/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 3730385cfaf86c3a2a6165f1958d644e71ad7b56
-ms.sourcegitcommit: 57eb071bdc55ef71fa3f8ac979326c3f8fbe9c45
+ms.openlocfilehash: f22ce2c9e2a014e4d8bf0ae9b61fa48b11d8c9a1
+ms.sourcegitcommit: 423d9b8145a11426c91f45510b2d77319838eb27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72246363"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74528818"
 ---
 # <a name="h1-in-moniker"></a>h1-in-moniker
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>제안
+## <a name="warning"></a>경고
 
 `H1s are not allowed in moniker sections. Each article should have one and only one H1.`
 

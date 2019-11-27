@@ -4,20 +4,18 @@ description: Docs 빌드 문제 h1-no-space에 대한 설명 및 해결 방법
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 12/12/2018
+ms.date: 11/25/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 7dd6a3d5cfc6def000d5bf7a5bf7810a16625cae
-ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.openlocfilehash: 7058367a6edd7f663ea42a4fc2e9fafd9cbfb34f
+ms.sourcegitcommit: 423d9b8145a11426c91f45510b2d77319838eb27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70856246"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74528971"
 ---
 # <a name="h1-no-space"></a>h1-no-space
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>제안
+## <a name="warning"></a>경고
 
 `A space is required after the hash (#) in H1.`
 
