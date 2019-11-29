@@ -1,19 +1,19 @@
 ---
-title: multiple-h1
-description: Docs 빌드 문제 multiple-h1에 대한 설명 및 해결 방법.
+title: multiple-h1s
+description: Docs 빌드 문제 multiple-h1s에 대한 설명 및 해결 방법
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 10/09/2019
+ms.date: 11/25/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: c97ae237cd2ce657bd02132af5169cb6544ae306
-ms.sourcegitcommit: 57eb071bdc55ef71fa3f8ac979326c3f8fbe9c45
+ms.openlocfilehash: e2912066895494e221181f2de2bb117ff9ed1636
+ms.sourcegitcommit: 423d9b8145a11426c91f45510b2d77319838eb27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72246266"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74528931"
 ---
-# <a name="multiple-h1"></a>multiple-h1
+# <a name="multiple-h1s"></a>multiple-h1s
 
 [!INCLUDE [suggestion-note](includes/suggestion-note.md)]
 
