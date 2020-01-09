@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 1552ecc3e17e52439a7faa72973813099ce4d253
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288315"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188313"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>VS Code용 Docs Authoring Pack
 
@@ -32,7 +32,7 @@ Docs Markdown 확장을 사용하여 상대 링크, 이미지 및 기타 포함�
 
 ## <a name="how-to-use-the-docs-markdown-extension"></a>Docs Markdown 확장을 사용하는 방법
 
-Docs Markdown 메뉴에 액세스하려면 `ALT+M`을 입력합니다. 위쪽/아래쪽 화살표를 클릭하거나 사용하여 원하는 함수를 선택하거나, 입력하여 필터링을 시작하고 원하는 함수가 메뉴에서 강조 표시되면 `ENTER` 키를 누릅니다. 다음을 사용할 수 있습니다.
+Docs Markdown 메뉴에 액세스하려면 `ALT+M`을 누릅니다. 위쪽/아래쪽 화살표를 클릭하거나 사용하여 원하는 함수를 선택하거나, 입력하여 필터링을 시작하고 원하는 함수가 메뉴에서 강조 표시되면 `ENTER` 키를 누릅니다. 다음을 사용할 수 있습니다.
 
 |기능     |Description           |
 |-------------|----------------------|

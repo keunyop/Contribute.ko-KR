@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592445"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188293"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown을 사용하여 Docs를 작성하는 방법
 
@@ -138,7 +138,7 @@ Blockquotes는 `>` 문자를 사용하여 생성됩니다.
 
 '1'을 모든 항목에 대해 사용합니다. 최신 업데이트에 새 단계가 포함되거나 기존 단계가 제거될 때 더 쉽게 검토할 수 있습니다.
 
-### <a name="tables"></a>테이블
+### <a name="tables"></a>Tables
 
 테이블은 주요 Markdown 사양의 일부가 아니지만 GFM은 테이블을 지원합니다. 파이프(|) 및 하이픈(-) 문자를 사용하여 테이블을 만들 수 있습니다. 하이픈은 각 열의 헤더를 만드는 데 반면 파이프는 각 열을 분리합니다. 테이블을 올바르게 렌더링하기 위해 테이블 앞에 빈 줄을 포함합니다.
 
@@ -196,7 +196,7 @@ Markdown에서는 코드 조각을 문장에서 인라인으로 배치하거나 
     ...
     ```
 
-처음 세 개의 ` 문자 뒤에 있는 별칭은 사용할 구문 강조 표시를 정의합니다. Docs 콘텐츠에서 일반적으로 사용되는 프로그래밍 언어 및 이에 대응되는 레이블에 대한 목록은 다음과 같습니다.
+처음 세 개의 억음 악센트 기호(\`) 문자 뒤에 있는 별칭은 사용할 구문 강조 표시를 정의합니다. Docs 콘텐츠에서 일반적으로 사용되는 프로그래밍 언어 및 이에 대응되는 레이블에 대한 목록은 다음과 같습니다.
 
 이러한 언어는 식별 이름을 지원하며, 대부분 언어를 강조 표시합니다.
 
@@ -230,6 +230,7 @@ Markdown에서는 코드 조각을 문장에서 인라인으로 배치하거나 
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
+|protobuf|protobuf|
 |PowerApps(점 10진 구분 기호)|powerapps-dot|
 |PowerApps(쉼표 10진 구분 기호)|powerapps-comma|
 |PowerShell|powershell|

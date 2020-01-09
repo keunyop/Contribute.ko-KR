@@ -7,15 +7,16 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 69371cd201d156b2d0ce5e3e38527d77baca5a8a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 970f80b4e6ce795e0e2f15192d31680d7de6d35b
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288575"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188326"
 ---
-# <a name="using-links-in-documentation"></a>설명서에서 링크 사용
-이 문서에서는 docs.microsoft.com에서 호스팅되는 페이지의 하이퍼 링크를 사용하는 방법에 대해 설명합니다. 링크는 몇 가지 다양한 규칙을 사용하여 Markdown에 쉽게 추가할 수 있습니다. 사용자는 링크를 통해 동일한 페이지의 콘텐츠를 가리키거나, 인접한 다른 페이지를 가리키거나, 외부 사이트 및 URL을 가리킬 수 있습니다.
+# <a name="use-links-in-documentation"></a>설명서에서 링크 사용
+
+이 문서에서는 docs.microsoft.com에서 호스팅되는 페이지의 하이퍼 링크를 사용하는 방법에 대해 설명합니다. 링크는 몇 가지 다양한 규칙을 사용하여 Markdown에 쉽게 추가할 수 있습니다. 사용자는 링크를 통해 같은 페이지, 인접한 다른 페이지 또는 외부 사이트 및 URL의 콘텐츠로 이동할 수 있습니다.
 
 docs.microsoft.com 사이트 백 엔드는 [Markdig](https://github.com/lunet-io/markdig) 구문 분석 엔진을 통해 구문 분석되는 [CommonMark](https://commonmark.org/) 규격 markdown을 지원하는 OPS(Open Publishing Services)를 사용합니다. 해당 markdown 유형은 대부분 [GFM(GitHub Flavored Markdown)](https://help.github.com/categories/writing-on-github/)과 호환되므로, 대부분의 문서가 GitHub에 저장되고 GitHub에서 편집 가능합니다. 추가 기능은 Markdown 확장을 통해 추가됩니다.
 
@@ -43,28 +44,35 @@ docs.microsoft.com 사이트 백 엔드는 [Markdig](https://github.com/lunet-io
 
 ## <a name="links-from-one-article-to-another"></a>하나의 문서에서 다른 문서로 링크
 
-한 Docs 기술 문서에서 동일한 docset 내의 다른 Docs 기술 문서로의 인라인 링크를 만들려면 다음과 같은 링크 구문을 사용합니다.
+한 Docs 기술 문서에서 같은 *docset* 내의 다른 Docs 기술 문서로의 인라인 링크를 만들려면 다음과 같은 링크 구문을 사용합니다.
 
-- 디렉토리의 문서는 동일한 디렉토리에 있는 다른 문서로 연결됩니다.
+- 문서는 같은 디렉터리의 다른 문서에 연결됩니다.
 
   `[link text](article-name.md)`
 
-- 문서는 하위 디렉토리에서 루트 디렉터리에 있는 문서로 연결됩니다.
+- 문서는 현재 디렉터리의 부모 디렉터리에 있는 문서에 연결됩니다.
 
   `[link text](../article-name.md)`
 
-- 루트 디렉터리의 문서는 하위 디렉토리에 있는 문서로 연결됩니다.
+- 문서는 현재 디렉터리의 하위 디렉터리에 있는 문서에 연결됩니다.
 
-  `[link text](./directory/article-name.md)`
+  `[link text](directory/article-name.md)`
 
-- 하위 디렉토리의 문서는 다른 하위 디렉토리에 있는 문서로 연결됩니다.
+- 문서는 현재 디렉터리의 부모 디렉터리에 있는 하위 디렉터리의 문서에 연결됩니다.
 
   `[link text](../directory/article-name.md)`
 
-- docset 간에 연결하는 문서(동일한 리포지토리에 있는 경우도 해당):  `[link text](./directory/article-name)`
+> [!NOTE]
+> 앞의 예제에서는 `~/`를 링크의 일부로 사용하지 않습니다. 리포지토리의 루트에서 시작하는 절대 경로에 연결하려면 `/`로 링크를 시작합니다. GitHub에서 원본 리포지토리로 이동할 때 `~/`를 포함하면 유효하지 않은 링크가 생성됩니다. `/`로 경로를 시작하면 올바르게 해결됩니다.
 
-> [!IMPORTANT]
-> 위의 예제에서는 `~/`를 링크의 일부로 사용하지 않습니다. 리포지토리의 루트에서 경로에 연결하는 경우 `/`로 시작합니다. GitHub에서 원본 리포지토리로 이동할 때 `~/`를 포함하면 유효하지 않은 링크가 생성됩니다. `/`로 경로를 시작하면 올바르게 해결됩니다.
+파일이 같은 리포지토리에 있는 경우에도 다른 docset의 문서에 연결하려면 다음 구문을 사용합니다.
+
+`[link text](/docset-root/directory/article-name)`
+   
+예를 들어 루트 URL이 `https://docs.microsoft.com/dotnet`인 문서가 루트 URL이 `https://docs.microsoft.com/visualstudio`인 문서에 연결되면 링크는 `[link text](/visualstudio/directory/article-name)`과 같습니다.
+
+> [!TIP]
+> 같은 *docset*의 문서는 “docs.microsoft.com” 뒤의 URL 조각이 같습니다. 예를 들어 `https://docs.microsoft.com/dotnet/core/get-started` 및 `https://docs.microsoft.com/dotnet/framework/install`은 같은 docset에 있고, `https://docs.microsoft.com/dotnet/core/get-started` 및 `https://docs.microsoft.com/visualstudio/whats-new`는 다른 docset에 있습니다.
 
 ## <a name="links-to-anchors"></a>앵커에 대한 링크
 
@@ -75,12 +83,7 @@ docs.microsoft.com 사이트 백 엔드는 [Markdig](https://github.com/lunet-io
   `[link](#the-text-of-the-H2-section-separated-by-hyphens)`
   `[Create cache](#create-cache)`
 
-- 동일한 하위 디렉토리의 다른 문서에 있는 앵커에 연결하려면
-
-  `[link text](article-name.md#anchor-name)`
-  `[Configure your profile](media-services-create-account.md#configure-your-profile)`
-
-- 다른 서비스 하위 디렉토리에 있는 앵커에 연결하려면
+- 다른 문서의 앵커에 연결하려면:
 
   `[link text](../directory/article-name.md#anchor-name)`
   `[Configure your profile](../directory/media-services-create-account.md#configure-your-profile)`
@@ -144,12 +147,8 @@ docs.microsoft.com 사이트 백 엔드는 [Markdig](https://github.com/lunet-io
 - **PM 승인**: 타사 콘텐츠에 대해 Microsoft에서 승인하도록 요청합니다. 링크를 설정한다는 것은 Microsoft가 해당 사이트를 신뢰한다는 것을 의미하며 사람들이 지침을 따를 경우 Microsoft에도 의무가 있다는 것을 나타냅니다.
 - **유효 시간 검토**: 타사 정보가 최신 정보이고 정확하며 관련성이 있는지 확인하고 링크가 변경되지 않도록 합니다.
 - **오프사이트**: 사용자가 다른 사이트로 이동한다는 점을 인식하도록 합니다. 이에 대한 명확한 내용이 없을 경우 설명하는 문구를 추가합니다. 예: “필수 조건은 Android 개발자 도구를 포함하며 Android Studio 사이트에서 다운로드할 수 있습니다.”
-- **다음 단계**: “다음 단계” 섹션에서 예를 들어 MVP 블로그에 대한 링크를 추가할 수 있습니다. 다시 한 번 사용자가 사이트를 벗어난다는 점을 인식하도록 합니다.
+- **다음 단계**: “다음 단계” 섹션에서 예를 들어 MVP 블로그에 대한 링크를 추가할 수 있습니다. 다시 사용자가 사이트를 벗어난다는 점을 알도록 합니다.
 - **법적 정보**: 모든 ms.com 페이지의 **사용 약관** 바닥글에 **타사 사이트에 대한 링크**의 법적 정보가 설명되어 있습니다.
-
-## <a name="links-to-msdn-or-technet"></a>MSDN 또는 TechNet에 대한 링크
-
-MSDN 또는 TechNet에 연결해야 하는 경우 항목에 대한 전체 링크를 사용하고 링크에서 "en-us" 언어 로캘을 제거합니다.
 
 ## <a name="links-to-azure-powershell-reference-content"></a>Azure PowerShell 참조 콘텐츠에 대한 링크
 
@@ -172,20 +171,17 @@ URL의 구조체:
 - Azure Information Protection PowerShell: [https://docs.microsoft.com/powershell/azure/_aip_](https://docs.microsoft.com/powershell/azure/aip)
 - Azure Elastic DB 작업 PowerShell: [https://docs.microsoft.com/powershell/azure/_elasticdbjobs_](https://docs.microsoft.com/powershell/azure/elasticdbjobs)
 
-이러한 URL을 사용하는 경우 콘텐츠의 최신 버전으로 이동합니다. 이러한 방식으로 버전 모니커를 지정할 필요가 없습니다. 그러면 버전이 변경될 때 업데이트되어야 하는 개념 콘텐츠에 대한 링크가 표시되지 않습니다.
+이 URL을 사용하는 경우 콘텐츠의 최신 버전으로 리디렉션됩니다. 이러한 방식으로 버전 모니커를 지정할 필요가 없습니다. 또한 버전이 변경될 때 업데이트되어야 하는 개념 콘텐츠에 대한 링크가 없습니다.
 
-올바른 링크를 만들려면 브라우저에서 연결하려는 페이지를 찾고 URL을 복사합니다.
-그런 다음, `https://docs.microsoft.com` 및 로캘 정보를 제거합니다.
-
-TOC에서 연결하는 경우 로캘 정보 없이 전체 URL을 사용해야 합니다.
+올바른 링크를 만들려면 브라우저에서 연결하려는 페이지를 찾고 URL을 복사한 후 로캘 코드(예: **ko-kr**)를 제거합니다.
 
 예제 Markdown:
 
 ```markdown
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup)
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
-[New-AzureVM](/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
-[New-AzureRmVM](/powershell/module/azurerm.compute/new-azurermvm)
-[Install Azure PowerShell for Service Management](/powershell/azure/servicemanagement/install-azurerm-ps)
-[Install Azure PowerShell](/powershell/azure/install-azurerm-ps)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
+[New-AzureVM](https://docs.microsoft.com/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
+[New-AzureRmVM](https://docs.microsoft.com/powershell/module/azurerm.compute/new-azurermvm)
+[Install Azure PowerShell for Service Management](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azurerm-ps)
+[Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)
 ```

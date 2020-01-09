@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: billwagner
 ms.author: wiwagn
 ms.date: 03/29/2019
-ms.openlocfilehash: 63192315c66eb05750c5a59751c339f671985314
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 862bf048b30584a5dc51c1b0758ffc7d41a406f5
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288278"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188352"
 ---
 # <a name="additional-git-and-github-resources"></a>추가 Git 및 GitHub 리소스
 
@@ -25,7 +25,7 @@ Git 또는 GitHub에 친숙하지 않은 경우 다음과 같은 리소스를 �
 - [Pro Git eBook(PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf): 앞의 링크와 같으며, PDF 형식으로 되어 있습니다.
 - [Codecademy의 Learn Git 과정](https://www.codecademy.com/learn/learn-git): Codeacademy의 Git 자습서입니다.
 - [Pluralsight에서 Code School의 Git 과정 수강](https://www.pluralsight.com/courses/code-school-git-real): Pluralsight에서 제공하는 Code School의 Git 자습서입니다.
-- [Udacity의 Git 및 Github 과정](https://www.udacity.com/course/how-to-use-git-and-github--ud775): Udacity의 Git 및 Github 자습서
+- [Udacity의 Git 및 Github 과정](https://www.udacity.com/course/how-to-use-git-and-github--ud775): Udacity의 Git 및 GitHub 자습서입니다.
 
 ## <a name="github-resources"></a>GitHub 리소스
 

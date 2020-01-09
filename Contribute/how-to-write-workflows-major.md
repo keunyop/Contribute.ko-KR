@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 87c31979e60a957586ea623b22be190bfdaa41d9
-ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
+ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310274"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188250"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>중요하거나 장기 실행되는 변경 내용에 대한 GitHub 참여 워크플로
 
@@ -54,7 +54,55 @@ ms.locfileid: "72310274"
 >[!TIP]
 >마스터 분기에서 변경 내용을 지정하는 것은 적절하지 *않습니다*. 특정 시기에 기능을 릴리스하기 위해 마스터 분기를 사용하여 변경 내용을 적용하는 경우를 가정하겠습니다. 변경 내용을 지정하고 릴리스되기를 기다리고 있습니다. 그 사이에 어떤 문제를 해결해 달라는 긴급 요청을 받고 마스터 분기에 있는 파일을 변경한 다음 해당 변경 내용을 게시합니다. 이 예제에서는 특정 날짜에 릴리스하기 위해 유보하고 있던 수정 *및* 변경 내용을 의도치 않게 게시했습니다.
 
-이제 로컬 리포지토리에서 새로운 작업 분기를 만들어 제안된 변경 내용을 캡처하겠습니다. Git 클라이언트는 각기 다르므로 원하는 클라이언트에 대한 도움말을 참조하세요. [GitHub Flow](https://guides.github.com/introduction/flow/)의 GitHub Guide에서 프로세스의 개요를 볼 수 있습니다.
+이제 로컬 리포지토리에서 새로운 작업 분기를 만들어 제안된 변경 내용을 캡처하겠습니다. Git Bash를 설치한 경우([콘텐츠 작성 도구 설치](get-started-setup-tools.md) 참조) 복제된 리포지토리 내에서 새 분기를 만들고 하나의 명령으로 해당 분기를 “체크 아웃”할 수 있습니다.
+
+````
+git checkout -b "branchname"
+````
+
+Git 클라이언트는 각기 다르므로 원하는 클라이언트에 대한 도움말을 참조하세요. [GitHub Flow](https://guides.github.com/introduction/flow/)의 GitHub Guide에서 프로세스의 개요를 볼 수 있습니다.
+
+## <a name="making-your-changes"></a>변경하기
+
+Microsoft 리포지토리의 복사본(“복제본”)이 있고 분기를 만들었으므로 이제 [콘텐츠 작성 도구 설치](get-started-setup-tools.md) 페이지에 설명된 대로 모든 텍스트 편집기 또는 Markdown editor를 사용하여 커뮤니티에 도움이 되는 변경 내용을 수행할 수 있습니다.  준비될 때까지 변경 내용을 Microsoft에 제출할 필요 없이 로컬에 저장할 수 있습니다.
+
+## <a name="saving-changes-to-your-repository"></a>리포지토리에 변경 내용 저장
+
+작성자에게 변경 내용을 보내기 전에 먼저 Github 리포지토리에 저장해야 합니다.  모든 도구가 각기 다르지만 Git Bash 명령줄을 사용하는 경우 몇 가지 간단한 단계로 이 작업을 수행할 수 있음을 다시 한번 말씀드립니다.
+
+먼저 리포지토리 내에서 모든 변경 내용을 커밋하려면 ‘스테이징’해야 합니다.   다음을 실행하여 이 작업을 수행할 수 있습니다.
+
+````
+git add --all
+````
+
+다음으로, 저장된 변경 내용을 로컬 리포지토리에 커밋해야 합니다.  다음을 실행하여 Git Bash에서 이 작업을 수행할 수 있습니다.
+
+````
+git commit -m "Short Description of Changes Made"
+````
+
+마지막으로, 로컬 컴퓨터에서 이 분기를 만들었으므로 GitHub.com 계정의 포크에서 이 내용을 인식하도록 해야 합니다.  Git Bash를 사용하는 경우 다음을 실행하여 이 작업을 수행할 수 있습니다.
+
+````
+git push --set-upstream origin <branchname>
+````
+
+작업을 완료했습니다!  이제 코드가 GitHub 리포지토리에 있으며 끌어오기 요청을 만들 준비가 되었습니다.  
+
+>[!TIP]
+> 변경 내용을 푸시할 때 변경 내용이 개인 GitHub 계정에 표시되더라도 즉시 끌어오기 요청을 제출해야 한다는 규칙은 없습니다.  지금 중지했다가 추가 조정을 위해 나중에 돌아오려는 경우 괜찮습니다!
+
+제출한 내용을 수정해야 하나요?  문제없습니다!  같은 분기에서 변경한 다음, 커밋한 후 다시 푸시하면 됩니다(같은 분기의 이후 푸시에 대해 업스트림 서버를 설정할 필요 없음).
+
+이와 관련 없는 내용을 더 변경해야 하나요?  마스터 분기로 다시 전환하고 다른 새 분기를 체크 아웃하면 됩니다. Git Bash를 사용하는 경우 다음과 같이 간단합니다.
+
+````
+git checkout master
+git checkout -b "branchname"
+````
+
+이제 다시 새 분기로 돌아왔으며 마스터 기여자가 되어 가는 과정을 잘하고 계십니다.
 
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 
