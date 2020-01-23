@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 086972acaef9647709fbe43f07c07abde71c7d9f
+ms.sourcegitcommit: fd92198ec2d0ce2d6687b6f1521a82b3fefc60e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188293"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111051"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Markdown을 사용하여 Docs를 작성하는 방법
 
@@ -389,10 +389,312 @@ Docs 문서는 문단, 링크, 목록, 제목 등 대부분의 문서 서식에 
 
 ### <a name="code-include-references"></a>코드에 포함되는 참조
 
-Markdig은 해당 코드 조각 확장을 통해 문서에 대한 고급 코드 포함 기능을 지원합니다. 이 기능은 프로그래밍 언어 선택과 구문 색 지정 및 다음과 같은 멋진 기능을 기반으로 하는 GFM 기능에서 빌드하는 고급 렌더링을 제공합니다.
+Docs 코드 조각 Markdown 확장을 사용하면 문서에 코드 샘플을 포함하고 언어별 구문 색 지정으로 렌더링할 수 있습니다. 현재 리포지토리 또는 다른 리포지토리의 코드를 포함할 수 있습니다. 아래 지침에서는 [docs.microsoft.com Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)으로 해당 기능을 사용하는 방법에 대한 개요를 제공합니다. Visual Studio Code에서 **Preview**를 열어 코드 조각을 미리 볼 수 있습니다. 강조 표시 및 대화형 작업은 미리 보기에서 사용할 수 없습니다.
 
-- 외부 리포지토리에서 중앙 집중식 코드 샘플/코드 조각 포함
-- 다른 언어로 여러 버전의 코드 샘플을 표시하는 탭 UI
+> [!NOTE]
+> 확장을 사용하여 코드 콘텐츠를 인라인으로 포함할 수 없습니다. 이 작업은 표준 삼중 틱 Markdown 규칙을 통해 수행해야 합니다.
+
+#### <a name="code-from-current-repository"></a>현재 리포지토리의 코드
+
+1. Visual Studio Code에서 **Alt + M** 또는 **Option + M**을 클릭하고 코드 조각을 선택합니다.
+2. 코드 조각을 선택하면 전체 검색, 범위 지정 검색 또는 리포지토리 간 참조를 선택하라는 메시지가 표시됩니다. 로컬에서 검색하려면 전체 로컬 검색을 선택합니다.
+3. 검색 용어를 입력하여 파일을 찾습니다. 파일을 찾으면 선택합니다.
+4. 다음으로, 코드 조각에 포함되어야 하는 코드 줄을 결정하기 위한 옵션을 선택합니다. 옵션은 **ID**, **범위**, **없음**입니다.
+5. 4단계에서 선택한 옵션에 따라 필요한 경우 값을 입력합니다.
+
+전체 코드 파일 표시:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs":::
+```
+
+줄 번호를 지정하여 코드 파일의 일부 표시:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+코드 조각 이름으로 코드 파일의 일부 표시:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+#### <a name="code-from-another-repository"></a>다른 리포지토리의 코드
+
+1. Visual Studio Code에서 **Alt + M** 또는 **Option + M**을 클릭하고 코드 조각을 선택합니다.
+2. 코드 조각을 선택하면 전체 검색, 범위 지정 검색 또는 리포지토리 간 참조를 선택하라는 메시지가 표시됩니다. 리포지토리에서 검색하려면 리포지토리 간 참조를 선택합니다.
+3. *.openpublishing.publish.config.json*에 있는 리포지토리에서 선택할 수 있습니다. 리포지토리를 선택합니다.
+3. 검색 용어를 입력하여 파일을 찾습니다. 파일을 찾으면 선택합니다.
+4. 다음으로, 코드 조각에 포함되어야 하는 코드 줄을 결정하기 위한 옵션을 선택합니다. 옵션은 **ID**, **범위**, **없음**입니다.
+5. 5단계에서 선택한 옵션에 따라 필요한 경우 값을 입력합니다.
+
+코드 조각 참조는 다음과 같이 표시됩니다.
+
+```markdown
+:::code language="csharp" source="~/samples-durable-functions/samples/csx/shared/Location.csx" highlight="2,5":::
+```
+
+#### <a name="path-to-code-file"></a>코드 파일의 경로
+
+예제:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+이 예제는 ASP.NET 문서 리포지토리, [aspnetcore/data/ef-mvc/crud.md](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/crud.md) 문서 파일에서 가져온 것입니다. 코드 파일은 동일한 리포지토리에 있는 [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs)의 상대 경로로 참조됩니다.
+
+#### <a name="selected-line-numbers"></a>선택한 줄 번호
+
+예제:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+위 예제에서는 *StudentController.cs* 코드 파일의 줄 2~24와 26만 표시됩니다.
+
+다음 섹션에 설명된 대로 하드 코드된 줄 번호보다 코드 조각을 사용하는 것이 좋습니다.
+
+#### <a name="named-snippet"></a>명명된 코드 조각
+
+예제:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+이름에는 문자와 밑줄만 사용합니다.
+
+이 예제는 코드 파일의 `snippet_Create` 섹션을 표시합니다. 이 예제의 코드 파일에는 `snippet_Create`라는 C# 영역이 있습니다.
+
+```cs
+// code excluded from the snippet
+// <snippet_Create>
+// code included in the snippet
+// </snippet_Create>
+// code excluded from the snippet
+```
+
+가능한 한, 줄 번호를 지정하지 말고 명명된 섹션을 참조하세요. 코드 파일은 필연적으로 변경되고, 이 경우 줄 번호도 변경되기 때문에 줄 번호 참조는 불안정합니다.
+항상 이러한 변경에 대한 알림을 받는 것은 아닙니다. 결국 문서에서 잘못된 줄이 나타나기 시작해도 무엇이 변경되었는지 알 수 없습니다.
+
+#### <a name="highlighting-selected-lines"></a>선택한 줄 강조 표시
+
+예제:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26" highlight="2,5":::
+```
+
+이 예제에서는 표시된 코드 조각의 처음부터 줄 2와 5를 강조 표시합니다. 강조 표시할 줄 번호가 코드 파일의 처음부터 계산되지 않습니다. 즉, 코드 파일의 줄 3과 6이 강조 표시됩니다.
+
+#### <a name="interactive-code-snippets"></a>대화형 코드 조각
+
+참조를 통해 포함된 코드 조각에 대해 대화형 모드를 사용하도록 설정할 수 있습니다. 예제는 다음과 같습니다.
+
+```markdown
+:::code language="powershell" source="PowerShell.ps1" interactive="cloudshell-powershell":::
+```
+
+```markdown
+:::code language="bash" source="Bash.sh" interactive="cloudshell-bash":::
+```
+
+특정 코드 블록을 대상으로 이 기능을 켜려면 `interactive` 특성을 사용합니다. 사용 가능한 특성 값은 다음과 같습니다.
+
+- `cloudshell-powershell` - 앞의 예제와 같이 Azure PowerShell Cloud Shell을 사용하도록 설정
+- `cloudshell-bash` - Azure Cloud Shell을 사용하도록 설정
+- `try-dotnet` - Try .NET을 사용하도록 설정
+- `try-dotnet-class` - 클래스 스캐폴딩으로 Try .NET을 사용하도록 설정
+- `try-dotnet-method` - 메서드 스캐폴딩으로 Try .NET을 사용하도록 설정
+
+호환되는 `language`와 `interactive`의 쌍이 있습니다. 예를 들어 `interactive`가 `try-dotnet`인 경우 언어는 `csharp`여야 합니다. 마찬가지로 `cloudshell-powershell`은 `powershell`과만, `cloudshell-bash`는 `bash`와만 언어로 호환됩니다.
+
+Azure Cloud Shell 및 PowerShell Cloud Shell의 경우 사용자가 자신의 Azure 계정에 대해서만 명령을 실행할 수 있습니다.
+
+[Try .NET](https://github.com/dotnet/try)을 사용하면 브라우저에서 .NET 코드(C#)를 대화형으로 실행할 수 있습니다. Try .NET에는 대화형 작업에 사용할 수 있는 세 가지 옵션(`try-dotnet`, `try-dotnet-class`, `try-dotnet-method`)이 있습니다. 이와 같은 옵션을 사용하는 데 코드 조각 내의 추가 구성이 필요하지 않습니다. 현재 기본적으로 사용할 수 있는 네임스페이스는 다음과 같습니다.
+
+- System
+- System.Linq
+- System.Collections.Generic
+- System.Text
+- System.Globalization
+- System.Text.RegularExpressions
+
+사용자는 `try-dotnet` 특성 값을 사용하여 사용자 지정 코드에서 코드를 래핑할 필요 없이 브라우저에서 C# 코드를 실행할 수 있습니다.
+
+예제:
+
+```md
+:::code language="csharp" source="relative/path/source.cs" interactive="try-dotnet":::
+```
+
+`try-dotnet-class` 값은 대화형 구성 요소에 전달된 코드에 클래스 수준 스캐폴딩을 적용합니다.
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-class":::
+```
+
+예제:
+
+클래스 스캐폴딩이 적용되지 않은 코드 조각
+
+```md
+public static void Main()
+    {  
+        // Specify the data source.  
+        int[] scores = new int[] { 97, 92, 81, 60 };        // Define the query expression.
+
+        IEnumerable<int> scoreQuery =
+            from score in scores  
+            where score > 80  
+            select score;
+
+        // Execute the query.  
+        foreach (int i in scoreQuery)
+        {  
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+클래스 스캐폴딩이 적용된 코드 조각
+
+```md
+class NameOfClass {
+
+   public static void Main()
+    {
+        // Specify the data source.
+        int[] scores = new int[] { 97, 92, 81, 60 };
+
+        // Define the query expression.
+        IEnumerable<int> scoreQuery =
+            from score in scores
+            where score > 80
+            select score;
+
+        // Execute the query.
+        foreach (int i in scoreQuery)
+        {
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+`try-dotnet-method` 값은 대화형 구성 요소에 전달된 코드에 메서드 수준 스캐폴딩을 적용합니다.
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-method":::
+```
+
+예제:
+
+메서드 스캐폴딩이 적용되지 않은 코드 조각
+
+```md
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+```
+
+메서드 스캐폴딩이 적용된 코드 조각
+
+```md
+public static void Main(string args[]) {
+
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+}
+```
+
+#### <a name="snippet-syntax-reference"></a>코드 조각 구문 참조
+
+지정된 코드 언어를 사용하여 리포지토리에 저장된 코드 조각을 참조할 수 있습니다. 지정된 코드 경로 콘텐츠가 확장되어 파일에 포함됩니다.
+
+코드 조각의 폴더 구조에 대한 제한은 없습니다. 코드 조각을 일반 소스 코드로 관리할 수 있습니다.
+
+구문:
+
+```md
+:::code language="<language>" source="<path>" <attribute>="<attribute-value>":::
+```
+
+> [!IMPORTANT]
+> 이 구문은 블록 Markdown 확장입니다. 자체 줄에 사용해야 합니다.
+
+- `<language>`(*선택 사항*)
+  - 코드 조각의 언어입니다. 자세한 내용은 본 문서의 아래에 있는 [지원되는 언어](#supported-languages) 섹션을 참조하세요.
+
+- `<path>`(*필수*)
+  - 참조할 코드 조각 파일을 나타내는, 파일 시스템의 상대 경로입니다.
+
+- `<attribute>` 및 `<attribute-value>`(*선택 사항*)
+  - 파일에서 코드를 검색하는 방법을 지정하는 데 함께 사용됩니다.
+    - `range`: `1,3-5` 줄 범위입니다. 이 예제는 1, 3, 4 및 5 줄을 포함합니다.
+    - `id`: `snippet_Create` 코드 파일에서 삽입해야 하는 코드 조각의 ID입니다. 이 값은 범위와 함께 사용할 수 없습니다.
+    - `highlight`: `2-4,6` 생성된 코드 조각에서 강조 표시해야 하는 범위 및/또는 줄 수입니다. 번호 매기기는 가져온 범위가 아니라 코드 조각 자체를 기준으로 합니다.
+    - `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class`, `try-dotnet-method` 문자열 값은 어떤 종류의 대화형 작업이 사용하도록 설정되는지를 결정합니다.
+
+#### <a name="supported-languages"></a>지원되는 언어
+
+|Name|Markdown 레이블|
+|-----|-------|
+|.NET Core CLI|`dotnetcli`|
+|ASP.NET 및 C#|`aspx-csharp`|
+|ASP.NET 및 VB|`aspx-vb`|
+|Azure CLI|`azurecli`|
+|브라우저의 Azure CLI|`azurecli-interactive`|
+|브라우저의 Azure PowerShell|`azurepowershell-interactive`|
+|AzCopy|`azcopy`|
+|Bash|`bash`|
+|C++|`cpp`|
+|C#|`csharp`|
+|브라우저의 C#|`csharp-interactive`|
+|콘솔|`console`|
+|CSHTML|`cshtml`|
+|DAX|`dax`|
+|Docker|`Dockerfile`|
+|F#|`fsharp`|
+|HTML|`html`|
+|Java|`java`|
+|JavaScript|`javascript`|
+|JSON|`json`|
+|Kusto 쿼리 언어|`kusto`|
+|Markdown|`md`|
+|Objective-C|`objc`|
+|PHP|`php`|
+|PowerShell|`powershell`|
+|파워 쿼리 M|`powerquery-m`|
+|protobuf|`protobuf`|
+|Python|`python`|
+|Ruby|`ruby`|
+|SQL|`sql`|
+|Swift|`swift`|
+|VB|`vb`|
+|XAML|`xaml`|
+|XML|`xml`|
+|YAML|`yml`|
+
+#### <a name="code-extensions"></a>코드 확장
+
+|Name|Markdown 레이블|파일 확장|
+|-----|-------|-----|
+|C#|csharp|.cs, .csx|
+|C++|cpp|.cpp, .h|
+|F#|fsharp|.fs|
+|Java|java|.java|
+|JavaScript|javascript|.js|
+|Python|python|.py|
+|SQL|sql|.sql|
+|VB|vb|.vb|
+|XAML|xaml|.xaml|
+|XML|xml|.xml|
 
 ## <a name="gotchas-and-troubleshooting"></a>과제 및 문제 해결
 
