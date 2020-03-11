@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 161f831bf3f31428f78d3a828b12b4c9ecaffb0e
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288336"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331771"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>.NET 문서에 참여하는 프로세스
 
@@ -169,7 +169,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 ## <a name="the-c-interactive-experience"></a>C# 대화형 환경
 
-문서에 포함된 모든 샘플은 [언어 태그](how-to-write-use-markdown.md#code-snippets)를 사용하여 원본 언어를 나타냅니다. C#의 짧은 코드 샘플은 `csharp-interactive` 언어 태그를 사용하여 브라우저에서 실행되는 C# 샘플을 지정할 수 있습니다. (인라인 코드 샘플은 `csharp-interactive` 태그를 사용하고, 소스에서 포함된 코드 조각의 경우 `code-csharp-interactive` 태그를 사용합니다.) 이러한 코드 샘플은 문서에 코드 창과 출력창을 표시합니다. 출력 창은 사용자가 샘플을 실행한 후 대화형 코드를 실행할 때의 모든 출력을 표시합니다.
+문서에 포함된 모든 샘플은 [언어 태그](code-in-docs.md)를 사용하여 원본 언어를 나타냅니다. C#의 짧은 코드 샘플은 `csharp-interactive` 언어 태그를 사용하여 브라우저에서 실행되는 C# 샘플을 지정할 수 있습니다. (인라인 코드 샘플은 `csharp-interactive` 태그를 사용하고, 소스에서 포함된 코드 조각의 경우 `code-csharp-interactive` 태그를 사용합니다.) 이러한 코드 샘플은 문서에 코드 창과 출력창을 표시합니다. 출력 창은 사용자가 샘플을 실행한 후 대화형 코드를 실행할 때의 모든 출력을 표시합니다.
 
 C# 대화형 환경은 샘플 작업 방법을 변경합니다. 방문자는 샘플을 실행하여 결과를 볼 수 있습니다. 샘플 또는 해당 텍스트에 출력에 대한 정보가 포함되어야 하는지 여부를 결정하는 데 많은 요인이 도움이 됩니다.
 
