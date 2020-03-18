@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 8d4d8c572435b9261038017c04dcad78ec83fe67
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288368"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331750"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 문서용 메타데이터 및 Markdown 템플릿
 
@@ -43,7 +43,7 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>기본 Markdown, GFM 및 특수 문자
 
-[Markdown](how-to-write-use-markdown.md) 및 [Markdown 참조](markdown-reference.md)의 일반 문서에서 Markdown, GFM(GitHub Flavored Markdown) 및 OPS별 확장의 기본 사항을 배울 수 있습니다.
+[Markdown 참조](markdown-reference.md) 문서에서 Markdown, GFM(GitHub Flavored Markdown) 및 OPS 관련 확장에 대한 기본 사항을 알아볼 수 있습니다.
 
 Markdown은 서식 지정에 \*, \` 및 \#과 같은 특수 문자를 사용합니다. 콘텐츠에 이러한 문자 중 하나를 포함하려면 다음 두 가지 작업 중 하나를 수행해야 합니다.
 
@@ -126,7 +126,7 @@ UID 뒤에 \*(또는 `%2A`)를 추가하면 링크는 특정 API가 아닌 오�
 
 ## <a name="code"></a>코드
 
-코드를 포함하기 위한 가장 좋은 방법은 작동하는 샘플의 코드 조각을 포함하는 것입니다. [.NET에 참여](dotnet-contribute-process.md#contributing-to-samples) 문서의 지침에 따라 샘플을 만듭니다. 코드 포함에 대한 기본 규칙은 [코드](how-to-write-use-markdown.md#code-snippets)에 대한 일반 지침에 있습니다.
+코드를 포함하기 위한 가장 좋은 방법은 작동하는 샘플의 코드 조각을 포함하는 것입니다. [.NET에 참여](dotnet-contribute-process.md#contributing-to-samples) 문서의 지침에 따라 샘플을 만듭니다. 코드 포함에 대한 기본 규칙은 [코드](code-in-docs.md)에 대한 일반 지침에 있습니다.
 
 다음 구문을 사용하여 코드를 포함할 수 있습니다.
 
@@ -145,7 +145,7 @@ UID 뒤에 \*(또는 `%2A`)를 추가하면 링크는 특정 API가 아닌 오�
 
 * `<queryoption>`(*선택 사항*)
   * 파일에서 코드를 검색하는 방법을 지정하는 데 사용됩니다.
-    * `#`: `#{tagname}`(태그 이름) *또는* `#L{startlinenumber}-L{endlinenumber}`(줄 범위).
+    * `#`: `#{tagname}`(태그 이름) ‘또는’ `#L{startlinenumber}-L{endlinenumber}`(줄 범위). 
     매우 약하기 때문에 줄 번호를 사용하지 않는 것이 좋습니다. 태그 이름은 코드 조각 참조의 기본 방법입니다. 의미 있는 태그 이름을 사용합니다. (이전 플랫폼에서 많은 코드 조각을 마이그레이션했으며 태그에 `Snippet1`, `Snippet2` 등의 이름이 있습니다. 이러한 실행은 유지하기가 훨씬 더 어렵습니다.)
     * `range`: `?range=1,3-5` 줄 범위입니다. 이 예제는 1, 3, 4 및 5 줄을 포함합니다.
 
@@ -183,7 +183,7 @@ UID 뒤에 \*(또는 `%2A`)를 추가하면 링크는 특정 API가 아닌 오�
 [![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net)
 ```
 
-## <a name="videos"></a>비디오
+## <a name="videos"></a>동영상
 
 현재 Channel 9 및 YouTube 비디오를 다음 구문과 함께 포함할 수 있습니다.
 

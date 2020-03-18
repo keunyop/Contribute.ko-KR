@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: sdwheeler
 ms.author: sewhee
 ms.date: 10/09/2019
-ms.openlocfilehash: e7ee9295794adfde78a2d500f0de3309dd3c821a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 073a44240b1aa4baa9e655dab069097d21cdd66d
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72290360"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331932"
 ---
 # <a name="markdown-style-guide-for-powershell-docs"></a>PowerShell-Docs에 대한 Markdown 스타일 가이드
 
@@ -59,7 +59,7 @@ Windows 특정 기술을 설명하는 동안 “Windows PowerShell”을 변경�
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>기본 Markdown, GFM 및 특수 문자
 
-[Markdown](../how-to-write-use-markdown.md) 및 [Markdown 참조](../markdown-reference.md)의 일반 문서에서 Markdown, GFM(GitHub Flavored Markdown) 및 OPS별 확장의 기본 사항을 배울 수 있습니다.
+[Markdown 참조](../markdown-reference.md) 문서에서 Markdown, GFM(GitHub Flavored Markdown) 및 OPS 관련 확장에 대한 기본 사항을 알아볼 수 있습니다.
 
 Markdown은 서식 지정에 \*, \` 및 \#과 같은 특수 문자를 사용합니다. 콘텐츠에 이러한 문자 중 하나를 포함하려면 다음 두 가지 작업 중 하나를 수행해야 합니다.
 

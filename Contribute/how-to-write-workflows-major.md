@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188250"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331909"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>중요하거나 장기 실행되는 변경 내용에 대한 GitHub 참여 워크플로
 
@@ -110,4 +110,4 @@ git checkout -b "branchname"
 
 이것으로 끝입니다. 여러분은 docs.microsoft.com 콘텐츠에 참여하셨습니다.
 
-- Markdwon, Markdown 확장 구문과 같은 항목에 대해 자세히 알아보려면 계속해서 [필수 항목 작성](how-to-write-use-markdown.md) 문서를 진행하세요.
+- Markdwon, Markdown 확장 구문과 같은 항목에 대해 자세히 알아보려면 계속해서 [Markdown 참조](markdown-reference.md) 문서를 진행하세요.

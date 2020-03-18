@@ -14,18 +14,40 @@
       href: how-to-write-workflows-major.md
 - name: Essentials 작성
   items:
-    - name: Markdown
-      href: how-to-write-use-markdown.md
     - name: Markdown 참조
       href: markdown-reference.md
+      displayName: alerts notes tips important caution warnings apostrophes quotation marks quotes blockquotes bold italic code snippets columns headings html images includes links lists bullets bulleted checklist numbered next steps button localize non-localized section selector superscript subscript table tables tabs tabbed videos icons
     - name: 스타일 및 음성 빠른 시작
       href: style-quick-start.md
     - name: 스타일 가이드
       href: /style-guide/
+    - name: 문서에 코드 추가
+      href: code-in-docs.md
+      displayName: 'backtick, code blocks, inline code blocks, repo snippet reference, !code-, interactive code snippets, programming languages, languages, code extensions, extensions'
+    - name: 텍스트 서식 지정
+      href: text-formatting-guidelines.md
     - name: 링크
       href: how-to-write-links.md
     - name: Docs Authoring Pack
-      href: how-to-write-docs-auth-pack.md
+      items:
+        - name: 개요
+          href: how-to-write-docs-auth-pack.md
+        - name: 기능
+          items:
+            - name: 개발자 언어 완성
+              href: docs-authoring/dev-lang-completion.md
+            - name: 이미지 압축
+              href: docs-authoring/image-compression.md
+            - name: 메타데이터 업데이트
+              href: docs-authoring/metadata-updates.md
+            - name: Markdown 테이블 서식 다시 지정
+              href: docs-authoring/reformat-table.md
+            - name: 둥근 따옴표 바꾸기
+              href: docs-authoring/smart-quote-replacement.md
+            - name: 리디렉션 정렬
+              href: docs-authoring/sort-redirects.md
+            - name: 선택 영역 정렬
+              href: docs-authoring/sort-selection.md
 - name: 문서 집합별 지침
   items:
     - name: .NET 문서
