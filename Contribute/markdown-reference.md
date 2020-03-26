@@ -7,12 +7,12 @@ ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
+ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78331969"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80070069"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown 참조
 
@@ -627,6 +627,19 @@ Markdown 테이블에 긴 단어가 있으면 테이블이 오른쪽 탐색으�
 ### <a name="line-breaks-within-words-in-second-column-table-cells"></a>두 번째 열 테이블 셀에 있는 단어 내 줄 바꿈
 
 테이블의 두 번째 열에 있는 단어 내에서만 줄 바꿈이 자동으로 삽입되도록 할 수 있습니다. 줄 바꿈을 두 번째 열로 제한하려면 앞에 표시된 대로 `div` 래퍼 구문을 사용하여 `mx-tdCol2BreakAll` 클래스를 적용합니다.
+
+### <a name="data-matrix-tables"></a>데이터 행렬 테이블
+
+데이터 행렬 테이블에는 헤더와 첫 번째 가중 열이 둘 다 있으므로 왼쪽 상단에 빈 셀이 있는 행렬을 만듭니다. 문서에는 데이터 행렬 테이블에 대한 사용자 지정 Markdown이 있습니다.
+
+```md
+|                  |Header 1 |Header 2|
+|------------------|---------|--------|
+|**First column A**|Cell 1A  |Cell 2A |
+|**First column B**|Cell 1B  |Cell 2B |
+```
+
+첫 번째 열의 모든 항목은 '굵게'(`**bold**`)로 스타일을 지정해야 합니다. 그렇지 않으면 화면 읽기 프로그램에서 테이블에 액세스할 수 없거나 문서가 유효하지 않습니다.
 
 ### <a name="html-tables"></a>HTML 테이블
 
