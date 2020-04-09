@@ -53,28 +53,16 @@
     - name: .NET 문서
       items:
         - name: .NET 문서에 기여하는 방법
-          href: dotnet-contribute.md
-        - name: .NET 문서에 기여
-          href: dotnet-contribute-process.md
+          href: dotnet/dotnet-contribute.md
+        - name: 레이블 및 프로젝트 로드맵
+          href: dotnet/labels-projects.md
         - name: .NET 문서 스타일 규칙
-          href: dotnet-style-guide.md
+          href: dotnet/dotnet-style-guide.md
         - name: 음성 및 톤 가이드
-          href: dotnet-voice-tone.md
+          href: dotnet/dotnet-voice-tone.md
         - name: 끌어오기 요청 검토 프로세스
-          href: dotnet-pr-review.md
-    - name: PowerShell 문서
-      items:
-        - name: PowerShell 문서에 기여하는 방법
-          href: powershell\powershell-contribute.md
-        - name: PowerShell에 대한 기여 프로세스
-          href: powershell\powershell-contribute-process.md
-        - name: PowerShell 문서 작성에 대한 빠른 시작
-          href: powershell\powershell-style-basic-markdown.md
-        - name: PowerShell 스크립트 샘플 스타일 가이드
-          href: powershell\powershell-style-code.md
-        - name: PowerShell Cmdlet 참조 스타일 가이드
-          href: powershell\powershell-style-reference.md
-        - name: PowerShell에 대한 끌어오기 요청 제출
-          href: powershell\powershell-pull-requests.md
+          href: dotnet/dotnet-pr-review.md
+    - name: PowerShell-Docs
+      href: powershell-overview.md
 - name: 추가 리소스
   href: additional-resources.md

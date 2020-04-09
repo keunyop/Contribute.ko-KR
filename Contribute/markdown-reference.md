@@ -3,16 +3,16 @@ title: docs.microsoft.com에 대한 Markdown 참조
 description: Microsoft Docs 플랫폼에서 사용되는 Markdown 기능 및 구문을 알아봅니다.
 author: meganbradley
 ms.author: mbradley
-ms.date: 01/30/2020
+ms.date: 03/31/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
-ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
+ms.openlocfilehash: f0aed4ebb57ee1ce34f55d9085bab718fd4511cb
+ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80070069"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624721"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown 참조
 
@@ -70,7 +70,7 @@ Markdown을 작성하는 데는 어떤 텍스트 편집기든 사용할 수 있�
 
 ## <a name="apostrophes-and-quotation-marks"></a>아포스트로피 및 큰따옴표
 
-Word에서 Markdown 편집기로 복사하는 경우 텍스트에 "스마트"(둥근) 아포스트로피 및 큰따옴표가 포함될 수 있습니다. 이러한 기호는 인코딩하거나 기본 아포스트로피 또는 큰따옴표로 변경해야 합니다. 그렇지 않을 경우 파일이 게시되면 다음과 같이 표시됩니다. Itâ€™s
+Word에서 Markdown 편집기로 복사하는 경우 텍스트에 "스마트"(둥근) 아포스트로피 및 큰따옴표가 포함될 수 있습니다. 이러한 기호는 인코딩하거나 기본 아포스트로피 또는 큰따옴표로 변경해야 합니다. 그렇지 않을 경우 파일이 게시되면 다음과 같이 표시됩니다. Itâ&euro;&trade;s
 
 이러한 "스마트" 버전 문장 부호를 다음과 같이 인코딩합니다.
 
@@ -187,11 +187,11 @@ Docs는 6가지 수준의 Markdown 제목을 지원합니다.
 - H1 제목은 파일에서 YML 메타데이터 블록 다음의 첫 번째 콘텐츠여야 합니다.
 - H2 제목은 게시된 파일의 오른쪽 탐색 메뉴에 자동으로 표시됩니다. 더 낮은 수준의 제목은 표시되지 않으므로 H2를 전략적으로 사용하여 독자의 콘텐츠 탐색을 돕습니다.
 - `<h1>`과 같은 HTML 제목은 사용하지 않는 것이 좋으며 경우에 따라 빌드 경고가 발생합니다.
-- [책갈피 링크](how-to-write-links.md#links-to-anchors)를 통해 파일의 개별 제목에 연결할 수 있습니다.
+- [책갈피 링크](how-to-write-links.md#explicit-anchor-links)를 통해 파일의 개별 제목에 연결할 수 있습니다.
 
 ## <a name="html"></a>HTML
 
-Markdown에서는 인라인 HTML을 지원하지만 HTML은 Docs에 게시하는 데 사용하지 않는 것이 좋으며 제한된 값 목록을 제외하고는 빌드 오류 또는 경고가 발생합니다. 
+Markdown에서는 인라인 HTML을 지원하지만 HTML은 Docs에 게시하는 데 사용하지 않는 것이 좋으며 제한된 값 목록을 제외하고는 빌드 오류 또는 경고가 발생합니다.
 
 ## <a name="images"></a>이미지
 
