@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d52d681987e26fddc89a33075b3d35279608ac04
-ms.sourcegitcommit: bf2f4c7d9050b480d4db306df19d4c9f8714eff0
+ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759587"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784298"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>.NET 문서 리포지토리에 참여하는 방법 알아보기
 
@@ -203,6 +203,10 @@ C# 대화형 환경은 샘플 작업 방법을 변경합니다. 방문자는 샘
 
 > [!NOTE]
 > 일부 항목은 현재 여기에 지정된 지침을 따르지 않을 수 있습니다. 사이트 전반에 걸쳐 일관성을 유지하기 위해 노력하고 있습니다. 특정 목적에 대해 현재 추적 중인 [미해결 문제](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22) 목록을 확인합니다.
+
+### <a name="contributing-to-international-content"></a>국가별 콘텐츠 기여   
+
+MT(기계 번역) 콘텐츠에 대한 기여는 현재 허용되지 않습니다. MT 콘텐츠의 품질을 개선하기 위해 인공신경망 MT 엔진으로 전환되었습니다. 인공신경망 MT 엔진을 학습시키는 데 사용되는 HT(사람이 한 번역) 콘텐츠에 대한 기여는 허용 및 권장됩니다. 따라서 시간을 두고 점차 HT 콘텐츠에 대한 기여가 HT 및 MT 모두의 품질을 개선합니다. MT 토픽에는 토픽의 일부가 MT일 수 있음을 나타내는 고지 사항이 있으며, 편집을 사용할 수 없으므로 **편집** 단추가 표시되지 않습니다.   
 
 ## <a name="contributor-license-agreement"></a>기여자 라이선스 계약
 
