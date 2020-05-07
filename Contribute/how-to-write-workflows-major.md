@@ -6,10 +6,10 @@ ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
 ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78331909"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>중요하거나 장기 실행되는 변경 내용에 대한 GitHub 참여 워크플로
@@ -31,7 +31,7 @@ ms.locfileid: "78331909"
 
 시작하기 전에 이 워크플로에서 사용되는 Git/GitHub 용어 및 monikers의 일부를 검토하겠습니다. 이 내용을 이제 이해할 수 있습니다. 이 내용에 대해 배우게 됩니다. 정의를 확인해야 하는 경우 이 섹션을 다시 참조하세요.
 
-| Name | 설명 |
+| 이름 | 설명 |
 |-----------|-------------|
 |포크|기본 GitHub 리포지토리의 복사본을 참조하는 경우 일반적으로 명사로 사용됩니다. 실제로 포크는 다른 리포지토리일 뿐입니다. 하지만 GitHub이 기본/부모 리포지토리에 다시 연결된다는 점에서 구별됩니다. "먼저 리포지토리를 포크해야 합니다."에서와 같이 동사로 사용되는 경우가 있습니다.|
 |원격|"원본" 또는 "업스트림" 원격과 같이 원격 리포지토리에 대한 명명된 연결입니다. 이 연결은 다른 컴퓨터에서 호스팅되는 리포지토리를 참조하는 데 사용되므로 Git에서는 이를 원격이라고 합니다. 이 워크플로에서 원격은 항상 GitHub 리포지토리입니다.|

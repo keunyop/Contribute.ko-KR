@@ -7,10 +7,10 @@ ms.topic: contributor-guide
 ms.date: 03/03/2020
 ms.author: scaddie
 ms.openlocfilehash: f81dc2315dc09256639c98ed72484517ff2c6ff3
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336799"
 ---
 # <a name="dev-lang-completion"></a>개발자 언어 완성
@@ -23,7 +23,7 @@ ms.locfileid: "78336799"
 
 C#을 예로 들어 보겠습니다. 기여자는 해당 언어에 대한 개발자 언어 표시로 `c#`, `C#`, `cs`, `csharp` 등을 사용합니다. 이러한 표시 중 올바른 것은 무엇인가요?
 
-‘개발자 언어 완성’ 기능은 알려진 개발자 언어 목록을 표시하여 혼동이 발생하지 않도록 합니다.  IntelliSense에서 개발자 언어 이름을 선택하면 다음 작업이 수행됩니다.
+‘개발자 언어 완성’ 기능은 알려진 개발자 언어 목록을 표시하여 혼동이 발생하지 않도록 합니다. IntelliSense에서 개발자 언어 이름을 선택하면 다음 작업이 수행됩니다.
 
 * 코드 펜스가 닫힙니다.
 * 캐럿이 코드 펜스에 배치됩니다.
@@ -40,7 +40,7 @@ C#을 예로 들어 보겠습니다. 기여자는 해당 언어에 대한 개발
 단일 문서 집합에는 유효한 개발자 언어의 일부만 사용됩니다. 사용자 환경을 개선하려면 다음을 수행합니다.
 
 1. Visual Studio Code에서 루트 디렉터리의 문서 집합을 엽니다.
-1. **파일** > **기본 설정** > **설정** 및 Docs Markdown 확장별 필터를 선택합니다. 
+1. **파일** > **기본 설정** > **설정** 및 Docs Markdown 확장별 필터를 선택합니다.
 1. **Markdown: 문서 집합 언어** 섹션에서 **settings.json에서 편집** 링크를 클릭합니다.
 1. 다음 `markdown.docsetLanguages` 속성을 *settings.json* 파일에 추가합니다.
 
@@ -77,7 +77,7 @@ C#을 예로 들어 보겠습니다. 기여자는 해당 언어에 대한 개발
 
 이 설정을 변경하려면 다음을 수행합니다.
 
-1. **파일** > **기본 설정** > **설정** 및 Docs Markdown 확장별 필터를 선택합니다. 
+1. **파일** > **기본 설정** > **설정** 및 Docs Markdown 확장별 필터를 선택합니다.
 1. **Markdown: 모든 사용 가능한 언어** 섹션에서 설정을 토글합니다.
 
 ## <a name="in-action"></a>예제

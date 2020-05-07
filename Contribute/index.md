@@ -11,7 +11,7 @@ ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
 ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "81784293"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 참여자 가이드 개요

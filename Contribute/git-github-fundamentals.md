@@ -6,10 +6,10 @@ ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/30/2017
 ms.openlocfilehash: c099a458718ade11840c314542c530dd6669402d
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78331886"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Docs용 Git 및 GitHub 기본 사항
@@ -70,9 +70,9 @@ GitHub는 [docs.microsoft.com](https://docs.microsoft.com) 콘텐츠를 저장�
 - 파일 맨 위에서 2개의 3-하이픈 선으로 구분된 **메타데이터 헤더**. 문서와 관련된 정보를 추적하는 데 사용되는 다양한 태그가 포함되어 있습니다. 문서 메타데이터를 사용하면 작성자 특성, 기여자 특성, 이동 경로, 문서 설명 등의 특정 기능을 사용할 수 있습니다. 또한 Microsoft가 콘텐츠의 성능을 평가하는 데 사용하는 SEO 최적화 및 보고 프로세스가 포함되어 있습니다. 따라서 메타데이터는 중요합니다.
 - 다양한 메타데이터 태그 및 값에 대해 설명하는 **메타데이터 섹션**. 메타데이터 섹션에 사용할 값을 잘 모를 경우에는 해당 섹션을 비워두거나 선행 해시태그(#)를 사용하여 주석으로 처리할 수 있습니다. 그런 다음 리포지토리의 끌어오기 요청 검토자가 검토 및 완료합니다.
 - 다양한 **Markdown 사용 예**는 문서 요소의 형식을 지정합니다.
-- 다양한 알림 형식에 사용할 수 있는 **Markdown 확장 사용에 대한 일반적인 지침**
+- 다양한 알림 형식에 사용할 수 있는 **Markdown 확장 사용에 대한 일반적인 지침**.
 - iframe을 사용하여 **동영상을 포함**하는 예제
-- 단추 및 선택기와 같은 특수한 컨트롤에 사용할 수 있는 **docs.microsoft.com 확장 사용에 대한 일반적인 지침**
+- 단추 및 선택기와 같은 특수한 컨트롤에 사용할 수 있는 **docs.microsoft.com 확장 사용에 대한 일반적인 지침**.
 
 ## <a name="pull-requests"></a>끌어오기 요청
 

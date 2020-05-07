@@ -8,10 +8,10 @@ author: jasonwhowell
 ms.author: jasonh
 ms.date: 04/30/2018
 ms.openlocfilehash: ba7e511d756f43acfa5cfbbd228f793d7fbce727
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78331863"
 ---
 # <a name="install-content-authoring-tools"></a>콘텐츠 작성 도구 설치

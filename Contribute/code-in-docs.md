@@ -8,10 +8,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 4aa34196f59a69651dd19add35a0351dd9b5d59b
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336481"
 ---
 # <a name="how-to-include-code-in-docs"></a>문서에 코드를 포함하는 방법
@@ -140,7 +140,7 @@ docs.microsoft.com에 게시되는 문서에 코드를 포함하는 다음 몇 �
 
 코드 파일을 참조하여 코드를 표시하는 것이 비실용적인 경우에만 인라인 코드 블록을 사용합니다. 인라인 코드는 일반적으로 전체 프로젝트의 일부인 코드 파일보다 테스트 및 최신 상태 유지가 더 어렵습니다.  인라인 코드에는 개발자가 코드를 이해하고 사용하는 데 도움이 되는 컨텍스트가 생략될 수도 있습니다. 이러한 고려 사항은 주로 프로그래밍 언어에 적용됩니다. 인라인 코드 블록은 출력 및 입력(예: JSON), 쿼리 언어(예: SQL), 스크립팅 언어(예: PowerShell)에도 사용될 수 있습니다.
   
-문서 파일에서 텍스트 섹션을 나타내는 두 가지 방법은 backtick 3개(\`\`\`)로 ‘펜싱’하거나 들여쓰기를 사용한 코드 블록입니다.  언어를 지정할 수 있는 펜싱을 사용하는 것이 좋습니다. 들여쓰기는 너무 간단하여 실수하기가 쉽고 다른 작성자가 문서를 편집해야 할 때 원래 작성자의 의도를 이해하기 어려울 수 있으므로 사용하지 않는 것이 좋습니다.
+문서 파일에서 텍스트 섹션을 나타내는 두 가지 방법은 backtick 3개(\`\`\`)로 ‘펜싱’하거나 들여쓰기를 사용한 코드 블록입니다. 언어를 지정할 수 있는 펜싱을 사용하는 것이 좋습니다. 들여쓰기는 너무 간단하여 실수하기가 쉽고 다른 작성자가 문서를 편집해야 할 때 원래 작성자의 의도를 이해하기 어려울 수 있으므로 사용하지 않는 것이 좋습니다.
 
 언어 표시기는 다음 예제와 같이 여는 backtick 3개 바로 뒤에 옵니다.
 
@@ -269,7 +269,7 @@ Markdown:
 
 ## <a name="out-of-repo-snippet-references"></a>리포지토리 외부 코드 조각 참조
 
-참조하려는 코드 파일이 다른 리포지토리에 있으면 코드 리포지토리를 ‘종속 리포지토리’로 설정합니다.  이 경우 이름을 지정합니다. 이 이름은 코드 참조를 위해 폴더 이름과 같이 작동합니다.
+참조하려는 코드 파일이 다른 리포지토리에 있으면 코드 리포지토리를 ‘종속 리포지토리’로 설정합니다. 이 경우 이름을 지정합니다. 이 이름은 코드 참조를 위해 폴더 이름과 같이 작동합니다.
 
 예를 들어 문서 리포지토리는 *Azure/azure-docs*이고, 코드 리포지토리는 *Azure/azure-functions-durable-extension*입니다.
 
@@ -410,8 +410,8 @@ Azure Cloud Shell 및 PowerShell Cloud Shell의 경우 사용자가 자신의 Az
 | AsciiDoc                       | `asciidoc`, `adoc`                                                             |
 | AspectJ                        | `aspectj`                                                                      |
 | ASPX                           | `aspx`                                                                         |
-| ASP.NET (C#)                   | `aspx-csharp`                                                                  |
-| ASP.NET (VB)                   | `aspx-vb`                                                                      |
+| ASP.NET(C#)                   | `aspx-csharp`                                                                  |
+| ASP.NET(VB)                   | `aspx-vb`                                                                      |
 | AutoHotkey                     | `autohotkey`                                                                   |
 | AutoIt                         | `autoit`                                                                       |
 | Awk                            | `awk`, `mawk`, `nawk`, `gawk`                                                  |
@@ -506,7 +506,7 @@ Azure Cloud Shell 및 PowerShell Cloud Shell의 경우 사용자가 자신의 Az
 | Mercury                        | `mercury`                                                                      |
 | mIRC Scripting Language        | `mirc`, `mrc`                                                                  |
 | Mizar                          | `mizar`                                                                        |
-| Managed Object Format          | `mof`                                                                          |
+| MOF(Managed Object Format)          | `mof`                                                                          |
 | Mojolicious                    | `mojolicious`                                                                  |
 | Monkey                         | `monkey`                                                                       |
 | Moonscript                     | `moonscript`, `moon`                                                           |
@@ -533,7 +533,7 @@ Azure Cloud Shell 및 PowerShell Cloud Shell의 경우 사용자가 자신의 Az
 | PowerShell (Interactive)       | `powershell-interactive`                                                       |
 | Processing                     | `processing`                                                                   |
 | Prolog                         | `prolog`                                                                       |
-| Properties                     | `properties`                                                                   |
+| 속성                     | `properties`                                                                   |
 | Protocol Buffers               | `protobuf`                                                                     |
 | Puppet                         | `puppet`, `pp`                                                                 |
 | Python                         | `python`, `py`, `gyp`                                                          |
@@ -559,7 +559,7 @@ Azure Cloud Shell 및 PowerShell Cloud Shell의 경우 사용자가 자신의 Az
 | Scheme                         | `scheme`                                                                       |
 | Scilab                         | `scilab`, `sci`                                                                |
 | Shape Expressions              | `shexc`                                                                        |
-| Shell                          | `shell`, `console`                                                             |
+| 셸                          | `shell`, `console`                                                             |
 | Smali                          | `smali`                                                                        |
 | Smalltalk                      | `smalltalk`, `st`                                                              |
 | Solidity                       | `solidity`, `sol`                                                              |

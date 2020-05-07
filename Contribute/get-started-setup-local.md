@@ -8,10 +8,10 @@ author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
 ms.openlocfilehash: e73c60c439285f901c5c83e538f8971d795bd6c4
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "72288599"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>설명서를 위한 Git 리포지토리 로컬로 설정
@@ -79,7 +79,7 @@ GitHub 웹 사이트를 통해 적절한 리포지토리를 사용하여 자신�
    > [!IMPORTANT]
    > 다른 git 리포지토리 폴더 위치 안에 중첩된 로컬 폴더 경로는 선택하지 마세요. 복제된 git 폴더를 서로 인접하여 저장하도록 허용되지만 서로의 내부에 git 폴더가 중첩되면 파일 추적 오류가 발생합니다.
 
-2. Git Bash를 시작합니다.
+2. Git Bash 시작
 
    ![Git Bash 시작](./media/contribute-get-started-setup-local/gitbash-start.png)
 

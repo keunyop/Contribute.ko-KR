@@ -8,10 +8,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 7b6927918c81fdc41e3c3887f94339b225e2a6e6
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336491"
 ---
 # <a name="text-formatting-guidelines"></a>텍스트 서식 지정 지침
@@ -26,7 +26,7 @@ ms.locfileid: "78336491"
 
 * **적용됨**: **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목**을 차례로 선택합니다.
 * **적용되지 않음**: 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 [추가 > 새 항목]을 차례로 선택합니다.
-* **적용되지 않음**: ‘솔루션 탐색기’에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 ‘추가 > 새 항목’을 차례로 선택합니다.  
+* **적용되지 않음**: ‘솔루션 탐색기’에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 ‘추가 > 새 항목’을 차례로 선택합니다.
 
 ## <a name="italics"></a>기울임꼴
 
@@ -38,7 +38,7 @@ ms.locfileid: "78336491"
 
 ### <a name="examples"></a>예제
 
-* **적용됨**: App Service에서는 앱이 ‘App Service 계획’에서 실행됩니다.  App Service 계획은 웹앱이 실행될 컴퓨팅 리소스 집합을 정의합니다.
+* **적용됨**: App Service에서는 앱이 ‘App Service 계획’에서 실행됩니다. App Service 계획은 웹앱이 실행될 컴퓨팅 리소스 집합을 정의합니다.
 * **적용되지 않음**: App Service에서는 앱이 “App Service 계획”에서 실행됩니다. App Service 계획은 웹앱이 실행될 컴퓨팅 리소스 집합을 정의합니다.
 * **적용됨**: *HttpTriggerCSharp.cs*의 코드를 다음 코드로 바꿉니다.
 * **적용되지 않음**: `HttpTriggerCSharp.cs`의 코드를 다음 코드로 바꿉니다.
@@ -59,7 +59,7 @@ ms.locfileid: "78336491"
 
 **적용 근거** 이전 스타일 가이드에서는 이러한 텍스트 요소 중 다수에 대해 굵게를 지정합니다. 하지만 대부분의 문서는 지역화되며, 코드 스타일은 텍스트의 해당 부분을 번역하지 않도록 번역기에 지시합니다.
 
-코드 스타일은 여러 줄로 되어 있는 ‘인라인’ 코드 블록(\`로 묶임)이거나 ‘펜싱된’ 코드 블록(\`\`\`로 묶임)일 수 있습니다.   긴 코드 조각과 경로는 펜스를 친 코드 블록에 넣습니다.
+코드 스타일은 여러 줄로 되어 있는 ‘인라인’ 코드 블록(\`로 묶임)이거나 ‘펜싱된’ 코드 블록(\`\`\`로 묶임)일 수 있습니다. 긴 코드 조각과 경로는 펜스를 친 코드 블록에 넣습니다.
 
 ### <a name="examples-using-inline-styles"></a>인라인 스타일을 사용하는 예제
 

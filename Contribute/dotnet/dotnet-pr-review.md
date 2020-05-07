@@ -6,10 +6,10 @@ ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 01/04/2019
 ms.openlocfilehash: 80877a93dc410454c939bcd5be5588861682ed11
-ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "80625123"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>.NET 문서 리포지토리에 대한 끌어오기 요청 검토 프로세스
