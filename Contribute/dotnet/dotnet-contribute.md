@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 948c96a63754566fc73e54c722998739984977d6
+ms.sourcegitcommit: 43a4f52ab827a7cf4609cc592483595efde3ceae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "81784298"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83203057"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>.NET 문서 리포지토리에 참여하는 방법 알아보기
 
@@ -69,7 +69,11 @@ ms.locfileid: "81784298"
 
 새 항목인 경우 이 [템플릿 파일](dotnet-style-guide.md)을 시작점으로 사용할 수 있습니다. 작성 지침이 포함되어 있으며 작성자 정보와 같이 각 문서에 필요한 메타데이터도 설명합니다.
 
-1단계에서 문서에 대해 결정된 TOC 위치에 해당하는 폴더로 이동합니다. 이 폴더에는 해당 섹션의 모든 문서에 대한 Markdown 파일이 들어 있습니다. 필요한 경우 콘텐츠용 파일을 배치할 새 폴더를 만듭니다. 해당 섹션의 주요 문서는 *index.md*라고 합니다. 이미지 및 기타 정적 리소스의 경우 문서를 포함하는 폴더 내에 **미디어**라는 하위 폴더를 만듭니다. **미디어** 폴더 내에서 문서 이름으로 하위 폴더를 만듭니다(인덱스 파일 제외). 샘플 코드는 [샘플](#contributing-to-samples)에 대한 섹션에 설명된 대로 `dotnet/samples` 리포지토리에 있어야 합니다.
+1단계에서 문서에 대해 결정된 TOC 위치에 해당하는 폴더로 이동합니다. 이 폴더에는 해당 섹션의 모든 문서에 대한 Markdown 파일이 들어 있습니다. 필요한 경우 콘텐츠용 파일을 배치할 새 폴더를 만듭니다. 해당 섹션의 주요 문서는 *index.md*라고 합니다.
+
+이미지 및 기타 정적 리소스의 경우 문서를 포함하는 폴더 내에 **미디어**라는 하위 폴더를 만듭니다. **미디어** 폴더 내에서 문서 이름으로 하위 폴더를 만듭니다(인덱스 파일 제외). 
+
+**코드 조각**의 경우 문서를 포함하는 폴더 내에 **조각**이라는 하위 폴더를 만듭니다(아직 없는 경우). 대부분의 경우 주요 .NET 언어인 C#, F# 및 Visual Basic 등 세 가지 모두의 코드 조각이 있습니다. 이 경우 세 프로젝트 각각에 대해 **csharp**, **fsharp**, **vb**라는 하위 폴더를 만듭니다. C# 가이드, F# 가이드 및 Visual Basic 가이드에 나오는 프로젝트용 **조각** 폴더를 사용하면 간편합니다. 이러한 영역에는 일반적으로 하나의 언어에 대한 조각이 있습니다. 코드 조각은 문서에 설명된 개념을 예시하는 요약된 작은 예제입니다. 다운로드 및 검색을 위한 큰 프로그램은 [dotnet/samples](https://github.com/dotnet/samples) 리포지토리에 있어야 합니다. 전체 샘플은 [샘플에 참여](#contributing-to-samples)의 섹션을 참조하세요.
 
 올바른 Markdown 구문을 따릅니다. 일반적인 예는 [템플릿 및 markdown 치트 시트](dotnet-style-guide.md)를 참조하세요.
 
@@ -83,6 +87,24 @@ ms.locfileid: "81784298"
           /media
             /porting-overview
                 portability_report.png
+          /snippets
+            /porting-overview
+              /csharp
+                porting.csproj
+                porting-overview.cs
+                Program.cs
+              /fsharp
+                porting.fsproj
+                porting-overview.fs
+                Program.fs
+               /vb
+                porting.vbproj
+                porting-overview.vb
+                Program.vb
+
+위의 구조에는 이미지 1개(*portability_report.png*) 및 *porting-overview.md* 문서에 포함된 **코드 조각**을 포함하는 코드 프로젝트 3개가 포함됩니다. 허용되는 대체 구조에는 언어별로 해당 폴더의 모든 문서에 대한 모든 코드 조각을 포함하는 프로젝트 1개가 포함됩니다. 이 대체 구조는 언어 구문을 예시하는 아주 작은 조각으로 인해 언어 참조 영역에서 사용되었습니다. 다른 영역에는 권장되지 않습니다.
+
+포함된 조각 대부분이 기록을 위해 *dotnet/docs* 리포지토리의 */samples* 폴더 아래에 저장됩니다. 문서에 중대한 변경이 필요한 경우에는 해당 코드 조각을 새 구조로 이동해야 합니다. 소소한 변경인 경우에는 코드 조각을 이동하지 마세요.
 
 **4단계:** 분기에서 마스터 분기로 PR(끌어오기 요청)을 제출합니다.
 
@@ -99,22 +121,20 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 유지관리자는 피드백이 적용되고 변경 내용이 승인되면 PR을 마스터 분기 내에 병합합니다.
 
-정기적으로 마스터 분기의 모든 커밋을 라이브 분기로 푸시하면 https://docs.microsoft.com/dotnet/ 에서 라이브로 기여한 것을 확인할 수 있습니다. 일반적으로 업무 주간 동안 매일 게시합니다. 유지 관리 활동으로 며칠 동안 게시가 지연될 수 있습니다.
+정기적으로 마스터 분기의 모든 커밋을 라이브 분기로 푸시하면 https://docs.microsoft.com/dotnet/에서 라이브로 기여한 것을 확인할 수 있습니다. 일반적으로 업무 주간 동안 매일 게시합니다. 유지 관리 활동으로 며칠 동안 게시가 지연될 수 있습니다.
 
 ## <a name="contributing-to-samples"></a>샘플에 참여
 
 [dotnet/samples](https://github.com/dotnet/samples) 리포지토리에는 .NET 문서 아래 항목의 일부인 모든 샘플 코드가 포함되어 있습니다. 하위 폴더에 구성된 여러 가지 다른 프로젝트가 있습니다. 이러한 하위 폴더는 .NET용 문서 조직과 유사하게 구성됩니다.
 
-리포지토리에 존재하는 코드에 대해 다음과 같이 구분합니다.
+콘텐츠를 지원하는 코드는 다음과 같이 구분합니다.
 
 - 샘플: readers는 샘플을 다운로드하고 실행할 수 있습니다. 모든 샘플은 완전한 애플리케이션 또는 라이브러리여야 합니다. 샘플이 라이브러리를 작성하는 곳에서는 readers가 코드를 실행할 수 있는 단위 테스트 또는 애플리케이션을 포함해야 합니다. 종종 둘 이상의 기술, 기능 또는 도구 키트를 사용합니다. 각 샘플의 readme.md 파일은 문서를 참조하므로 각 샘플에서 다루는 개념에 대해 자세히 읽을 수 있습니다.
 - 코드 조각: 더 작은 개념이나 작업을 보여줍니다. 컴파일되지만 완전한 애플리케이션을 위한 것은 아닙니다. 올바르게 실행되어야 하지만 일반적인 시나리오의 예제 애플리케이션은 아닙니다. 대신 단일 개념이나 기능을 설명하기 위해 가능한 한 작게 설계됩니다. 단일 코드 화면을 초과하면 안됩니다.
 
-모든 코드는 [dotnet/samples](https://github.com/dotnet/samples) 리포지토리에 있습니다. 샘플 폴더 구조는 문서 폴더 구조와 일치하는 모델로 작업하고 있습니다. 따르는 표준은 다음과 같습니다.
+샘플은 [dotnet/samples](https://github.com/dotnet/samples) 리포지토리에 저장됩니다. 샘플 폴더 구조는 문서 폴더 구조와 일치하는 모델로 작업하고 있습니다. 따르는 표준은 다음과 같습니다.
 
-- 최상위 수준 *코드 조각* 폴더에는 작고 집중된 샘플을 위한 코드 조각들이 포함되어 있습니다.
-- API 참조 샘플은 *snippets/\<language>/api/\<namespace>/\<apiname>* 패턴의 따라 폴더에 배치됩니다.
-- 다른 최상위 폴더는 *문서* 리포지토리의 최상위 폴더와 일치합니다. 예를 들어 문서 리포지토리에는 *machine-learning/tutorials* 폴더가 있고, 기계 학습 자습서 샘플은 *samples/machine-learning/tutorials* 폴더에 있습니다.
+- 최상위 폴더는 *docs* 리포지토리의 최상위 폴더와 일치합니다. 예를 들어 문서 리포지토리에는 *machine-learning/tutorials* 폴더가 있고, 기계 학습 자습서 샘플은 *samples/machine-learning/tutorials* 폴더에 있습니다.
 
 또한 *핵심* 및 *표준* 폴더 아래의 모든 샘플은 .NET Core에서 지원되는 모든 플랫폼에서 빌드하고 실행해야 합니다. CI 빌드 시스템이 이를 시행할 것입니다. 최상위 수준 *프레임워크* 폴더에는 Windows에서만 빌드되고 유효성을 검사한 샘플이 포함되어 있습니다.
 
@@ -126,7 +146,9 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 항목에는 샘플에 대한 링크도 포함됩니다. GitHub의 샘플 폴더에 직접 연결합니다.
 
-### <a name="writing-a-new-snippet-or-sample"></a>새 코드 조각 또는 샘플 작성
+### <a name="writing-a-new-sample"></a>새 샘플 작성
+
+샘플은 다운로드를 위한 전체 프로그램 및 라이브러리입니다. 샘플의 범위는 작을 수 있지만, 사용자가 직접 살펴보고 실험해 볼 수 있는 방법으로 개념을 예시합니다. 예제에 대한 지침에 따라 독자는 다운로드하고 살펴볼 수 있습니다. 각 지침의 예제로 [PLINQ(병렬 LINQ)](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ) 샘플을 검토합니다.
 
 1. 샘플은 **빌드 가능한 프로젝트의 일부여야 합니다**. 가능한 경우 프로젝트는 .NET Core에서 지원하는 모든 플랫폼에 빌드되어야 합니다. 이에 대한 예외는 플랫폼별 기능 또는 플랫폼별 도구를 보여주는 샘플입니다.
 
@@ -179,7 +201,29 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 3. 샘플의 루트 디렉터리에 readme.md를 추가합니다.
 
-   여기에는 코드에 대한 간략한 설명이 포함되어야 하며 샘플을 참조하는 문서를 참조해야 합니다.
+   여기에는 코드에 대한 간략한 설명이 포함되어야 하며 샘플을 참조하는 문서를 참조해야 합니다. *readme.md*의 맨 위에는 [샘플 브라우저](https://docs.microsoft.com/samples)에 필요한 메타데이터가 있어야 합니다. 헤더 블록에는 다음 필드가 포함되어야 합니다.
+
+   ```yml
+   ---
+   name: "really cool sample"
+   description: "Learn everything about this really cool sample."
+   page_type: sample
+   languages:
+     - csharp
+     - fsharp
+     - vbnet
+   products:
+     - dotnet-core
+     - dotnet
+     - dotnet-standard
+     - aspnet
+     - aspnet-core
+     - ef-core
+   ---
+   ```
+
+   - `languages` 컬렉션에는 샘플에 사용할 수 있는 언어만 포함되어야 합니다.
+   - `products` 컬렉션에는 샘플과 관련된 제품만 포함되어야 합니다.
 
 명시된 경우를 제외하고 모든 샘플은 .NET Core에서 지원되는 모든 플랫폼의 명령줄에서 빌드됩니다. Visual Studio와 관련된 샘플이 몇 가지 있으며 Visual Studio 2017 이상이 필요합니다. 또한 일부 샘플은 플랫폼별 기능을 나타내며 특정 플랫폼이 필요합니다. 다른 샘플 및 코드 조각에는 .NET Framework가 필요하고, Windows 플랫폼에서 실행되며, 대상 Framework 버전용 Developer Pack이 필요합니다.
 
@@ -204,9 +248,9 @@ C# 대화형 환경은 샘플 작업 방법을 변경합니다. 방문자는 샘
 > [!NOTE]
 > 일부 항목은 현재 여기에 지정된 지침을 따르지 않을 수 있습니다. 사이트 전반에 걸쳐 일관성을 유지하기 위해 노력하고 있습니다. 특정 목적에 대해 현재 추적 중인 [미해결 문제](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22) 목록을 확인합니다.
 
-### <a name="contributing-to-international-content"></a>국가별 콘텐츠 기여   
+### <a name="contributing-to-international-content"></a>국가별 콘텐츠 기여
 
-MT(기계 번역) 콘텐츠에 대한 기여는 현재 허용되지 않습니다. MT 콘텐츠의 품질을 개선하기 위해 인공신경망 MT 엔진으로 전환되었습니다. 인공신경망 MT 엔진을 학습시키는 데 사용되는 HT(사람이 한 번역) 콘텐츠에 대한 기여는 허용 및 권장됩니다. 따라서 시간을 두고 점차 HT 콘텐츠에 대한 기여가 HT 및 MT 모두의 품질을 개선합니다. MT 토픽에는 토픽의 일부가 MT일 수 있음을 나타내는 고지 사항이 있으며, 편집을 사용할 수 없으므로 **편집** 단추가 표시되지 않습니다.   
+MT(기계 번역) 콘텐츠에 대한 기여는 현재 허용되지 않습니다. MT 콘텐츠의 품질을 개선하기 위해 인공신경망 MT 엔진으로 전환되었습니다. 인공신경망 MT 엔진을 학습시키는 데 사용되는 HT(사람이 한 번역) 콘텐츠에 대한 기여는 허용 및 권장됩니다. 따라서 시간을 두고 점차 HT 콘텐츠에 대한 기여가 HT 및 MT 모두의 품질을 개선합니다. MT 토픽에는 토픽의 일부가 MT일 수 있음을 나타내는 고지 사항이 있으며, 편집을 사용할 수 없으므로 **편집** 단추가 표시되지 않습니다.
 
 ## <a name="contributor-license-agreement"></a>기여자 라이선스 계약
 
