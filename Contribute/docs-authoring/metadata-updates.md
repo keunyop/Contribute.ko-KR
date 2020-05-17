@@ -29,7 +29,7 @@ Markdown( *\*.md*) 파일에는 메타데이터와 관련된 두 개의 상황�
 
 ## <a name="update-implicit-metadata-values"></a>암시적 메타데이터 값 업데이트
 
-**암시적 메타데이터 값 업데이트** 옵션을 선택하면 암시적으로 지정할 수 있는 모든 가능한 메타데이터 값을 찾아 바꿉니다. 메타데이터 값은 *docfx.json* 파일의 `build/fileMetadata` 노드에서 암시적으로 지정됩니다. `fileMetadata` 노드에 있는 각각의 키 값 쌍은 메타데이터 기본값을 나타냅니다. 예를 들어 *메타데이터 값을 생략하는*top-level/sub-folder`ms.author` 디렉터리의 Markdown 파일은 `fileMetadata` 노드에 사용할 기본값을 암시적으로 지정할 수 있습니다.
+**암시적 메타데이터 값 업데이트** 옵션을 선택하면 암시적으로 지정할 수 있는 모든 가능한 메타데이터 값을 찾아 바꿉니다. 메타데이터 값은 *docfx.json* 파일의 `build/fileMetadata` 노드에서 암시적으로 지정됩니다. `fileMetadata` 노드에 있는 각각의 키 값 쌍은 메타데이터 기본값을 나타냅니다. 예를 들어 `ms.author` 메타데이터 값을 생략하는 *top-level/sub-folder* 디렉터리의 Markdown 파일은 `fileMetadata` 노드에 사용할 기본값을 암시적으로 지정할 수 있습니다.
 
 ```json
 {
