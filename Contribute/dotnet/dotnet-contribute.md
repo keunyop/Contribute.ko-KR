@@ -4,13 +4,13 @@ description: 이 문서에서는 .NET 설명서에서 구성되는 리포지토�
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 11/07/2018
-ms.openlocfilehash: 948c96a63754566fc73e54c722998739984977d6
-ms.sourcegitcommit: 43a4f52ab827a7cf4609cc592483595efde3ceae
+ms.date: 05/14/2020
+ms.openlocfilehash: c4382a66035a10debb2a0aa05f61c549a3f97ee6
+ms.sourcegitcommit: 300ce72ffc8596213e82ae511b1b314c850841c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83203057"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83404151"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>.NET 문서 리포지토리에 참여하는 방법 알아보기
 
@@ -73,7 +73,7 @@ ms.locfileid: "83203057"
 
 이미지 및 기타 정적 리소스의 경우 문서를 포함하는 폴더 내에 **미디어**라는 하위 폴더를 만듭니다. **미디어** 폴더 내에서 문서 이름으로 하위 폴더를 만듭니다(인덱스 파일 제외). 
 
-**코드 조각**의 경우 문서를 포함하는 폴더 내에 **조각**이라는 하위 폴더를 만듭니다(아직 없는 경우). 대부분의 경우 주요 .NET 언어인 C#, F# 및 Visual Basic 등 세 가지 모두의 코드 조각이 있습니다. 이 경우 세 프로젝트 각각에 대해 **csharp**, **fsharp**, **vb**라는 하위 폴더를 만듭니다. C# 가이드, F# 가이드 및 Visual Basic 가이드에 나오는 프로젝트용 **조각** 폴더를 사용하면 간편합니다. 이러한 영역에는 일반적으로 하나의 언어에 대한 조각이 있습니다. 코드 조각은 문서에 설명된 개념을 예시하는 요약된 작은 예제입니다. 다운로드 및 검색을 위한 큰 프로그램은 [dotnet/samples](https://github.com/dotnet/samples) 리포지토리에 있어야 합니다. 전체 샘플은 [샘플에 참여](#contributing-to-samples)의 섹션을 참조하세요.
+**코드 조각**의 경우 문서를 포함하는 폴더 내에 **조각**이라는 하위 폴더를 만듭니다(아직 없는 경우).  **조각** 폴더 내에서 문서 이름으로 하위 폴더를 만듭니다. 대부분의 경우 주요 .NET 언어인 C#, F# 및 Visual Basic 등 세 가지 모두의 코드 조각이 있습니다. 이 경우 세 프로젝트 각각에 대해 **csharp**, **fsharp**, **vb**라는 하위 폴더를 만듭니다. C# 가이드, F# 가이드 및 Visual Basic 가이드에 나오는 프로젝트용 **조각** 폴더를 사용하면 간편합니다. 이러한 영역에는 일반적으로 하나의 언어에 대한 조각이 있습니다. 코드 조각은 문서에 설명된 개념을 예시하는 요약된 작은 예제입니다. 다운로드 및 검색을 위한 큰 프로그램은 [dotnet/samples](https://github.com/dotnet/samples) 리포지토리에 있어야 합니다. 전체 샘플은 [샘플에 참여](#contributing-to-samples)의 섹션을 참조하세요.
 
 올바른 Markdown 구문을 따릅니다. 일반적인 예는 [템플릿 및 markdown 치트 시트](dotnet-style-guide.md)를 참조하세요.
 
@@ -121,7 +121,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 유지관리자는 피드백이 적용되고 변경 내용이 승인되면 PR을 마스터 분기 내에 병합합니다.
 
-정기적으로 마스터 분기의 모든 커밋을 라이브 분기로 푸시하면 https://docs.microsoft.com/dotnet/에서 라이브로 기여한 것을 확인할 수 있습니다. 일반적으로 업무 주간 동안 매일 게시합니다. 유지 관리 활동으로 며칠 동안 게시가 지연될 수 있습니다.
+정기적으로 마스터 분기의 모든 커밋을 라이브 분기로 푸시하면 https://docs.microsoft.com/dotnet/ 에서 라이브로 기여한 것을 확인할 수 있습니다. 일반적으로 업무 주간 동안 매일 게시합니다. 유지 관리 활동으로 며칠 동안 게시가 지연될 수 있습니다.
 
 ## <a name="contributing-to-samples"></a>샘플에 참여
 
