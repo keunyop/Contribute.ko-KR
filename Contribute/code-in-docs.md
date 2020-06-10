@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 4aa34196f59a69651dd19add35a0351dd9b5d59b
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 4e57af6a1fe9a9d3799f09cb04f3bd3f0b9b712d
+ms.sourcegitcommit: 59e77d2fb9c38cccbacde9d2a7df61ae58c38fa4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "78336481"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84421048"
 ---
 # <a name="how-to-include-code-in-docs"></a>문서에 코드를 포함하는 방법
 
@@ -378,12 +378,14 @@ Azure Cloud Shell 및 PowerShell Cloud Shell의 경우 사용자가 자신의 Az
   * 참조할 코드 조각 파일을 나타내는, 파일 시스템의 상대 경로입니다.
 
 * `<attribute>` 및 `<attribute-value>`(*선택 사항*)
-  * 파일에서 코드를 검색하는 방법과 표시하는 방법을 지정하는 데 함께 사용됩니다.
-    * `range`: `1,3-5` 줄 범위입니다. 이 예제는 1, 3, 4 및 5 줄을 포함합니다.
-    * `id`: `snippet_Create` 코드 파일에서 삽입해야 하는 코드 조각의 ID입니다. 이 값은 범위와 함께 사용할 수 없습니다.
-    * `highlight`: `2-4,6` 생성된 코드 조각에서 강조 표시해야 하는 범위 및/또는 줄 수입니다. 번호 매기기는 파일이 아니라 표시된 줄(범위 또는 ID로 지정됨)을 기준으로 합니다.
-    * `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class`, `try-dotnet-method` 문자열 값은 어떤 종류의 대화형 작업이 사용하도록 설정되는지를 결정합니다.
-    * 코드 조각 소스의 태그 이름 표현에 대한 자세한 내용을 언어별로 보려면 [DocFX 지침](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file)을 참조하세요.
+
+  파일에서 코드를 검색하는 방법과 표시하는 방법을 지정하는 데 함께 사용됩니다.
+
+  * `range`: `1,3-5` 줄 범위입니다. 이 예제는 1, 3, 4 및 5 줄을 포함합니다.
+  * `id`: `snippet_Create` 코드 파일에서 삽입해야 하는 코드 조각의 ID입니다. 이 값은 범위와 함께 사용할 수 없습니다.
+  * `highlight`: `2-4,6` 생성된 코드 조각에서 강조 표시해야 하는 범위 및/또는 줄 수입니다. 번호 매기기는 파일이 아니라 표시된 줄(범위 또는 ID로 지정됨)을 기준으로 합니다.
+  * `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class`, `try-dotnet-method` 문자열 값은 어떤 종류의 대화형 작업이 사용하도록 설정되는지를 결정합니다.
+  * 코드 조각 소스의 태그 이름 표현에 대한 자세한 내용을 언어별로 보려면 [DocFX 지침](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file)을 참조하세요.
 
 ## <a name="supported-languages"></a>지원되는 언어
 
