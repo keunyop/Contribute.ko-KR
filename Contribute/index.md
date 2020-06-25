@@ -3,16 +3,16 @@ title: Microsoft Docs 참여자 가이드 개요
 description: 이 가이드에서는 Microsoft 설명서 사이트인 docs.microsoft.com에 참여할 수 있는 방법에 대해 설명합니다.
 author: billwagner
 ms.author: wiwagn
-ms.date: 02/19/2019
+ms.date: 06/23/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 084da0320514b3a4551ce130d8d17e3040a35f29
+ms.sourcegitcommit: 6a7c9b5e9538ed588bd2da772ae319c09e545a74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "81784293"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279350"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 참여자 가이드 개요
 
@@ -35,7 +35,7 @@ ms.locfileid: "81784293"
 
 빠른 편집은 문서의 사소한 오류 및 누락을 보고하고 수정하는 프로세스를 간소화합니다. 오류를 최소화하려는 모든 노력에도 불구하고 게시되는 문서에서 사소한 문법 및 맞춤법 _오류가 발견될 수 있습니다_. 이슈를 작성해 오류를 보고할 수도 있지만, PR(끌어오기 요청)을 만들면 문제를 더 빠르고 쉽게 해결할 수 있습니다(옵션을 사용할 수 있는 경우).
 
-1. 일부 문서 페이지의 경우 브라우저에서 직접 콘텐츠를 편집할 수 있습니다. 해당하는 경우 아래 표시된 것처럼 **편집** 단추가 표시됩니다. **편집**(또는 지역화된) 단추를 클릭하면 GitHub의 원본 파일로 이동합니다. **편집** 단추(텍스트 없는 연필 아이콘)가 없는 경우 설명서 페이지를 수정할 수 없습니다.
+1. 일부 문서 페이지의 경우 브라우저에서 직접 콘텐츠를 편집할 수 있습니다. 해당하는 경우 아래 표시된 것처럼 **편집** 단추가 표시됩니다. **편집**(또는 지역화된) 단추를 클릭하면 GitHub의 원본 파일로 이동합니다. **편집** 단추가 없는 경우 설명서 페이지를 변경할 수 없다는 의미입니다.
 
    ![편집 링크의 위치](./media/index/edit-article.png)
 

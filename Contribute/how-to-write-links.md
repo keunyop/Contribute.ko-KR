@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 03/31/2020
-ms.openlocfilehash: ca29d4b9e81f8af3b680367b210bd1734860687d
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 94ba4cefd9aff70b38502aa397a3761127c8089f
+ms.sourcegitcommit: 9852045bac75fd5d90c0ffc88d2a17dd45ba015f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80624786"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85107102"
 ---
 # <a name="use-links-in-documentation"></a>설명서에서 링크 사용
 
@@ -107,7 +107,7 @@ https://docs.microsoft.com/en-us/powershell/azure/overview?view=azurermps-5.1.1
 
 ## <a name="bookmark-links"></a>책갈피 링크
 
-‘현재’ 파일의 제목에 대한 책갈피 링크를 사용하려면 해시 기호 다음에 제목의 소문자 단어를 사용합니다.  제목에서 문장 부호를 제거하고 공백을 대시로 바꿉니다.
+‘현재’ 파일의 제목에 대한 책갈피 링크를 사용하려면 해시 기호 다음에 제목의 소문자 단어를 사용합니다.** 제목에서 문장 부호를 제거하고 공백을 대시로 바꿉니다.
 
 ```markdown
 [Managed Disks](#managed-disks)
@@ -241,7 +241,7 @@ UID의 특수 문자는 다음과 같이 HTML로 인코딩해야 합니다.
 
 인코딩 예:
 
-- `System.Threading.Tasks.Task``1`은 `System.Threading.Tasks.Task%601`로 인코딩됨([제네릭 형식에 대한 섹션](#generic-types) 참조)
+- ``System.Threading.Tasks.Task`1``은 `System.Threading.Tasks.Task%601`로 인코딩됨([제네릭 형식에 대한 섹션](#generic-types) 참조)
 
 - `System.Exception.#ctor`은 `System.Exception.%23ctor`로 인코딩됨
 
