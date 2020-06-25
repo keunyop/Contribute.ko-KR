@@ -107,7 +107,7 @@ https://docs.microsoft.com/en-us/powershell/azure/overview?view=azurermps-5.1.1
 
 ## <a name="bookmark-links"></a>책갈피 링크
 
-‘현재’ 파일의 제목에 대한 책갈피 링크를 사용하려면 해시 기호 다음에 제목의 소문자 단어를 사용합니다.** 제목에서 문장 부호를 제거하고 공백을 대시로 바꿉니다.
+‘현재’ 파일의 제목에 대한 책갈피 링크를 사용하려면 해시 기호 다음에 제목의 소문자 단어를 사용합니다. 제목에서 문장 부호를 제거하고 공백을 대시로 바꿉니다.
 
 ```markdown
 [Managed Disks](#managed-disks)
