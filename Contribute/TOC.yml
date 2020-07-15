@@ -52,11 +52,11 @@
   items:
     - name: .NET 문서
       items:
-        - name: .NET 문서에 기여하는 방법
+        - name: 참가 방법
           href: dotnet/dotnet-contribute.md
         - name: 레이블 및 프로젝트 로드맵
           href: dotnet/labels-projects.md
-        - name: .NET 문서 스타일 규칙
+        - name: 스타일 규칙
           href: dotnet/dotnet-style-guide.md
         - name: 음성 및 톤 가이드
           href: dotnet/dotnet-voice-tone.md
