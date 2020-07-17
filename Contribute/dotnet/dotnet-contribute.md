@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: c4382a66035a10debb2a0aa05f61c549a3f97ee6
-ms.sourcegitcommit: 300ce72ffc8596213e82ae511b1b314c850841c9
+ms.openlocfilehash: fa905d17a39b5fa7737e06fce38659b7e1563635
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83404151"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290960"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>.NET 문서 리포지토리에 참여하는 방법 알아보기
 
@@ -20,46 +20,42 @@ ms.locfileid: "83404151"
 
 .NET 문서 사이트는 여러 리포지토리에서 빌드됩니다.
 
-- [.NET 개념 문서](https://github.com/dotnet/docs)
+- [.NET 개념 문서 및 코드 조각](https://github.com/dotnet/docs)
 - [코드 샘플 및 코드 조각](https://github.com/dotnet/samples)
 - [.NET 표준, .NET Core, .NET Framework API 참조](https://github.com/dotnet/dotnet-api-docs)
 - [.NET Compiler Platform SDK 참조](https://github.com/dotnet/roslyn-api-docs)
 - [ML.NET API 참조](https://github.com/dotnet/ml-api-docs)
 
-이러한 모든 리포지토리에 대한 문제는 [dotnet/docs](https://github.com/dotnet/docs/issues) 리포지토리에서 추적됩니다.
+이 리포지토리 모두에 대한 문제는 [dotnet/docs](https://github.com/dotnet/docs/issues) 리포지토리에서 추적됩니다.
 
 ## <a name="guidelines-for-contributions"></a>기여 지침
 
-문서에 대한 커뮤니티 기여에 감사드립니다. 다음 목록에서는 .NET 문서에 참여할 때 주의해야 할 몇 가지 지침 규칙을 보여줍니다.
+문서에 대한 커뮤니티 기여에 감사드립니다. 다음 목록에서는 .NET 설명서에 기여할 때 주의해야 할 몇 가지 지침 규칙을 보여 줍니다.
 
 - 많은 끌어오기 요청으로 놀라게 **하지 마세요**. 대신, 많은 시간을 투자하기 전에 문제를 제기하고 토론을 시작하여 하나의 방향에 동의할 수 있습니다.
 - **DO**는 다음 지침과 [음성 및 톤](dotnet-voice-tone.md) 지침을 따릅니다.
 - **DO**는 [템플릿](dotnet-style-guide.md) 파일을 작업의 시작점으로 사용합니다.
 - **DO**는 문서를 작업하기 전에 포크에 별도의 분기를 만듭니다.
-- **DO**는 [GitHub Flow 워크플로](https://guides.github.com/introduction/flow/)를 따릅니다.
-- **DO**에서 참여에 대해 자주 블로그 및 트윗(또는 기타)을 하세요.
+- [GitHub 흐름](https://guides.github.com/introduction/flow/)을 **따릅니다**.
+- 원하는 경우 기여에 관해 블로그 및 트윗(또는 기타)을 **합니다**.
 
 이러한 지침을 따르면 모두에게 더 나은 환경을 제공할 것입니다.
 
 ## <a name="make-a-contribution-to-net-docs"></a>.NET 문서에 기여하기
 
-**1단계:** 작은 변경 내용은 이 단계를 건너뜁니다. 새 콘텐츠를 작성하거나 기존 콘텐츠를 완전히 개정하려는 경우 수행할 작업을 설명하는 [문제](https://github.com/dotnet/docs/issues)를 엽니다.
-
-**문서** 폴더 내의 콘텐츠는 TOC(목차)에 반영된 섹션으로 구성됩니다. 토픽에서 TOC에 있는 위치를 정의합니다. 제안에 대한 피드백을 받으세요.
+**1단계:** 새 콘텐츠를 작성하거나 기존 콘텐츠를 완전히 개정하려는 경우 수행할 작업을 설명하는 [문제](https://github.com/dotnet/docs/issues)를 엽니다. **문서** 폴더 내의 콘텐츠는 TOC(목차)에 반영된 섹션으로 구성됩니다. 토픽에서 TOC에 있는 위치를 정의합니다. 제안에 대한 피드백을 받으세요.
 
 -또는-
 
-커뮤니티 기여가 시작된 기존 문제 중에서 선택할 수도 있습니다. [.NET 커뮤니티 기여자를 위한 프로젝트](https://github.com/dotnet/docs/projects/35)에는 커뮤니티 기여자가 사용할 수 있는 많은 문제가 나열되어 있습니다. 관심사와 책임 수준에 따라 다음 범주의 문제 중에서 선택할 수 있습니다.
+기존 문제를 선택하고 해결합니다. 다음과 같은 방법으로, [미해결 문제](https://github.com/dotnet/docs/issues) 목록을 보고 관심 있는 분야의 문제 해결에 자발적으로 참여할 수 있습니다.
 
-- **유지 관리**. 이 범주에는 끊어진 링크 또는 잘못된 링크 수정, 누락된 코드 예제 추가 또는 제한된 콘텐츠 문제 해결과 같은 매우 간단한 기여가 포함됩니다. 경우에 따라 이러한 문제는 많은 수의 파일과 관련될 수 있습니다. 이 경우 시작하기 전에 어떤 작업을 수행하는지 알려주세요. 문제에 대한 주석을 추가하여 작업 진행 중임을 알려주세요.
+- [good-first-issue](https://github.com/dotnet/docs/labels/good-first-issue) 레이블로 필터링하여 적절한 첫 번째 문제를 찾습니다.
+- [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) 레이블로 필터링하여 커뮤니티 기여에 적합한 문제를 찾습니다. 이 문제는 일반적으로 최소한의 컨텍스트가 필요합니다.
+- 숙련된 기여자는 관심 있는 문제를 해결할 수 있습니다.
 
-- **콘텐츠 업데이트**. 문서 집합의 엄청난 양을 감안할 때 콘텐츠는 쉽게 구식이 되어 개정이 필요합니다. 또한 여러 가지 이유로 인해 일부 콘텐츠가 중복되거나 심지어 삼중으로 복제되었습니다. 콘텐츠를 업데이트하려면 개별 항목이 최신인지 확인하거나 기능 영역의 콘텐츠를 수정하여 중복을 제거하고 모든 고유한 콘텐츠를 더 작은 문서 집합에 보존해야 합니다.
+참여할 문제를 찾았으면 해당 문제가 미해결 상태인지 확인하기 위한 주석을 추가합니다.
 
-- **새 콘텐츠 작성**. 고유의 항목을 작성하는 데 관심이 있는 경우 이러한 문제에는 문서 집합에 추가하려는 항목이 나열됩니다. 하지만 항목에 대한 작업을 시작하기 전에 알려주세요. 여기에 나열되지 않은 항목을 작성하는 데 관심이 있다면 문제를 엽니다.
-
-또한 [문제 열기](https://github.com/dotnet/docs/issues) 목록을 보고 관심 있는 분야에 대한 작업을 자원하여 수행할 수 있습니다. [누구나 구할 수 있는](https://github.com/dotnet/docs/labels/up-for-grabs) 레이블을 사용하여 커뮤니티 기여에 대해 식별된 태그를 지정합니다. 일반적으로 최소한의 컨텍스트만 필요하며 첫 번째 문제에 매우 적합합니다. 커뮤니티의 경험 있는 기여자가 관심 있는 항목을 살펴 볼 것을 권장합니다. 항목을 찾을 때 열려 있는지 묻는 주석을 추가합니다.
-
-수행할 작업을 선택한 후 [시작하기](../get-started-setup-github.md) 가이드에 따라 GitHub 계정을 만들고 환경을 설정합니다.
+참여할 작업을 선택한 후 [시작하기](../get-started-setup-github.md) 가이드에 따라 GitHub 계정을 만들고 환경을 설정합니다.
 
 **2단계:** 필요한 경우 `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` 또는 `dotnet/ml-api-docs` 리포지토리를 선택하여 변경 내용에 대한 분기를 만듭니다.
 
@@ -67,51 +63,30 @@ ms.locfileid: "83404151"
 
 **3단계:** 이 새 분기를 변경하세요.
 
-새 항목인 경우 이 [템플릿 파일](dotnet-style-guide.md)을 시작점으로 사용할 수 있습니다. 작성 지침이 포함되어 있으며 작성자 정보와 같이 각 문서에 필요한 메타데이터도 설명합니다.
+새 항목인 경우 이 [템플릿 파일](dotnet-style-guide.md)을 시작점으로 사용할 수 있습니다. 작성 지침이 포함되어 있으며 작성자 정보와 같이 각 문서에 필요한 메타데이터도 설명합니다. docs.microsoft.com 사이트에서 사용되는 Markdown 구문에 대한 자세한 내용은 [Markdown 참조](../markdown-reference.md)를 참조하세요.
 
 1단계에서 문서에 대해 결정된 TOC 위치에 해당하는 폴더로 이동합니다. 이 폴더에는 해당 섹션의 모든 문서에 대한 Markdown 파일이 들어 있습니다. 필요한 경우 콘텐츠용 파일을 배치할 새 폴더를 만듭니다. 해당 섹션의 주요 문서는 *index.md*라고 합니다.
 
-이미지 및 기타 정적 리소스의 경우 문서를 포함하는 폴더 내에 **미디어**라는 하위 폴더를 만듭니다. **미디어** 폴더 내에서 문서 이름으로 하위 폴더를 만듭니다(인덱스 파일 제외). 
+이미지 및 기타 정적 리소스의 경우 문서를 포함하는 폴더 내에 **미디어**라는 하위 폴더를 만듭니다. **미디어** 폴더 내에서 문서 이름으로 하위 폴더를 만듭니다(인덱스 파일 제외).
 
-**코드 조각**의 경우 문서를 포함하는 폴더 내에 **조각**이라는 하위 폴더를 만듭니다(아직 없는 경우).  **조각** 폴더 내에서 문서 이름으로 하위 폴더를 만듭니다. 대부분의 경우 주요 .NET 언어인 C#, F# 및 Visual Basic 등 세 가지 모두의 코드 조각이 있습니다. 이 경우 세 프로젝트 각각에 대해 **csharp**, **fsharp**, **vb**라는 하위 폴더를 만듭니다. C# 가이드, F# 가이드 및 Visual Basic 가이드에 나오는 프로젝트용 **조각** 폴더를 사용하면 간편합니다. 이러한 영역에는 일반적으로 하나의 언어에 대한 조각이 있습니다. 코드 조각은 문서에 설명된 개념을 예시하는 요약된 작은 예제입니다. 다운로드 및 검색을 위한 큰 프로그램은 [dotnet/samples](https://github.com/dotnet/samples) 리포지토리에 있어야 합니다. 전체 샘플은 [샘플에 참여](#contributing-to-samples)의 섹션을 참조하세요.
+**코드 조각**의 경우 문서를 포함하는 폴더 내에 **조각**이라는 하위 폴더를 만듭니다(아직 없는 경우). **조각** 폴더 내에서 문서 이름으로 하위 폴더를 만듭니다. 대부분의 경우 주요 .NET 언어인 C#, F# 및 Visual Basic 등 세 가지 모두의 코드 조각이 있습니다. 이 경우 세 프로젝트 각각에 대해 **csharp**, **fsharp**, **vb**라는 하위 폴더를 만듭니다. [docs/csharp](https://github.com/dotnet/docs/tree/master/docs/csharp), [docs/fsharp](https://github.com/dotnet/docs/tree/master/docs/fsharp) 또는 [docs/visual-basic](https://github.com/dotnet/docs/tree/master/docs/visual-basic) 폴더 아래에 각 문서에 대한 코드 조각을 만드는 경우 해당 코드 조각은 한 언어로만 작성되므로 언어 하위 폴더를 생략할 수 있습니다.
 
-올바른 Markdown 구문을 따릅니다. 일반적인 예는 [템플릿 및 markdown 치트 시트](dotnet-style-guide.md)를 참조하세요.
+코드 조각은 문서에 설명된 개념을 예시하는 요약된 작은 예제입니다. 다운로드 및 탐색을 위한 큰 프로그램은 [dotnet/samples](https://github.com/dotnet/samples) 리포지토리에 있어야 합니다. 전체 샘플은 [샘플에 참여](#contribute-to-samples)의 섹션을 참조하세요.
 
-## <a name="example-structure"></a>예제 구조
+## <a name="example-folder-structure"></a>폴더 구조의 예
 
-    docs
-      /about
-      /core
-        /porting
-          porting-overview.md
-          /media
-            /porting-overview
-                portability_report.png
-          /snippets
-            /porting-overview
-              /csharp
-                porting.csproj
-                porting-overview.cs
-                Program.cs
-              /fsharp
-                porting.fsproj
-                porting-overview.fs
-                Program.fs
-               /vb
-                porting.vbproj
-                porting-overview.vb
-                Program.vb
+docs /about /core /porting porting-overview.md /media /porting-overview portability_report.png /snippets /porting-overview /csharp porting.csproj porting-overview.cs Program.cs /fsharp porting.fsproj porting-overview.fs Program.fs /vb porting.vbproj porting-overview.vb Program.vb
 
 위의 구조에는 이미지 1개(*portability_report.png*) 및 *porting-overview.md* 문서에 포함된 **코드 조각**을 포함하는 코드 프로젝트 3개가 포함됩니다. 허용되는 대체 구조에는 언어별로 해당 폴더의 모든 문서에 대한 모든 코드 조각을 포함하는 프로젝트 1개가 포함됩니다. 이 대체 구조는 언어 구문을 예시하는 아주 작은 조각으로 인해 언어 참조 영역에서 사용되었습니다. 다른 영역에는 권장되지 않습니다.
 
-포함된 조각 대부분이 기록을 위해 *dotnet/docs* 리포지토리의 */samples* 폴더 아래에 저장됩니다. 문서에 중대한 변경이 필요한 경우에는 해당 코드 조각을 새 구조로 이동해야 합니다. 소소한 변경인 경우에는 코드 조각을 이동하지 마세요.
+포함된 조각 대부분이 기록을 위해 *dotnet/docs* 리포지토리의 */samples* 폴더 아래에 저장됩니다. 문서에 중대한 변경 내용을 적용하는 경우 해당 코드 조각을 새 구조로 이동해야 합니다. 소소한 변경인 경우에는 코드 조각을 이동하지 마세요.
 
 **4단계:** 분기에서 마스터 분기로 PR(끌어오기 요청)을 제출합니다.
 
 > [!IMPORTANT]
 > 지금은 [주석 자동화](../how-to-write-workflows-major.md#review-and-sign-off) 기능을 .NET 리포지토리에서 사용할 수 없습니다. .NET 문서 팀의 구성원이 PR을 검토하고 병합합니다.
 
-각 PR은 일반적으로 한 번에 하나씩 문제를 해결해야 합니다. PR은 하나 또는 여러 개의 파일을 수정할 수 있습니다. 다른 파일의 여러 수정 사항을 해결하는 경우 PR을 별도로 사용하는 것이 좋습니다. markdown 업데이트뿐만 아니라 샘플을 만드는 경우 샘플에 대해 별도의 PR을 만들어야 합니다.
+각 PR은 일반적으로 한 번에 하나씩 문제를 해결해야 합니다. PR은 하나 또는 여러 개의 파일을 수정할 수 있습니다. 다른 파일의 여러 수정 사항을 해결하는 경우 PR을 별도로 사용하는 것이 좋습니다. markdown을 업데이트할 뿐만 아니라 샘플을 만드는 경우 샘플에 대해 별도의 PR을 만들어야 합니다.
 
 PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명에 `Fixes #Issue_Number` 키워드를 추가합니다. 이렇게 하면 PR이 병합될 때 이 문제가 자동으로 닫힙니다. 자세한 내용은 [커밋 메시지를 통해 문제 닫기](https://help.github.com/articles/closing-issues-via-commit-messages/)를 참조하세요.
 
@@ -121,11 +96,9 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 유지관리자는 피드백이 적용되고 변경 내용이 승인되면 PR을 마스터 분기 내에 병합합니다.
 
-정기적으로 마스터 분기의 모든 커밋을 라이브 분기로 푸시하면 https://docs.microsoft.com/dotnet/ 에서 라이브로 기여한 것을 확인할 수 있습니다. 일반적으로 업무 주간 동안 매일 게시합니다. 유지 관리 활동으로 며칠 동안 게시가 지연될 수 있습니다.
+정기적으로 마스터 분기의 모든 커밋을 라이브 분기로 푸시하면 https://docs.microsoft.com/dotnet/ 에서 라이브로 기여한 것을 확인할 수 있습니다. 일반적으로 업무 주간 동안 매일 게시합니다.
 
-## <a name="contributing-to-samples"></a>샘플에 참여
-
-[dotnet/samples](https://github.com/dotnet/samples) 리포지토리에는 .NET 문서 아래 항목의 일부인 모든 샘플 코드가 포함되어 있습니다. 하위 폴더에 구성된 여러 가지 다른 프로젝트가 있습니다. 이러한 하위 폴더는 .NET용 문서 조직과 유사하게 구성됩니다.
+## <a name="contribute-to-samples"></a>샘플에 기여
 
 콘텐츠를 지원하는 코드는 다음과 같이 구분합니다.
 
@@ -146,7 +119,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 항목에는 샘플에 대한 링크도 포함됩니다. GitHub의 샘플 폴더에 직접 연결합니다.
 
-### <a name="writing-a-new-sample"></a>새 샘플 작성
+### <a name="write-a-new-sample"></a>새 샘플 작성
 
 샘플은 다운로드를 위한 전체 프로그램 및 라이브러리입니다. 샘플의 범위는 작을 수 있지만, 사용자가 직접 살펴보고 실험해 볼 수 있는 방법으로 개념을 예시합니다. 예제에 대한 지침에 따라 독자는 다운로드하고 살펴볼 수 있습니다. 각 지침의 예제로 [PLINQ(병렬 LINQ)](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ) 샘플을 검토합니다.
 
@@ -154,7 +127,7 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 2. 샘플이 일관성을 유지하려면 [corefx 코딩 스타일](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md)을 준수해야 합니다.
 
-    - 또한 새 개체를 인스턴스화할 필요가 없는 것을 시연할 때 인스턴스 메서드보다 `static` 메서드를 사용하는 것이 좋습니다.
+   또한 새 개체를 인스턴스화할 필요가 없는 것을 시연할 때 인스턴스 메서드보다 `static` 메서드를 사용하는 것이 좋습니다.
 
 3. 샘플에는 **적절한 예외 처리**가 포함되어야 합니다. 샘플의 컨텍스트에서 throw될 수 있는 모든 예외를 처리해야 합니다. 예를 들어 사용자 입력을 검색하기 위해 [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) 메서드를 호출하는 샘플은 메서드에 대한 인수로 문자열을 전달할 때 적절한 예외 처리를 사용해야 합니다. 마찬가지로 샘플에서 메서드 호출이 실패할 것으로 예상되는 경우 결과 예외를 처리해야 합니다. [예외](https://docs.microsoft.com/dotnet/api/system.exception) 또는 [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception)과 같은 기본 클래스 예외가 아닌 메서드가 throw한 특정 예외를 항상 처리합니다.
 

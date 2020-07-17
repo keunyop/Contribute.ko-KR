@@ -5,18 +5,18 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: a520112cd77f4c4807e7719c2c4dbd43a762f062
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 926516895798757bde0861a345e0b5d0f95218a4
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80759567"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290914"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 문서용 메타데이터 및 Markdown 템플릿
 
 이 dotnet/docs 템플릿에는 Markdown 구문의 예와 메타데이터 설정에 대한 지침이 포함되어 있습니다.
 
-Markdown 파일을 만들 때 포함된 템플릿을 새 파일로 복사하여 아래 지정된 대로 메타데이터를 채우고 위의 H1 제목을 문서 제목으로 설정해야 합니다.
+Markdown 파일을 만들 때 포함된 템플릿을 새 파일로 복사하여 아래 지정된 대로 메타데이터를 채우고 위의 H1 제목을 문서 제목으로 설정합니다.
 
 ## <a name="metadata"></a>메타데이터
 
@@ -47,7 +47,7 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 
 Markdown은 서식 지정에 \*, \` 및 \#과 같은 특수 문자를 사용합니다. 콘텐츠에 이러한 문자 중 하나를 포함하려면 다음 두 가지 작업 중 하나를 수행해야 합니다.
 
-- 특수 문자 앞에 백슬래시를 두어 “이스케이프”합니다(예:\*의 경우 `\*`).
+- 특수 문자 앞에 백슬래시를 두어 “이스케이프”합니다(예: \*의 경우 `\*`).
 - 문자에 대해 [HTML 엔터티 코드](http://www.ascii.cl/htmlcodes.htm)를 사용합니다(예:&#42;의 경우 `&#42;`).
 
 ## <a name="file-names"></a>파일 이름
@@ -67,11 +67,14 @@ Markdown은 서식 지정에 \*, \` 및 \#과 같은 특수 문자를 사용합�
 
 ## <a name="text-styling"></a>텍스트 스타일 지정
 
-*기울임꼴* 파일, 폴더, 경로(긴 항목의 경우, 해당 행으로 분리), 새 용어에 사용합니다.
+*기울임꼴*\
+파일, 폴더, 경로(긴 항목의 경우, 해당 행으로 분리), 새 용어에 사용합니다.
 
-**Bold** UI 요소에 사용합니다.
+**굵게**\
+UI 요소에 사용합니다.
 
-`Code`인라인 코드, 언어 키워드, NuGet 패키지 이름, 명령줄 명령, 데이터베이스 테이블과 열 이름 및 클릭하지 않을 URL에 사용합니다.
+`Code`\
+인라인 코드, 언어 키워드, NuGet 패키지 이름, 명령줄 명령, 데이터베이스 테이블과 열 이름 및 클릭 가능한 것으로 설정하지 않을 URL에 사용합니다.
 
 ## <a name="links"></a>링크
 
@@ -120,13 +123,13 @@ Markdown은 서식 지정에 \*, \` 및 \#과 같은 특수 문자를 사용합�
 
 UID 뒤에 \*(또는 `%2A`)를 추가하면 링크는 특정 API가 아닌 오버로드 페이지를 나타냅니다. 예를 들어 [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_)처럼 특정 오버로드 대신 일반적인 방법으로 [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) 페이지에 연결하려는 경우 사용할 수 있습니다. 또한 멤버가 오버로드되지 않은 경우 \*를 사용하여 구성원 페이지에 연결할 수 있습니다. 이렇게 하면 매개 변수 목록을 UID에 포함하지 않아도 됩니다.
 
-특정 메서드 오버로드에 연결하려면 각 메서드 매개 변수의 정규화된 형식 이름을 포함해야 합니다. 예를 들어 \<xref:System.DateTime.ToString>은 매개 변수가 없는 [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) 메서드에 연결되는 반면 \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)>은 [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) 메서드에 연결됩니다.
+특정 메서드 오버로드에 연결하려면 각 메서드 매개 변수의 정규화된 형식 이름을 포함해야 합니다. 예를 들어 \<xref:System.DateTime.ToString>은 매개 변수가 없는 [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) 메서드에 연결되는 반면, \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)>는 [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) 메서드에 연결됩니다.
 
-[System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1)와 같은 제네릭 형식에 연결하려면 \`(`%60`) 문자 다음에 제네릭 형식 매개 변수의 수를 사용합니다. 예를 들어 `<xref:System.Nullable%601>`은 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 형식에 연결되는 반면 `<xref:System.Func%602>`는 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 대리자에 연결됩니다.
+[System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1) 같은 제네릭 형식에 연결하려면 \`(`%60`) 문자 다음에 제네릭 형식 매개 변수의 수를 사용합니다. 예를 들어 `<xref:System.Nullable%601>`은 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 형식에 연결되는 반면, `<xref:System.Func%602>`는 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 대리자에 연결됩니다.
 
 ## <a name="code"></a>코드
 
-코드를 포함하기 위한 가장 좋은 방법은 작동하는 샘플의 코드 조각을 포함하는 것입니다. [.NET에 참여](dotnet-contribute.md#contributing-to-samples) 문서의 지침에 따라 샘플을 만듭니다. 코드 포함에 대한 기본 규칙은 [코드](../code-in-docs.md)에 대한 일반 지침에 있습니다.
+코드를 포함하기 위한 가장 좋은 방법은 작동하는 샘플의 코드 조각을 포함하는 것입니다. [.NET에 참여](dotnet-contribute.md#contribute-to-samples) 문서의 지침에 따라 샘플을 만듭니다. 코드 포함에 대한 기본 규칙은 [코드](../code-in-docs.md)에 대한 일반 지침에 있습니다.
 
 다음 구문을 사용하여 코드를 포함할 수 있습니다.
 
@@ -145,7 +148,7 @@ UID 뒤에 \*(또는 `%2A`)를 추가하면 링크는 특정 API가 아닌 오�
 
 * `<queryoption>`(*선택 사항*)
   * 파일에서 코드를 검색하는 방법을 지정하는 데 사용됩니다.
-    * `#`: `#{tagname}`(태그 이름) ‘또는’ `#L{startlinenumber}-L{endlinenumber}`(줄 범위). 
+    * `#`: `#{tagname}`(태그 이름) ‘또는’ `#L{startlinenumber}-L{endlinenumber}`(줄 범위).
     매우 약하기 때문에 줄 번호를 사용하지 않는 것이 좋습니다. 태그 이름은 코드 조각 참조의 기본 방법입니다. 의미 있는 태그 이름을 사용합니다. (이전 플랫폼에서 많은 코드 조각을 마이그레이션했으며 태그에 `Snippet1`, `Snippet2` 등의 이름이 있습니다. 이러한 실행은 유지하기가 훨씬 더 어렵습니다.)
     * `range`: `?range=1,3-5` 줄 범위입니다. 이 예제는 1, 3, 4 및 5 줄을 포함합니다.
 

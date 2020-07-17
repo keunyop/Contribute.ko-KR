@@ -5,16 +5,16 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 4108019ac50d703c6dd509eca7a6394cc1c9dc18
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 49b0e60ec9f4368bf50317dfe4a6b17bd30a82a5
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80625192"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290822"
 ---
 # <a name="voice-and-tone-guidelines"></a>음성 및 톤 지침
 
-IT 전문가 및 개발자를 비롯한 다양한 사람들이 .NET을 배우고 정규 작업에 사용하기 위해 설명서를 읽습니다. 목표는 reader가 경험을 하는 데 도움이 되는 훌륭한 설명서를 만드는 것입니다. 지침이 도움을 줍니다. 스타일 가이드에는 다음 권장 사항이 포함되어 있습니다.
+IT 전문가 및 개발자를 비롯한 다양한 사람들이 .NET을 배우고 일상적인 작업에 사용하기 위해 .NET docs를 읽습니다. 목표는 reader가 경험을 하는 데 도움이 되는 훌륭한 설명서를 만드는 것입니다. 지침이 도움을 줍니다. 스타일 가이드에는 다음 권장 사항이 포함되어 있습니다.
 
 이 스타일 가이드를 읽을 때 각 예제를 볼 수 있습니다. .NET용 설명서를 빌드할 때 따라야 할 예제를 제공하기 위해 지침에 따라 이 가이드를 작성했습니다. 대조적인 샘플도 제공되므로 지침을 따르지 않을 때 문서가 어떤 모습인지 확인할 수 있습니다.
 
@@ -34,7 +34,7 @@ IT 전문가 및 개발자를 비롯한 다양한 사람들이 .NET을 배우고
 
 ### <a name="appropriate-style"></a>적절한 스타일
 
-reader에게 직접 말하는 것처럼 문서를 작성해야 합니다. 2인칭을 자주 사용해야 합니다(이러한 두 문장에서 했던 것처럼). 2인칭이 항상 ‘너’라는 단어를 사용하는 의미는 아닙니다. reader에게 직접 작성합니다. 명령문을 작성합니다. 배우고 싶은 것을 reader에게 알려주세요.
+reader에게 직접 말하는 것처럼 문서를 작성해야 합니다. 2인칭을 자주 사용합니다(이 두 문장에서 한 것처럼). 2인칭이 항상 ‘너’라는 단어를 사용하는 의미는 아닙니다. reader에게 직접 작성합니다. 명령문을 작성합니다. 배우고 싶은 것을 reader에게 알려주세요.
 
 ### <a name="inappropriate-style"></a>부적절한 스타일
 
@@ -54,7 +54,7 @@ reader에게 직접 말하는 것처럼 문서를 작성해야 합니다. 2인�
 
 더 읽기 쉽기 때문에 능동태를 권장합니다. 수동태는 읽기가 더 어려울 수 있습니다.
 
-## <a name="target-a-fifth-grade-reading-level"></a>5등급 읽기 수준 대상
+## <a name="target-a-fifth-grade-reading-level"></a>5학년 학생의 읽기 수준을 대상으로 하여 작성
 
 많은 readers는 영어를 모국어로 사용하지 않기 때문에 이 최종 지침을 제공합니다. 자신의 문서로 국제적인 청중에게 다가가고 있습니다. 서로의 영어 어휘가 다를 수 있다는 것을 고려해 주세요.
 
