@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: fa905d17a39b5fa7737e06fce38659b7e1563635
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: d1631f34ef9a3ceb10178792842421376fea97b0
+ms.sourcegitcommit: 3774d06ddc1f92b2bdb4c1d8babbd18357229298
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290960"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87264812"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>.NET 문서 리포지토리에 참여하는 방법 알아보기
 
@@ -75,7 +75,30 @@ ms.locfileid: "86290960"
 
 ## <a name="example-folder-structure"></a>폴더 구조의 예
 
-docs /about /core /porting porting-overview.md /media /porting-overview portability_report.png /snippets /porting-overview /csharp porting.csproj porting-overview.cs Program.cs /fsharp porting.fsproj porting-overview.fs Program.fs /vb porting.vbproj porting-overview.vb Program.vb
+```
+docs
+  /about
+  /core
+    /porting
+      porting-overview.md
+      /media
+        /porting-overview
+          portability_report.png
+      /snippets
+        /porting-overview
+          /csharp
+            porting.csproj
+            porting-overview.cs
+            Program.cs
+          /fsharp
+            porting.fsproj
+            porting-overview.fs
+            Program.fs
+          /vb
+            porting.vbproj
+            porting-overview.vb
+            Program.vb
+```
 
 위의 구조에는 이미지 1개(*portability_report.png*) 및 *porting-overview.md* 문서에 포함된 **코드 조각**을 포함하는 코드 프로젝트 3개가 포함됩니다. 허용되는 대체 구조에는 언어별로 해당 폴더의 모든 문서에 대한 모든 코드 조각을 포함하는 프로젝트 1개가 포함됩니다. 이 대체 구조는 언어 구문을 예시하는 아주 작은 조각으로 인해 언어 참조 영역에서 사용되었습니다. 다른 영역에는 권장되지 않습니다.
 
