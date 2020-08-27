@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: d1631f34ef9a3ceb10178792842421376fea97b0
-ms.sourcegitcommit: 3774d06ddc1f92b2bdb4c1d8babbd18357229298
+ms.openlocfilehash: 810a1335bf3c93b79952c701c44470d3e72fb124
+ms.sourcegitcommit: 940c84d6bc23a8fbec780244563af188d2620ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87264812"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88668646"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>.NET 문서 리포지토리에 참여하는 방법 알아보기
 
@@ -100,6 +100,9 @@ docs
             Program.vb
 ```
 
+> [!NOTE]
+> 조각 아래의 언어 폴더는 하나의 언어로만 사용되는 언어 가이드 영역에 필요하지 않습니다.
+
 위의 구조에는 이미지 1개(*portability_report.png*) 및 *porting-overview.md* 문서에 포함된 **코드 조각**을 포함하는 코드 프로젝트 3개가 포함됩니다. 허용되는 대체 구조에는 언어별로 해당 폴더의 모든 문서에 대한 모든 코드 조각을 포함하는 프로젝트 1개가 포함됩니다. 이 대체 구조는 언어 구문을 예시하는 아주 작은 조각으로 인해 언어 참조 영역에서 사용되었습니다. 다른 영역에는 권장되지 않습니다.
 
 포함된 조각 대부분이 기록을 위해 *dotnet/docs* 리포지토리의 */samples* 폴더 아래에 저장됩니다. 문서에 중대한 변경 내용을 적용하는 경우 해당 코드 조각을 새 구조로 이동해야 합니다. 소소한 변경인 경우에는 코드 조각을 이동하지 마세요.
@@ -154,14 +157,6 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 3. 샘플에는 **적절한 예외 처리**가 포함되어야 합니다. 샘플의 컨텍스트에서 throw될 수 있는 모든 예외를 처리해야 합니다. 예를 들어 사용자 입력을 검색하기 위해 [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) 메서드를 호출하는 샘플은 메서드에 대한 인수로 문자열을 전달할 때 적절한 예외 처리를 사용해야 합니다. 마찬가지로 샘플에서 메서드 호출이 실패할 것으로 예상되는 경우 결과 예외를 처리해야 합니다. [예외](https://docs.microsoft.com/dotnet/api/system.exception) 또는 [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception)과 같은 기본 클래스 예외가 아닌 메서드가 throw한 특정 예외를 항상 처리합니다.
 
-4. 샘플이 독립 실행형 패키지를 빌드하는 경우 샘플에서 사용하는 런타임 외에도 CI 빌드 시스템에서 사용하는 런타임을 포함해야 합니다.
-    - `win7-x64`
-    - `win8-x64`
-    - `win81-x64`
-    - `ubuntu.16.04-x64`
-
-이러한 프로젝트를 곧 빌드할 수 있는 CI 시스템을 배치하게 될 것입니다.
-
 샘플을 만들려면:
 
 1. [문제](https://github.com/dotnet/docs/issues)를 제출하거나 작업 중인 기존 보고서에 주석을 추가합니다.
@@ -186,12 +181,13 @@ PR에서 기존 문제를 해결하는 경우 커밋 메시지 또는 PR 설명�
 
 1. 샘플 폴더로 이동하여 오류를 확인하기 위해 빌드합니다.
 
-    ```console
+    ```dotnetcli
     dotnet build
     ```
+
 2. 다음과 같이 샘플을 실행합니다.
 
-    ```console
+    ```dotnetcli
     dotnet run
     ```
 
