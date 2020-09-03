@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/24/2020
-ms.openlocfilehash: 7a494b00c05251e70b74d874d13653db9ba9f6e9
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: b2c0cbb0ed72948ba49a7456e16df5659057f5e6
+ms.sourcegitcommit: 56505b3f7e670f6387d2c919f0326e9f4c571c8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290983"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89201130"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>.NET 문서 리포지토리에 대한 끌어오기 요청 검토 프로세스
 
@@ -61,6 +61,10 @@ PR이 클수록 보다 철저한 검토를 받습니다. 다음 사항이 모두
 ### <a name="review-draft-pull-requests"></a>초안 끌어오기 요청 검토
 
 프로세스의 초기 단계에서 피드백을 원할 수도 있습니다. 초안 PR을 열고 초기 검토를 요청하는 주석을 추가합니다. 이러한 초기 검토는 개요, 전체 콘텐츠, 샘플 등의 문서 구조를 중점적으로 다룹니다. 문법 및 올바른 링크에 대한 철저한 검사는 이러한 검토에 포함되지 않습니다.
+
+## <a name="explain-suggestions"></a>제안 사항 설명
+
+GitHub를 사용하여 diff로 표시되고 단추를 클릭하여 병합할 수 있는 `suggestion` 형식의 삼중 역따옴표(`) 블록에 주석을 입력할 수 있습니다. 짧은 줄에서 GitHub는 변경 내용의 강조 표시를 잘 수행합니다. 긴 줄에서(예: 텍스트 한 줄로 작성된 긴 단락) GitHub는 변경 내용을 강조 표시하지 않습니다. 긴 줄에 대한 제안 사항을 입력할 때 변경 내용이 명확하게 강조 표시되는지 확인하세요. 변경 내용이 강조 표시되지 않으면 제안 블록 외부에 변경 내용을 설명하는 주석을 포함합니다. 설명이 없으면 이후 검토자 또는 PR 작성자가 변경 내용을 파악하는 데 긴 시간이 소요되는 경우가 많습니다.
 
 ## <a name="respond-to-reviews"></a>검토에 응답
 
