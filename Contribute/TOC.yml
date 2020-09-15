@@ -54,7 +54,7 @@
       items:
         - name: 참가 방법
           href: dotnet/dotnet-contribute.md
-        - name: 레이블 및 프로젝트 로드맵
+        - name: '레이블, 프로젝트 및 마일스톤 로드맵'
           href: dotnet/labels-projects.md
         - name: 스타일 규칙
           href: dotnet/dotnet-style-guide.md
