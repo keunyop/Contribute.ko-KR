@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 926516895798757bde0861a345e0b5d0f95218a4
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: 15288ccb1831e994fd078f47788ad4c2f502775c
+ms.sourcegitcommit: 92d06515af1d9d0e5abf632fc3b6425c487174d5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290914"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90837215"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 문서용 메타데이터 및 Markdown 템플릿
 
@@ -129,48 +129,9 @@ UID 뒤에 \*(또는 `%2A`)를 추가하면 링크는 특정 API가 아닌 오�
 
 ## <a name="code"></a>코드
 
-코드를 포함하기 위한 가장 좋은 방법은 작동하는 샘플의 코드 조각을 포함하는 것입니다. [.NET에 참여](dotnet-contribute.md#contribute-to-samples) 문서의 지침에 따라 샘플을 만듭니다. 코드 포함에 대한 기본 규칙은 [코드](../code-in-docs.md)에 대한 일반 지침에 있습니다.
+코드를 포함하기 위한 가장 좋은 방법은 작동하는 샘플의 코드 조각을 포함하는 것입니다. [.NET에 참여](dotnet-contribute.md#contribute-to-samples) 문서의 지침에 따라 샘플을 만듭니다. 전체 프로그램에서 코드 조각을 포함하면 모든 코드가 CI(연속 통합) 시스템을 통해 실행될 수 있습니다. 그러나 컴파일 시간 또는 런타임 오류를 일으키는 요소를 표시해야 하는 경우 인라인 코드 블록을 사용할 수 있습니다.
 
-다음 구문을 사용하여 코드를 포함할 수 있습니다.
-
-```markdown
-[!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
-```
-
-* `-<language>`(*선택 사항*이지만 *권장됨*)
-  * 참조되고 있는 코드 조각의 언어입니다.
-
-* `<name>`(*선택 사항*)
-  * 코드 조각의 이름입니다. 출력 HTML에는 아무런 영향이 없지만, 이를 사용하여 Markdown 소스의 가독성을 개선할 수 있습니다.
-
-* `<pathToFile>`(*필수*)
-  * 참조할 코드 조각 파일을 나타내는, 파일 시스템의 상대 경로입니다. 이는 .NET 문서 집합을 구성하는 다양한 리포지토리에 의해 복잡해질 수 있습니다. .NET 샘플은 dotnet/samples 리포지토리에 있습니다. 모든 코드 조각 경로는 `~/samples`로 시작하고 나머지 경로는 해당 리포지토리의 루트에서 소스에 대한 경로입니다.
-
-* `<queryoption>`(*선택 사항*)
-  * 파일에서 코드를 검색하는 방법을 지정하는 데 사용됩니다.
-    * `#`: `#{tagname}`(태그 이름) ‘또는’ `#L{startlinenumber}-L{endlinenumber}`(줄 범위).
-    매우 약하기 때문에 줄 번호를 사용하지 않는 것이 좋습니다. 태그 이름은 코드 조각 참조의 기본 방법입니다. 의미 있는 태그 이름을 사용합니다. (이전 플랫폼에서 많은 코드 조각을 마이그레이션했으며 태그에 `Snippet1`, `Snippet2` 등의 이름이 있습니다. 이러한 실행은 유지하기가 훨씬 더 어렵습니다.)
-    * `range`: `?range=1,3-5` 줄 범위입니다. 이 예제는 1, 3, 4 및 5 줄을 포함합니다.
-
-가능할 때마다 태그 이름 옵션을 사용하는 것이 좋습니다. 태그 이름은 소스 코드에 있는 `Snippettagname` 형식의 지역 이름 또는 코드 주석 이름입니다. 다음 예제에서는 태그 이름 `BasicThrow`를 참조하는 방법을 보여줍니다.
-
-```markdown
-[!code-csharp[csrefKeyword#1](~/samples/snippets/snippets/csharp/language-reference/operators/ConditionalExamples.csConditionalRef)]
-```
-
-**dotnet/samples** 리포지토리의 소스에 대한 상대 경로는 `~/samples` 경로를 따릅니다.
-
-그리고 코드 조각 태그가 [이 원본 파일](https://github.com/dotnet/samples/blob/master/snippets/csharp/language-reference/operators/ConditionalExamples.cs)에서 어떻게 구성되었는지 확인할 수 있습니다. 코드 조각 소스의 태그 이름 표현에 대한 자세한 내용을 언어별로 보려면 [DocFX 지침](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file)을 참조하세요.
-
-다음 예제는 세 개의 .NET 언어에 포함된 코드를 보여줍니다.
-
-```markdown
-[!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
- [!code-csharp[ADCreateDomain#2](../../../samples/snippets/csharp/VS_Snippets_CLR/ADCreateDomain/CS/source2.cs#2)]
- [!code-vb[ADCreateDomain#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/ADCreateDomain/VB/source2.vb#2)]
-```
-
-전체 프로그램에서 코드 조각을 포함하면 모든 코드가 CI(연속 통합) 시스템을 통해 실행될 수 있습니다. 그러나 컴파일 시간 또는 런타임 오류를 일으키는 요소를 표시해야 하는 경우 인라인 코드 블록을 사용할 수 있습니다.
+문서에서 코드를 표시하는 Markdown 구문에 대한 자세한 내용은 [문서에 코드를 포함하는 방법](../code-in-docs.md)을 참조하세요.
 
 ## <a name="images"></a>이미지
 
